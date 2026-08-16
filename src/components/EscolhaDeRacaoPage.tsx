@@ -80,9 +80,9 @@ export const EscolhaDeRacaoPage: React.FC<EscolhaDeRacaoPageProps> = ({
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   useEffect(() => {
-    document.title = 'Escolha de Ração para Cães e Gatos | Dra. Thais Vieira';
+    document.title = 'Orientação de Ração para Cães e Gatos | Dra. Thais Vieira';
     const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = 'Escolho a ração certa para o seu pet, a quantidade por dia e os petiscos. Atendimento online, R$ 150. Para quem acabou de adotar ou é de primeira viagem.';
+    const descContent = 'Orientação de ração para cães e gatos com a Dra. Thais Vieira. Indicação da ração ideal, quantidade por dia em gramas e petiscos seguros. Atendimento online, R$ 150.';
     if (metaDesc) {
       metaDesc.setAttribute('content', descContent);
     }
@@ -142,7 +142,7 @@ export const EscolhaDeRacaoPage: React.FC<EscolhaDeRacaoPageProps> = ({
             Blog
           </button>
           <span>/</span>
-          <span className="text-stone-800 font-bold">Escolha de Ração</span>
+          <span className="text-stone-800 font-bold">Orientação de Ração</span>
         </div>
 
         {/* EDITORIAL HERO SECTION */}
@@ -160,7 +160,7 @@ export const EscolhaDeRacaoPage: React.FC<EscolhaDeRacaoPageProps> = ({
                 </div>
                 <div>
                   <div className="text-sm font-bold text-stone-900 leading-tight">Dra. Thais Vieira</div>
-                  <div className="text-xs text-stone-500">Médica Veterinária • Nutrologia Pet</div>
+                  <div className="text-xs text-stone-500">Médica Veterinária • CRMV-SP 55784</div>
                 </div>
               </div>
 
@@ -177,7 +177,7 @@ export const EscolhaDeRacaoPage: React.FC<EscolhaDeRacaoPageProps> = ({
 
             {/* Main H1 Title */}
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold font-display text-stone-900 mb-6 leading-snug">
-              Escolha da ração ideal para o seu pet
+              Orientação de Ração para o seu Pet
             </h1>
           </div>
 
@@ -605,7 +605,7 @@ export const EscolhaDeRacaoPage: React.FC<EscolhaDeRacaoPageProps> = ({
               Pronto para acertar na alimentação do seu pet?
             </h3>
             <p className="text-stone-600 text-sm max-w-lg">
-              Agende sua orientação de escolha de ração por videochamada (R$ 150) e receba o cálculo exato por dia.
+              Agende sua Orientação de Ração por videochamada (R$ 150) e receba o cálculo exato por dia.
             </p>
           </div>
 

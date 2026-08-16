@@ -64,7 +64,7 @@ export const BlogIndexPage: React.FC<BlogIndexPageProps> = ({
           
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#a338b9] mb-4">
             <BookOpen size={16} />
-            <span>Portal Educativo de Nutrologia Veterinária</span>
+            <span>Portal Educativo de Nutrição Veterinária</span>
           </div>
 
           <h1 className="text-3xl md:text-5xl font-black font-display text-[#111827] mb-4 tracking-tight leading-tight">
@@ -105,7 +105,7 @@ export const BlogIndexPage: React.FC<BlogIndexPageProps> = ({
             className="text-xs font-bold text-[#a338b9] hover:underline flex items-center gap-1.5 bg-[#f4e2f7] px-3.5 py-1.5 rounded-full border border-[#ebdcf2]"
           >
             <Sparkles size={14} />
-            <span>Serviço: Escolha de Ração (R$ 150)</span>
+            <span>Serviço: Orientação de Ração (R$ 150)</span>
             <ArrowRight size={14} />
           </a>
         </div>
@@ -158,7 +158,7 @@ export const BlogIndexPage: React.FC<BlogIndexPageProps> = ({
               <span>Orientação Nutricional Avulsa</span>
             </div>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold font-display text-stone-900 leading-tight">
-              Escolha da ração ideal para o seu pet
+              Orientação de Ração para o seu pet
             </h2>
             <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
               Acabou de adotar ou é pai de pet de primeira viagem? Definimos a ração ideal dentro do seu orçamento, o cálculo exato por dia em gramas e os petiscos permitidos para o seu cão ou gato crescer saudável.
@@ -346,7 +346,7 @@ export const BlogIndexPage: React.FC<BlogIndexPageProps> = ({
         <div className="bg-[#111827] text-white rounded-3xl p-8 md:p-12 text-center md:text-left relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 border border-stone-800 shadow-xl">
           <div className="space-y-4 max-w-2xl">
             <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-amber-400">
-              <CheckCircle2 size={16} /> Atendimento Médico Veterinário Especializado
+              <CheckCircle2 size={16} /> Atendimento Médico Veterinário Individualizado
             </span>
             <h2 className="text-2xl md:text-4xl font-extrabold font-display leading-tight text-white">
               Quer uma orientação personalizada para a alimentação do seu cão ou gato?

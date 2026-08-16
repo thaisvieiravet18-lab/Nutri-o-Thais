@@ -178,7 +178,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <User size={22} />
               </div>
               <div className="flex flex-col text-left">
-                <span className="text-sm font-extrabold text-stone-900">{article.author.name}</span>
+                <span className="text-sm font-extrabold text-stone-900">{article.author.name} <span className="text-xs font-normal text-stone-500">• {article.author.crmv || 'CRMV-SP 55784'}</span></span>
                 <span className="text-xs font-semibold text-[#a338b9]">{article.author.role}</span>
               </div>
             </div>
@@ -247,7 +247,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
               onClick={() => onNavigateInternalLink('/escolha-de-racao')}
               className="bg-white hover:bg-stone-50 text-stone-800 py-4 px-6 rounded-2xl font-bold text-xs uppercase tracking-wider transition-all border border-stone-300 cursor-pointer"
             >
-              Escolha de Ração (R$ 150)
+              Orientação de Ração (R$ 150)
             </button>
           </div>
         </section>
@@ -258,7 +258,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
           <div className="text-xs text-amber-900 font-medium leading-relaxed space-y-1">
             <p className="font-bold uppercase tracking-wider">Aviso de Responsabilidade Veterinária:</p>
             <p>
-              Este artigo tem caráter estritamente educativo e informativo. Nenhuma orientação online substitui a avaliação clínica presencial ou teleorientação individualizada realizada por um médico veterinário. Em casos de filhotes, idosos, gatos com inapetência, suspeita de alergia alimentar, doença renal, obesidade ou necessidade de ração terapêutica, consulte sempre um especialista.
+              Este artigo tem caráter estritamente educativo e informativo. Nenhuma orientação online substitui a avaliação clínica individualizada realizada por um médico veterinário. Em casos de filhotes, idosos, gatos com inapetência, suspeita de alergia alimentar, doença renal, obesidade ou necessidade de ração terapêutica, consulte sempre um médico veterinário.
             </p>
           </div>
         </section>

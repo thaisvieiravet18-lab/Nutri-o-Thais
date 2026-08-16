@@ -66,7 +66,7 @@ export const CommercialLandingPage: React.FC<CommercialLandingPageProps> = ({
 
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-400 mb-4">
             <Heart size={16} fill="currentColor" />
-            <span>Nutrição Veterinária Especializada</span>
+            <span>Nutrição Veterinária Clínica</span>
           </div>
 
           <h1 className="text-3xl md:text-5xl font-black font-display text-white mb-6 leading-tight">
@@ -92,7 +92,7 @@ export const CommercialLandingPage: React.FC<CommercialLandingPageProps> = ({
         {landing.detailedText && (
           <div className="bg-white border border-stone-200 rounded-3xl p-8 md:p-10 shadow-sm text-left mb-10">
             <h2 className="text-xl md:text-2xl font-extrabold font-display text-stone-900 mb-4">
-              Entenda o Cuidado Nutricional Especializado
+              Entenda o Cuidado Nutricional Clínico
             </h2>
             <p className="text-stone-700 text-base leading-relaxed">
               {landing.detailedText}

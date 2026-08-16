@@ -23,7 +23,7 @@ export function getSeoDataForPath(pathname: string): SeoData {
   // 1. Home Page
   if (cleanPath === '/') {
     const title = 'Consulta Nutricional Veterinária Online para Cães e Gatos | Dra. Thais Vieira';
-    const description = 'Consulta nutricional veterinária online para cães e gatos. Planos personalizados de ração, alimentação natural, alimentação mista e manejo nutricional para necessidades específicas..';
+    const description = 'Consulta nutricional veterinária online para cães e gatos. Planos personalizados de ração, alimentação natural, alimentação mista e manejo nutricional para necessidades específicas.';
     const canonicalUrl = `${DOMAIN}/`;
     const h1 = 'Consulta Nutricional Veterinária Online para Cães e Gatos';
 
@@ -52,7 +52,7 @@ export function getSeoDataForPath(pathname: string): SeoData {
           'founder': {
             '@type': 'Person',
             'name': 'Dra. Thais Vieira',
-            'jobTitle': 'Médica Veterinária Nutróloga'
+            'jobTitle': 'Médica Veterinária com pós-graduação em nutrição animal'
           }
         },
         {
@@ -70,7 +70,7 @@ export function getSeoDataForPath(pathname: string): SeoData {
     const title = 'Blog de Nutrição Veterinária | Dra. Thais Vieira';
     const description = 'Artigos e guias práticos sobre alimentação natural, escolha de ração, nutrição para gatos e filhotes por Dra. Thais Vieira.';
     const canonicalUrl = `${DOMAIN}/blog`;
-    const h1 = 'Blog de Nutrologia Veterinária';
+    const h1 = 'Blog de Nutrição Veterinária';
 
     return {
       title,
@@ -139,7 +139,7 @@ export function getSeoDataForPath(pathname: string): SeoData {
           'provider': {
             '@type': 'Person',
             'name': 'Dra. Thais Vieira',
-            'jobTitle': 'Médica Veterinária Nutróloga',
+            'jobTitle': 'Médica Veterinária com pós-graduação em nutrição animal',
             'url': DOMAIN
           }
         },
@@ -249,12 +249,12 @@ export function getSeoDataForPath(pathname: string): SeoData {
             'author': {
               '@type': 'Person',
               'name': authorName,
-              'jobTitle': 'Médica Veterinária Nutróloga',
+              'jobTitle': 'Médica Veterinária com pós-graduação em nutrição animal',
               'url': DOMAIN
             },
             'publisher': {
               '@type': 'Organization',
-              'name': 'Dra. Thais Vieira | Nutrologia Veterinária',
+              'name': 'Dra. Thais Vieira | Nutrição Veterinária',
               'url': DOMAIN,
               'logo': {
                 '@type': 'ImageObject',
@@ -306,7 +306,7 @@ export function getSeoDataForPath(pathname: string): SeoData {
       {
         '@context': 'https://schema.org',
         '@type': 'Service',
-        'serviceType': 'Nutricionista Veterinária',
+        'serviceType': 'Nutrição Veterinária',
         'name': landing.title,
         'description': landing.description,
         'offers': {
@@ -318,7 +318,7 @@ export function getSeoDataForPath(pathname: string): SeoData {
         'provider': {
           '@type': 'Person',
           'name': 'Dra. Thais Vieira',
-          'jobTitle': 'Médica Veterinária Nutróloga',
+          'jobTitle': 'Médica Veterinária com pós-graduação em nutrição animal',
           'url': DOMAIN
         }
       },
@@ -404,12 +404,12 @@ export function getSeoDataForPath(pathname: string): SeoData {
           'author': {
             '@type': 'Person',
             'name': authorName,
-            'jobTitle': 'Médica Veterinária Nutróloga',
+            'jobTitle': 'Médica Veterinária com pós-graduação em nutrição animal',
             'url': DOMAIN
           },
           'publisher': {
             '@type': 'Organization',
-            'name': 'Dra. Thais Vieira | Nutrologia Veterinária',
+            'name': 'Dra. Thais Vieira | Nutrição Veterinária',
             'url': DOMAIN,
             'logo': {
               '@type': 'ImageObject',
@@ -471,7 +471,7 @@ export function renderPageHtml(pathname: string, templateHtml: string): string {
     `<meta property="og:url" content="${escapeHtml(seo.canonicalUrl)}" />`,
     `<meta property="og:type" content="${seo.ogType}" />`,
     `<meta property="og:image" content="${escapeHtml(seo.ogImage)}" />`,
-    `<meta property="og:site_name" content="Dra. Thais Vieira | Nutrologia Veterinária" />`,
+    `<meta property="og:site_name" content="Dra. Thais Vieira | Nutrição Veterinária" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${escapeHtml(seo.title)}" />`,
     `<meta name="twitter:description" content="${escapeHtml(seo.description)}" />`,

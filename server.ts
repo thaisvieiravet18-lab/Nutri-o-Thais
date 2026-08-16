@@ -69,6 +69,11 @@ async function startServer() {
     }
   });
 
+  // 301 Redirect for legacy routes
+  app.get("/consulta-primeiro-pet", (req, res) => {
+    res.redirect(301, "/escolha-de-racao");
+  });
+
   // SEO Routes: robots.txt
   app.get("/robots.txt", (req, res) => {
     res.type("text/plain");
@@ -81,7 +86,8 @@ async function startServer() {
 
     const staticUrls = [
       `${DOMAIN}/`,
-      `${DOMAIN}/blog`
+      `${DOMAIN}/blog`,
+      `${DOMAIN}/escolha-de-racao`
     ];
 
     const articleUrls = BLOG_ARTICLES.map((a) => `${DOMAIN}/blog/${a.slug}`);

@@ -234,8 +234,8 @@ export default function App({ initialPath }: AppProps = {}) {
     {
       title: "Suporte em Doenças Crônicas",
       img: "https://images.unsplash.com/photo-1554693190-38385b414383?q=80&w=1200&auto=format&fit=crop",
-      desc: "Instabilidade renal, diabetes, distúrbios hepáticos e gastrintestinais exigem controle laboratorial de fósforo, glicemia e sódio. A nutrição especializada retarda a evolução dessas patologias.",
-      highlight: "Nutrologia Terapêutica"
+      desc: "Instabilidade renal, diabetes, distúrbios hepáticos e gastrintestinais exigem controle laboratorial de fósforo, glicemia e sódio. O manejo nutricional adequado auxilia no controle dessas condições.",
+      highlight: "Nutrição Clínica"
     }
   ];
 
@@ -350,7 +350,7 @@ export default function App({ initialPath }: AppProps = {}) {
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center gap-7">
             <a href="/" onClick={(e) => { e.preventDefault(); navigateTo('/'); }} className={`text-xs font-semibold uppercase tracking-wider hover:text-[#a338b9] transition-colors ${activeView === 'home' ? 'text-[#a338b9] font-bold' : 'text-[#374151]'}`}>Início</a>
-            <a href="/escolha-de-racao" onClick={(e) => { e.preventDefault(); navigateTo('/escolha-de-racao'); }} className={`text-xs font-semibold uppercase tracking-wider hover:text-[#a338b9] transition-colors ${activeView === 'escolha_de_racao' ? 'text-[#a338b9] font-bold underline' : 'text-[#374151]'}`}>Escolha de Ração</a>
+            <a href="/escolha-de-racao" onClick={(e) => { e.preventDefault(); navigateTo('/escolha-de-racao'); }} className={`text-xs font-semibold uppercase tracking-wider hover:text-[#a338b9] transition-colors ${activeView === 'escolha_de_racao' ? 'text-[#a338b9] font-bold underline' : 'text-[#374151]'}`}>Orientação de Ração</a>
             <a href="/blog" onClick={(e) => { e.preventDefault(); navigateTo('/blog'); }} className={`text-xs font-semibold uppercase tracking-wider hover:text-[#a338b9] transition-colors ${activeView === 'blog_index' || activeView === 'blog_post' ? 'text-[#a338b9] font-bold underline' : 'text-[#374151]'}`}>Blog</a>
             <a href="#sobre" onClick={(e) => scrollToSection(e, 'sobre')} className="text-xs font-semibold uppercase tracking-wider text-[#374151] hover:text-[#a338b9] transition-colors">A Veterinária</a>
             <a href="#atendimento" onClick={(e) => scrollToSection(e, 'atendimento')} className="text-xs font-semibold uppercase tracking-wider text-[#374151] hover:text-[#a338b9] transition-colors">Formatos</a>
@@ -394,10 +394,7 @@ export default function App({ initialPath }: AppProps = {}) {
               className="absolute top-[112px] left-4 right-4 z-40 bg-white/95 backdrop-blur-md p-6 rounded-3xl border border-stone-200/60 shadow-xl flex flex-col gap-3 lg:hidden text-left max-h-[80vh] overflow-y-auto"
             >
               <a href="/" onClick={(e) => { e.preventDefault(); navigateTo('/'); setIsMobileMenuOpen(false); }} className="text-sm font-bold uppercase tracking-wider text-[#111827] py-2 border-b border-stone-100">Início</a>
-              <a href="/escolha-de-racao" onClick={(e) => { e.preventDefault(); navigateTo('/escolha-de-racao'); setIsMobileMenuOpen(false); }} className="text-sm font-bold uppercase tracking-wider text-[#a338b9] py-2 border-b border-stone-100 flex items-center justify-between">
-                <span>Escolha de Ração</span>
-                <span className="text-[10px] bg-[#a338b9]/15 text-[#a338b9] px-2 py-0.5 rounded-full font-bold">R$ 150</span>
-              </a>
+              <a href="/escolha-de-racao" onClick={(e) => { e.preventDefault(); navigateTo('/escolha-de-racao'); setIsMobileMenuOpen(false); }} className="text-sm font-bold uppercase tracking-wider text-[#a338b9] py-2 border-b border-stone-100">Orientação de Ração</a>
               <a href="/blog" onClick={(e) => { e.preventDefault(); navigateTo('/blog'); setIsMobileMenuOpen(false); }} className="text-sm font-bold uppercase tracking-wider text-[#a338b9] py-2 border-b border-stone-100">Blog de Nutrição Pet</a>
               <a href="#sobre" onClick={(e) => { scrollToSection(e, 'sobre'); setIsMobileMenuOpen(false); }} className="text-sm font-bold uppercase tracking-wider text-[#111827] py-2 border-b border-stone-100">A Veterinária</a>
               <a href="#atendimento" onClick={(e) => { scrollToSection(e, 'atendimento'); setIsMobileMenuOpen(false); }} className="text-sm font-bold uppercase tracking-wider text-[#111827] py-2 border-b border-stone-100">Formatos</a>
@@ -415,7 +412,7 @@ export default function App({ initialPath }: AppProps = {}) {
                   onClick={() => { navigateTo('/escolha-de-racao'); setIsMobileMenuOpen(false); }}
                   className="bg-[#a338b9] text-white py-3.5 rounded-2xl text-[11px] font-bold uppercase tracking-wider transition-all hover:bg-[#812099] cursor-pointer border-none"
                 >
-                  Escolha de Ração
+                  Orientação de Ração
                 </button>
               </div>
             </motion.div>
@@ -610,7 +607,7 @@ export default function App({ initialPath }: AppProps = {}) {
                 className="inline-block text-[#3B4FA8] font-nunito text-[13px] font-bold uppercase"
                 style={{ letterSpacing: "2.5px" }}
               >
-                DRA. THAIS VIEIRA • NUTRICIONISTA & NUTRÓLOGA VETERINÁRIA ONLINE
+                DRA. THAIS VIEIRA • NUTRICIONISTA VETERINÁRIO ONLINE
               </span>
             </FadeIn>
 
@@ -626,7 +623,7 @@ export default function App({ initialPath }: AppProps = {}) {
               {/* Description Body Text */}
               <FadeIn delay={0.4}>
                 <p className="text-stone-700 font-sans text-sm sm:text-base md:text-[17px] font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
-                  A <strong>consulta nutricional veterinária online para cães e gatos</strong> com a Dra. Thais Vieira oferece acompanhamento científico e plano alimentar personalizado para alimentação natural, indicação da melhor ração e dietas para cão renal, alergia ou obesidade em todo o Brasil.
+                  Como nutricionista veterinário online, eu monto o plano alimentar do seu cão ou gato de acordo com a idade, a rotina e a saúde dele. Pode ser com alimentação natural, com ração, ou com as duas. Atendo todo o Brasil e presencialmente em São Paulo.
                 </p>
               </FadeIn>
             </div>
@@ -691,7 +688,7 @@ export default function App({ initialPath }: AppProps = {}) {
               Como posso ajudar o seu pet?
             </h2>
             <p className="text-stone-700 font-medium text-sm md:text-base leading-relaxed max-w-xl mx-auto font-sans text-center mt-2">
-              Soluções científicas e personalizadas que promovem mais saúde, vitalidade e qualidade de vida para cães e gatos.
+              Cada pet come de um jeito e precisa de uma coisa diferente. Veja onde a nutrição de cães e gatos entra no caso do seu.
             </p>
           </div>
 
@@ -700,7 +697,7 @@ export default function App({ initialPath }: AppProps = {}) {
               {
                 title: "Filhotes, Adultos e idosos",
                 subtitle: "Nutrição para cada fase da vida",
-                desc: "A alimentação ideal muda conforme a idade. Ajustamos a dieta para acompanhar o crescimento, a fase adulta e o envelhecimento saudável do seu pet.",
+                desc: "A necessidade muda com a idade. Ajusto a ração e a alimentação para acompanhar o crescimento do filhote, a fase adulta e o envelhecimento.",
                 img: "https://images.unsplash.com/photo-1624180930030-7eb26f634e13?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 badge: "FASES DE VIDA",
                 action: () => openConsulta('online'),
@@ -709,7 +706,7 @@ export default function App({ initialPath }: AppProps = {}) {
               {
                 title: "Doenças e Casos Clínicos",
                 subtitle: "Nutrição terapêutica personalizada",
-                desc: "Planos alimentares desenvolvidos para pets com alergias, obesidade, diabetes, doenças renais, hepáticas e outras condições que exigem atenção especial.",
+                desc: "Dieta para cães e gatos com alergia alimentar, obesidade, diabetes, doença renal, hepática e outras condições que pedem atenção na alimentação.",
                 img: "https://images.unsplash.com/photo-1614621494969-757f4acbe726?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dp",
                 badge: "SUPORTE CLÍNICO",
                 action: () => openConsulta('online'),
@@ -718,21 +715,22 @@ export default function App({ initialPath }: AppProps = {}) {
               {
                 title: "Controle de Peso",
                 subtitle: "Emagrecer ou ganhar massa com segurança",
-                desc: "Nem dieta restritiva, nem excesso de comida. Criamos estratégias nutricionais para atingir o peso ideal respeitando a saúde e o bem-estar do pet.",
+                desc: "Nem passar fome, nem comer demais. Monto o plano de emagrecimento do cão ou gato obeso respeitando o ritmo dele.",
                 img: "https://images.unsplash.com/photo-1644178488613-555a71c24e16?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dp",
                 badge: "CONTROLE DE PESO",
                 action: () => openConsulta('online'),
                 footerText: "Obesidade • Magreza"
               },
               {
-                title: "Nutrição Felina",
-                subtitle: "Gatos vivem diferente. Comem diferente.",
-                desc: "Orientação especializada para hidratação, prevenção urinária, controle de peso e longevidade felina em todas as fases da vida.",
+                title: "Nutrição para gatos",
+                subtitle: "Gato não é cachorro pequeno.",
+                desc: "Como nutricionista para gatos, cuido de hidratação, saúde urinária, controle de peso e dieta felina em todas as fases da vida.",
                 img: "https://images.unsplash.com/photo-1529778873920-4da4926a72c2?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dop",
                 badge: "NUTRIÇÃO FELINA",
                 action: () => {
-                  const el = document.getElementById("meu-primeiro-pet");
+                  const el = document.getElementById("orientacao-racao");
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  else navigateTo('/escolha-de-racao');
                 },
                 footerText: "Saúde Felina"
               }
@@ -788,66 +786,51 @@ export default function App({ initialPath }: AppProps = {}) {
         </div>
       </section>
 
-      {/* SECTION: GUIA COMPLETO DE NUTRIÇÃO VETERINÁRIA E CONSULTORIA ONLINE (SEO SEMÂNTICO EM HTML ESTÁTICO) */}
-      <section className="py-16 md:py-20 px-4 md:px-8 bg-white border-t border-b border-stone-200/50 relative z-20" id="guia-nutricional-seo">
-        <div className="max-w-5xl mx-auto space-y-10 text-left">
+      {/* SECTION: GUIA DE NUTRIÇÃO VETERINÁRIA E ATENDIMENTO ONLINE */}
+      <section className="py-14 md:py-16 px-4 md:px-8 bg-white border-t border-b border-stone-200/50 relative z-20" id="guia-nutricional">
+        <div className="max-w-4xl mx-auto space-y-8 text-left">
           
           <div>
-            <span className="text-[11px] font-bold text-[#a338b9] tracking-[0.2em] uppercase font-sans">Especialidades & Manejo Nutricional</span>
-            <h2 className="text-2xl md:text-4xl font-extrabold text-[#111827] font-display mt-2 mb-4">
+            <span className="text-[11px] font-bold text-[#a338b9] tracking-[0.2em] uppercase font-sans">Abordagem Clínica</span>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#111827] font-display mt-2 mb-3">
               Consulta de Nutrição Veterinária Online para Cães e Gatos
             </h2>
             <p className="text-stone-700 font-medium text-sm md:text-base leading-relaxed">
-              A <strong>consulta nutricional veterinária online para cães e gatos</strong> é a forma mais prática, segura e acolhedora de receber um <strong>plano alimentar online para cachorro</strong> ou <strong>plano alimentar online para gato</strong> sem o estresse de transporte. Como <strong>nutricionista veterinária online</strong> e <strong>nutróloga veterinária online</strong>, a Dra. Thais Vieira desenvolve o <strong>manejo nutricional online</strong> e a <strong>nutrição veterinária</strong> de precisão ideais para garantir a saúde e a longevidade do seu companheiro.
+              O atendimento com nutricionista veterinário online evita o deslocamento, que costuma ser a parte mais difícil da consulta, principalmente para gato. Eu monto o plano alimentar de acordo com o caso de cada pet, com foco em prevenção e em apoiar o tratamento quando já existe uma doença.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             {/* Bloco 1: Alimentação Natural & Ração */}
-            <div className="bg-[#FAF8F5] border border-stone-200/60 rounded-3xl p-6 sm:p-8 space-y-4">
-              <h3 className="text-lg md:text-xl font-bold text-[#111827] font-display">
-                Alimentação Natural para Cães e Gatos Online & Escolha da Ração
+            <div className="bg-[#FAF8F5] border border-stone-200/60 rounded-2xl p-6 space-y-3">
+              <h3 className="text-base md:text-lg font-bold text-[#111827] font-display">
+                Alimentação Natural para Cães e Gatos e Orientação de Ração
               </h3>
-              <p className="text-xs sm:text-sm text-stone-700 leading-relaxed font-medium">
-                Oferecemos <strong>alimentação natural para cães online</strong> e <strong>alimentação natural para gatos online</strong> através de dietas caseiras cozidas, balanceadas com vitaminas e minerais essenciais para cada pet.
-              </p>
-              <p className="text-xs sm:text-sm text-stone-700 leading-relaxed font-medium">
-                Na <strong>consulta online para escolher ração</strong>, você conta com um <strong>plano de ração online</strong> feito sob medida na <strong>consultoria online</strong>, tirando todas as dúvidas como <strong>qual é a melhor ração?</strong> e <strong>quanto dar de ração?</strong>.
-              </p>
-              <p className="text-xs sm:text-sm text-stone-700 leading-relaxed font-medium">
-                Inicie o acompanhamento desde cedo com a <strong>orientação alimentar online para filhotes</strong> na <strong>consulta veterinária online para alimentação</strong>.
+              <p className="text-xs sm:text-sm text-stone-700 leading-relaxed">
+                Elaboro cardápios caseiros balanceados e suplementados conforme a necessidade de cada animal. Para quem prefere ração, indico a opção mais adequada ao orçamento e calculo a quantidade diária em gramas para filhotes, adultos e idosos.
               </p>
             </div>
 
-            {/* Bloco 2: Dietas Terapêuticas & Casos Clínicos */}
-            <div className="bg-[#FAF8F5] border border-stone-200/60 rounded-3xl p-6 sm:p-8 space-y-4">
-              <h3 className="text-lg md:text-xl font-bold text-[#111827] font-display">
-                Dieta Veterinária Online para Cão Renal, Alergias e Doenças Crônicas
+            {/* Bloco 2: Dietas Coadjuvantes & Casos Clínicos */}
+            <div className="bg-[#FAF8F5] border border-stone-200/60 rounded-2xl p-6 space-y-3">
+              <h3 className="text-base md:text-lg font-bold text-[#111827] font-display">
+                Dieta para Cão Renal, Gato Renal e Doenças Crônicas
               </h3>
-              <p className="text-xs sm:text-sm text-stone-700 leading-relaxed font-medium">
-                Elaboramos a <strong>dieta veterinária online</strong> ideal para condições clínicas complexas, como <strong>dieta para cachorro com doença renal</strong> e <strong>alimentação para gato com doença renal</strong> com suporte especializado para o <strong>cão renal</strong> e felino renal.
-              </p>
-              <p className="text-xs sm:text-sm text-stone-700 leading-relaxed font-medium">
-                Prescrevemos também <strong>dieta para cachorro com alergia</strong> (eliminação de alérgenos), <strong>alimentação para cachorro com problema no fígado</strong> (suporte hepático) e <strong>dieta para cachorro com artrose</strong>.
-              </p>
-              <p className="text-xs sm:text-sm text-stone-700 leading-relaxed font-medium">
-                Proporcione o melhor cuidado com a <strong>consulta nutricional para cachorro</strong> e <strong>consulta nutricional para gato</strong> com acompanhamento direto via WhatsApp.
+              <p className="text-xs sm:text-sm text-stone-700 leading-relaxed">
+                Manejo alimentar para cães e gatos com doença renal crônica, alergia alimentar, alterações hepáticas ou problemas articulares, integrado ao acompanhamento clínico veterinário.
               </p>
             </div>
 
           </div>
 
           {/* Bloco 3: Controle de Peso & Obesidade */}
-          <div className="bg-[#fcf5fe] border border-[#ebdcf2] rounded-3xl p-6 sm:p-8 space-y-4">
-            <h3 className="text-lg md:text-xl font-bold text-[#111827] font-display">
-              Controle de Peso para Cães e Gatos & Emagrecimento Saudável
+          <div className="bg-[#fcf5fe] border border-[#ebdcf2] rounded-2xl p-6 space-y-3">
+            <h3 className="text-base md:text-lg font-bold text-[#111827] font-display">
+              Controle de Peso e Emagrecimento de Cães e Gatos
             </h3>
-            <p className="text-xs sm:text-sm text-stone-700 leading-relaxed font-medium">
-              Com o trabalho de <strong>nutricionista veterinário para cachorro obeso</strong> e felinos, prescrevemos <strong>dieta para cachorro obeso</strong> e <strong>dieta para gato obeso</strong> voltadas ao <strong>controle de peso para cães e gatos</strong> de forma segura e progressiva.
-            </p>
-            <p className="text-xs sm:text-sm text-stone-700 leading-relaxed font-medium">
-              A <strong>consulta para emagrecimento de cães</strong> e gatos oferece plano de saciedade sem passar fome, sob os cuidados de uma <strong>nutricionista de cães e gatos online</strong>, oferecendo <strong>consulta online para cachorro</strong> e <strong>consulta online para gato</strong> em todo o Brasil.
+            <p className="text-xs sm:text-sm text-stone-700 leading-relaxed">
+              Programas graduais de perda de peso para o cão ou gato obeso, com saciedade e aporte de nutrientes preservado, sem perda de massa muscular.
             </p>
           </div>
 
@@ -913,14 +896,14 @@ export default function App({ initialPath }: AppProps = {}) {
                   Quem vai cuidar da alimentação do seu pet?
                 </h2>
                 <p className="text-purple-100/90 font-medium text-xs md:text-sm leading-relaxed font-sans mt-2">
-                  Médica veterinária dedicada exclusivamente à nutrologia animal de alta performance. Atuando com ética, ciência e sem qualquer vínculo comercial com indústrias pet — foco total na real saúde metabólica do seu animal.
+                  Sou médica veterinária com pós-graduação em nutrição animal e atendo como nutricionista pet online para todo o Brasil. Não tenho vínculo com nenhuma marca de ração, então a recomendação que você recebe é a que faz sentido para o seu pet, e não a que alguém está vendendo.
                 </p>
 
                 {/* Grid of Highlight Badges */}
                 <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 pt-4 text-white font-sans font-semibold text-xs">
                   {[
                     "Médica veterinária",
-                    "Nutricionista pet",
+                    "Pós-graduação em nutrição",
                     "Atendimento online",
                     "Atendimento presencial em SP",
                     "Sem vínculo com marcas",
@@ -931,18 +914,6 @@ export default function App({ initialPath }: AppProps = {}) {
                       <span className="break-words">{hl}</span>
                     </div>
                   ))}
-                </div>
-
-                {/* Numbers in Highlight */}
-                <div className="flex items-center gap-8 pt-6 border-t border-purple-900/40 mt-6">
-                  <div>
-                    <span className="block text-2xl md:text-3xl font-black font-display text-white leading-none drop-shadow-[0_2px_8px_rgba(163,56,185,0.4)]">+300</span>
-                    <span className="text-[9px] font-bold text-purple-200/80 uppercase tracking-widest mt-1 block leading-tight">pets orientados</span>
-                  </div>
-                  <div>
-                    <span className="block text-2xl md:text-3xl font-black font-display text-white leading-none drop-shadow-[0_2px_8px_rgba(163,56,185,0.4)]">100%</span>
-                    <span className="text-[9px] font-bold text-purple-200/80 uppercase tracking-widest mt-1 block leading-tight">orientação personalizada</span>
-                  </div>
                 </div>
               </FadeIn>
             </div>
@@ -967,10 +938,10 @@ export default function App({ initialPath }: AppProps = {}) {
           <div className="text-center mb-8 sm:mb-16 max-w-3xl mx-auto flex flex-col items-center space-y-3">
             <span className="text-[11px] font-bold text-[#a338b9] tracking-[0.25em] uppercase font-sans">Sessões Individuais</span>
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-[#111827] font-display uppercase tracking-tight text-center mt-1">
-              Quer um acompanhamento clínico exclusivo?
+              Qual atendimento é o certo para o seu pet?
             </h2>
             <p className="text-stone-700 font-semibold text-sm md:text-base leading-relaxed font-sans max-w-2xl text-center mt-2 mx-auto">
-              Se o seu pet possui alguma patologia diagnosticada (doença renal, obesidade severa, alergia grave ou diabetes) ou você prefere uma consulta tête-à-tête comigo, escolha um dos formatos abaixo:
+              Cada pet chega com uma necessidade diferente. Se o seu já tem uma doença diagnosticada, como renal, alergia ou diabetes, ou está acima do peso, o caminho é a consulta de nutrição veterinária. Se a dúvida é qual ração dar e quanto oferecer, a orientação de ração resolve. Veja qual faz mais sentido para vocês:
             </p>
           </div>
 
@@ -1026,7 +997,7 @@ export default function App({ initialPath }: AppProps = {}) {
                   <div className="h-44 sm:h-60 w-full overflow-hidden relative bg-stone-100">
                     <img 
                       src="https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&w=500&q=70" 
-                      alt="Teleconsulta com a médica veterinária Dra Thais" 
+                      alt="Consulta online com a médica veterinária Dra Thais" 
                       className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-95"
                       referrerPolicy="no-referrer"
                       loading="lazy"
@@ -1042,7 +1013,7 @@ export default function App({ initialPath }: AppProps = {}) {
                       <span className="text-xs font-black text-[#a338b9] uppercase tracking-widest font-sans">Sessão Digital</span>
                       <h3 className="text-xl sm:text-2xl font-bold text-[#111827] font-display">Consulta Online</h3>
                       <p className="text-xs sm:text-sm text-stone-700 font-medium leading-relaxed font-sans">
-                        Atendimento de nutrologia veterinária 100% online para cães e gatos de todo o Brasil. Prescrição de dieta personalizada com Alimentação Natural (AN), Ração balanceada ou Alimentação Mista, análise de exames e envio de receita digital em PDF.
+                        Consulta de nutrição veterinária online por videochamada, para todo o Brasil. Eu avalio exames, histórico e rotina, e monto a dieta com alimentação natural, ração ou as duas. Você recebe o plano em PDF.
                       </p>
                     </div>
                     <button 
@@ -1084,7 +1055,7 @@ export default function App({ initialPath }: AppProps = {}) {
                       <span className="text-xs font-black text-[#a338b9] uppercase tracking-widest font-sans">Sessão Consultório</span>
                       <h3 className="text-xl sm:text-2xl font-bold text-[#111827] font-display">Consulta Presencial</h3>
                       <p className="text-xs sm:text-sm text-stone-700 font-medium leading-relaxed font-sans">
-                        Atendimento em consultório na cidade de São Paulo. Bem parecida com a consulta online — com elaboração de dieta de Alimentação Natural, Ração ou Mista —, acrescida do exame físico presencial e avaliação corporal do seu cão ou gato.
+                        Consulta de nutrição veterinária presencial no consultório em São Paulo. Funciona como a online, com o acréscimo do exame físico e da avaliação corporal do seu cão ou gato.
                       </p>
                     </div>
                     <button 
@@ -1109,7 +1080,7 @@ export default function App({ initialPath }: AppProps = {}) {
                 >
                   <div className="h-44 sm:h-60 w-full overflow-hidden relative bg-stone-100">
                     <img 
-                      src="https://img.freepik.com/fotos-premium/pessoa-feminina-segurando-smartphone-nas-maos-enquanto-deitada-no-sofa-em-casa-com-sua-ia-generativa_874904-125864.jpg?semt=ais_hybrid&w=740&q=80" 
+                      src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=600&q=75" 
                       alt="Orientação de ração e petiscos para pets" 
                       className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-95"
                       referrerPolicy="no-referrer"
@@ -1126,7 +1097,7 @@ export default function App({ initialPath }: AppProps = {}) {
                       <span className="text-xs font-black text-[#a338b9] uppercase tracking-widest font-sans">Orientação Nutricional</span>
                       <h3 className="text-xl sm:text-2xl font-bold text-[#111827] font-display">Orientação de Ração</h3>
                       <p className="text-xs sm:text-sm text-stone-700 font-medium leading-relaxed font-sans">
-                        Acabou de adotar um pet ou é pai/mãe de primeira viagem? Não sabe qual é a melhor ração, os petiscos mais seguros para seu cão ou gato, e não sabe quanto oferecer por dia? Este plano foi feito especialmente para você!
+                        Acabou de adotar, ou é pai ou mãe de pet de primeira viagem? Na orientação de ração eu escolho a melhor ração para ele, calculo quanto oferecer por dia e indico os petiscos seguros.
                       </p>
                     </div>
                     <button 
@@ -1164,9 +1135,9 @@ export default function App({ initialPath }: AppProps = {}) {
           <div className="text-center mb-16 max-w-3xl mx-auto space-y-4">
             <FadeIn>
               <span className="text-[11px] font-bold text-[#a338b9] tracking-[0.2em] uppercase font-sans">Histórias de Cuidado</span>
-              <h2 className="text-3xl md:text-5xl font-extrabold text-[#111827] font-display mb-8">A transformação visível em poucas semanas</h2>
-              <p className="text-stone-700 text-lg md:text-xl font-semibold leading-relaxed max-w-2xl mx-auto font-sans text-center mt-6">
-                Relatórios reais de bem-estar enviados por tutores satisfeitos com a recuperação ativa do pet.
+              <h2 className="text-3xl md:text-5xl font-extrabold text-[#111827] font-display mb-4">Histórias de tutores atendidos</h2>
+              <p className="text-stone-700 text-sm md:text-base font-medium leading-relaxed max-w-2xl mx-auto font-sans text-center">
+                Mensagens que tutores me enviaram depois do atendimento.
               </p>
             </FadeIn>
           </div>
@@ -1245,7 +1216,7 @@ export default function App({ initialPath }: AppProps = {}) {
             <span className="text-[11px] font-bold text-[#a338b9] tracking-[0.2em] uppercase font-sans">Dúvidas Frequentes</span>
             <h2 className="text-3xl md:text-5xl font-extrabold text-[#111827] font-display">Perguntas Respondidas</h2>
             <p className="text-stone-700 font-semibold text-sm md:text-base leading-relaxed font-sans max-w-lg mx-auto">
-              Veja as respostas essenciais sobre a consulta nutricional online da Dra. Thais e a orientação para escolha e porção exata de ração.
+              As dúvidas que mais me perguntam sobre a consulta nutricional online e sobre a orientação de ração.
             </p>
           </div>
 
@@ -1293,7 +1264,7 @@ export default function App({ initialPath }: AppProps = {}) {
 
           <FadeIn delay={0.2}>
             <p className="text-stone-200 font-medium md:text-lg leading-relaxed max-w-2xl mx-auto font-sans">
-              Oferecer uma vida longa, ativa e feliz para quem só sabe te amar é o melhor presente que você pode dar. Proteja o futuro dele hoje mesmo com orientação nutricional científica feita sob medida.
+              O que o seu pet come todo dia é a decisão de saúde que mais se repete na vida dele. Vale a pena acertar.
             </p>
           </FadeIn>
 
@@ -1349,7 +1320,10 @@ export default function App({ initialPath }: AppProps = {}) {
                 <span className="text-sm font-bold text-[#111827] font-display">Dra. Thais Vieira</span>
               </div>
               <p className="text-stone-700 font-medium max-w-sm leading-relaxed">
-                Médica Veterinária especialista em nutrição animal. Cuidados focados em devolver a longevidade biológica a cães e felinos por meio de protocolos de suporte de alto rigor científico.
+                Médica veterinária com pós-graduação em nutrição animal. Atendo como nutricionista de cães e gatos online, para todo o Brasil, e presencialmente em São Paulo.
+              </p>
+              <p className="text-xs font-bold text-[#a338b9]">
+                CRMV-SP 55784
               </p>
               <div className="pt-1.5 flex items-center">
                 <a 
@@ -1364,25 +1338,34 @@ export default function App({ initialPath }: AppProps = {}) {
               </div>
             </div>
 
-            <div className="md:col-span-2 space-y-4">
+            <div className="md:col-span-3 space-y-4">
               <h4 className="text-[10px] font-bold tracking-widest uppercase text-[#111827]">Atendimento</h4>
-              <ul className="space-y-2 font-medium text-stone-600">
+              <ul className="space-y-2.5 font-medium text-stone-600">
                 <li>
                   <button onClick={() => navigateTo('/escolha-de-racao')} className="hover:text-[#a338b9] text-left cursor-pointer border-none bg-transparent p-0 font-medium text-xs">
-                    Escolha de Ração
+                    Orientação de Ração
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigateTo('/consulta-online')} className="hover:text-[#a338b9] text-left cursor-pointer border-none bg-transparent p-0 font-medium text-xs">
-                    Teleconsultas Online
+                  <button onClick={() => openConsulta('online')} className="hover:text-[#a338b9] text-left cursor-pointer border-none bg-transparent p-0 font-medium text-xs">
+                    Consulta de Nutrição Veterinária Online
                   </button>
                 </li>
-                <li>Consultório Presencial</li>
+                <li>
+                  <button onClick={() => { scrollToSection({ preventDefault: () => {} } as any, 'ajuda'); }} className="hover:text-[#a338b9] text-left cursor-pointer border-none bg-transparent p-0 font-medium text-xs">
+                    Nutricionista para Gatos
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => openConsulta('presencial')} className="hover:text-[#a338b9] text-left cursor-pointer border-none bg-transparent p-0 font-medium text-xs">
+                    Consultório Presencial em São Paulo
+                  </button>
+                </li>
               </ul>
             </div>
 
             <div className="md:col-span-3 space-y-4">
-              <h4 className="text-[10px] font-bold tracking-widest uppercase text-[#111827]">Blog & Conteúdo SEO</h4>
+              <h4 className="text-[10px] font-bold tracking-widest uppercase text-[#111827]">Blog</h4>
               <ul className="space-y-2 font-medium text-stone-600">
                 <li>
                   <button onClick={() => navigateTo('/blog')} className="hover:text-[#a338b9] text-left cursor-pointer border-none bg-transparent p-0 font-semibold text-xs">
@@ -1417,17 +1400,20 @@ export default function App({ initialPath }: AppProps = {}) {
               </ul>
             </div>
 
-            <div className="md:col-span-3 space-y-4">
+            <div className="md:col-span-2 space-y-4">
               <h4 className="text-[10px] font-bold tracking-widest uppercase text-[#111827]">Legal & Ética</h4>
               <p className="leading-relaxed text-stone-600">
-                As consultas e orientações nutricionais e os artigos do blog não representam diagnóstico médico final e não substituem o acompanhamento completo em consultório físico veterinário em casos de quadros patológicos do animal.
+                As consultas e orientações nutricionais e os artigos do blog não representam diagnóstico médico final e não substituem o acompanhamento clínico veterinário presencial em casos de emergência ou patologias graves do animal.
+              </p>
+              <p className="text-stone-500 font-semibold text-[11px]">
+                Dra. Thais Vieira • CRMV-SP 55784
               </p>
             </div>
 
           </div>
 
           <div className="border-t border-stone-200/40 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px]">
-            <p>© {new Date().getFullYear()} Dra. Thais Vieira Nutrição Animal. Todos os direitos reservados.</p>
+            <p>© {new Date().getFullYear()} Dra. Thais Vieira • CRMV-SP 55784. Todos os direitos reservados.</p>
             <p className="font-medium">Isenção absoluta de comissões de marketing de rações industriais.</p>
           </div>
         </div>

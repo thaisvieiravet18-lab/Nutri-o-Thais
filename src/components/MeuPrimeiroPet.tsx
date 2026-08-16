@@ -144,7 +144,7 @@ export function MeuPrimeiroPet({ setIsModalOpen }: MeuPrimeiroPetProps) {
               </div>
               <div>
                 <p className="text-white text-xs font-bold font-sans">Orientação profissional</p>
-                <p className="text-stone-400 text-[10px] leading-relaxed font-sans">Plano analisado por médica veterinária especialista em nutrição animal.</p>
+                <p className="text-stone-400 text-[10px] leading-relaxed font-sans">Plano analisado por médica veterinária com pós-graduação em nutrição animal.</p>
               </div>
             </div>
 

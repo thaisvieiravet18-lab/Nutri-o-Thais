@@ -36,7 +36,7 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
       title: "Comida de verdade para uma vida plena",
       desc: "Ingredientes frescos e cozidos sob medida, calculados e suplementados para cobrir todas as necessidades individuais do seu pet.",
       icon: <Leaf size={18} />,
-      img: "https://www.petz.com.br/blog/wp-content/uploads/2019/11/alimentacao-natural-cachorro.jpg",
+      img: "[IMAGEM A SUBSTITUIR]",
       accentColor: "from-emerald-500 to-teal-600",
       leftFeatures: [
         {
@@ -236,14 +236,21 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
                   animate={{ opacity: 1, scale: 1, rotate: 0 }}
                   exit={{ opacity: 0, scale: 0.9, rotate: 15 }}
                   transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                  className="w-full h-full rounded-full overflow-hidden"
+                  className="w-full h-full rounded-full overflow-hidden flex items-center justify-center bg-stone-100"
                 >
-                  <img
-                    src={current.img}
-                    alt={current.title}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                    referrerPolicy="no-referrer"
-                  />
+                  {current.img === '[IMAGEM A SUBSTITUIR]' ? (
+                    <div className="text-center p-4">
+                      <Leaf className="text-emerald-500 mx-auto mb-2" size={32} />
+                      <span className="text-xs font-bold text-stone-500 uppercase tracking-wider block">[IMAGEM A SUBSTITUIR]</span>
+                    </div>
+                  ) : (
+                    <img
+                      src={current.img}
+                      alt={current.title}
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                      referrerPolicy="no-referrer"
+                    />
+                  )}
                 </motion.div>
               </AnimatePresence>
 
