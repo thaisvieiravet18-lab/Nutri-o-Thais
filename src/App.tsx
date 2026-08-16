@@ -91,40 +91,45 @@ export default function App({ initialPath }: AppProps = {}) {
   // Hero slideshow photos with updated images and correct framing
   const defaultHeroPhotos = [
     {
-      url: "https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=1000&auto=format&fit=crop",
-      alt: "Cachorro feliz e saudável com pelo brilhante",
+      url: "https://images.unsplash.com/photo-1678783133022-89e103910f76?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Pet saudável sob acompanhamento clínico cuidadoso",
       className: "object-center scale-100 hover:scale-[1.05]"
     },
     {
-      url: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=1000&auto=format&fit=crop",
-      alt: "Gatinho saudável e bem nutrido",
+      url: "https://images.unsplash.com/photo-1573024027027-a82b1b0f783e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Veterinária sorridente atendendo um cachorro com carinho",
+      className: "object-[72%_30%] scale-100 hover:scale-[1.05]"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1618760439064-9c608de98e4e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Pet recebendo cuidados especiais",
+      className: "object-[center_35%] scale-100 hover:scale-[1.05]"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1723065314557-e2a6b8a41d08?q=80&w=759&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Cachorro feliz e saudável",
       className: "object-center scale-100 hover:scale-[1.05]"
     },
     {
-      url: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=1000&auto=format&fit=crop",
-      alt: "Cachorrinho feliz e bem cuidado",
+      url: "https://images.unsplash.com/photo-1745252777945-d430ecf54580?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Cachorrinho dócil sob cuidados pet",
       className: "object-center scale-100 hover:scale-[1.05]"
     },
     {
-      url: "https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=1000&auto=format&fit=crop",
-      alt: "Gato lindo e saudável em ambiente acolhedor",
+      url: "https://images.unsplash.com/photo-1596854675667-b1716ee49130?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Cachorro feliz rindo",
       className: "object-center scale-100 hover:scale-[1.05]"
     },
     {
-      url: "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?q=80&w=1000&auto=format&fit=crop",
-      alt: "Filhote de cãozinho saudável e cheio de energia",
-      className: "object-center scale-100 hover:scale-[1.05]"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1573865526739-10659fec78a5?q=80&w=1000&auto=format&fit=crop",
-      alt: "Gato dócil recebendo carinho e nutrição adequada",
-      className: "object-center scale-100 hover:scale-[1.05]"
+      url: "https://images.unsplash.com/photo-1558993457-4bc6ec2c3734?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Veterinária examinando gatinho dócil",
+      className: "object-[center_25%] scale-100 hover:scale-[1.05]"
     }
   ];
 
   const [photos, setPhotos] = useState<Array<{ url: string; alt: string; className: string }>>(() => {
-    // Clear old hero photos cache if it contains outdated photos
-    const keysToClean = ['hero_photos_v7', 'hero_photos_v8', 'hero_photos_v9', 'hero_photos_v10'];
+    // Clear old hero photos cache if it contains pexels photos
+    const keysToClean = ['hero_photos_v7', 'hero_photos_v8', 'hero_photos_v9'];
     keysToClean.forEach(k => safeLocalStorage.removeItem(k));
     return defaultHeroPhotos;
   });
