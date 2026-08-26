@@ -36,7 +36,7 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
       title: "Comida de verdade para uma vida plena",
       desc: "Ingredientes frescos e cozidos sob medida, calculados e suplementados para cobrir todas as necessidades individuais do seu pet.",
       icon: <Leaf size={18} />,
-      img: "[IMAGEM A SUBSTITUIR]",
+      img: "https://f.i.uol.com.br/fotografia/2021/03/18/16161104516053e373991f0_1616110451_3x2_md.jpg",
       accentColor: "from-emerald-500 to-teal-600",
       leftFeatures: [
         {
