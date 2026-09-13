@@ -17,7 +17,7 @@ export const faqs = [
   },
   {
     question: "Como funciona a dieta para cachorro com doença renal ou gato com doença renal?",
-    answer: "Para o cão ou gato com doença renal crônica, elaboramos uma dieta com teores rigorosamente controlados de fósforo, sódio e proteína de altíssima digestibilidade, associando suplementação adequada para proteger a função renal."
+    answer: "Para o cão ou gato com doença renal crônica, elaboramos uma dieta com teores rigorosamente controlados de fósforo, sódio e proteína de altíssima digestibilidade, associando nutrientes e compostos específicos para proteger a função renal."
   },
   {
     question: "Como é o controle de peso para cães e gatos obesos?",

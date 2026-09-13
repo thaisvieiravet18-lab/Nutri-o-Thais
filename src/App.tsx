@@ -808,7 +808,7 @@ export default function App({ initialPath }: AppProps = {}) {
                 Alimentação Natural para Cães e Gatos e Orientação de Ração
               </h3>
               <p className="text-xs sm:text-sm text-stone-700 leading-relaxed">
-                Elaboro cardápios caseiros balanceados e suplementados conforme a necessidade de cada animal. Para quem prefere ração, indico a opção mais adequada ao orçamento e calculo a quantidade diária em gramas para filhotes, adultos e idosos.
+                Elaboro cardápios caseiros balanceados e completos conforme a necessidade de cada animal. Para quem prefere ração, indico a opção mais adequada ao orçamento e calculo a quantidade diária em gramas para filhotes, adultos e idosos.
               </p>
             </div>
 

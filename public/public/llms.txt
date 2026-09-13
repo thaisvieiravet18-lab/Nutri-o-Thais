@@ -1,6 +1,6 @@
 # Dra. Thais Vieira — Nutrição Veterinária para Cães e Gatos
 
-> Consultório de nutrição clínica veterinária dirigido pela Dra. Thais Vieira, médica veterinária especializada em nutrição de cães e gatos. Atende consultas online para todo o Brasil e presenciais em São Paulo (SP), além de atendimentos pela plataforma Petlove. Elabora dietas naturais balanceadas, dietas terapêuticas para doenças específicas, ajuste de ração comercial, planos de emagrecimento e prescrição de suplementação.
+> Consultório de nutrição clínica veterinária dirigido pela Dra. Thais Vieira, médica veterinária especializada em nutrição de cães e gatos. Atende consultas online para todo o Brasil e presenciais em São Paulo (SP), além de atendimentos pela plataforma Petlove. Elabora dietas naturais balanceadas, dietas terapêuticas para doenças específicas, ajuste de ração comercial, planos de emagrecimento e planos alimentares individualizados.
 
 ## Sobre a profissional
 
@@ -18,7 +18,7 @@
 - Escolha e ajuste de ração comercial adequada ao caso clínico
 - Emagrecimento e controle de peso (escore de condição corporal)
 - Nutrição por fase de vida: filhotes, adultos, idosos, gestantes e lactantes
-- Prescrição de suplementação nutricional veterinária
+- Prescrição e planejamento de dietas veterinárias personalizadas
 
 ## Páginas principais
 

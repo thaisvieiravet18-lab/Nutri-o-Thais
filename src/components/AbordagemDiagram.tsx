@@ -34,7 +34,7 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
       id: "natural",
       tabLabel: "Comida Natural",
       title: "Comida de verdade para uma vida plena",
-      desc: "Ingredientes frescos e cozidos sob medida, calculados e suplementados para cobrir todas as necessidades individuais do seu pet.",
+      desc: "Ingredientes frescos e cozidos sob medida, calculados de forma completa para cobrir todas as necessidades individuais do seu pet.",
       icon: <Leaf size={18} />,
       img: "https://f.i.uol.com.br/fotografia/2021/03/18/16161104516053e373991f0_1616110451_3x2_md.jpg",
       accentColor: "from-emerald-500 to-teal-600",
@@ -52,13 +52,13 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
       ],
       rightFeatures: [
         {
-          title: "Suplementação Precisa",
-          desc: "Cálculo detalhado de vitaminas e minerais essenciais para ajudar a manter a dieta natural equilibrada e segura.",
+          title: "Equilíbrio na Medida",
+          desc: "Cálculo detalhado e individualizado para ajudar a manter a dieta natural equilibrada e segura.",
           icon: <Scale className="text-emerald-500" size={24} />
         },
         {
           title: "Preparo com Cuidado",
-          desc: "Cozimento a vapor que preserva a integridade de aminoácidos, minerais e o sabor original dos alimentos.",
+          desc: "Cozimento a vapor que preserva a integridade dos ingredientes e o sabor original dos alimentos.",
           icon: <Sparkles className="text-emerald-500" size={24} />
         }
       ]
@@ -79,7 +79,7 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
         },
         {
           title: "Hidratação Natural",
-          desc: "A adição de comida úmida ajuda a proteger o trato urinário e rins de cães e gatos de forma preventiva.",
+          desc: "A presença de comida úmida ajuda a proteger o trato urinário e rins de cães e gatos de forma preventiva.",
           icon: <Heart className="text-amber-500" size={24} />
         }
       ],

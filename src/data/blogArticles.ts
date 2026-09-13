@@ -125,7 +125,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     whatsIncluded: [
       'Avaliação minuciosa de exames de ureia, creatinina, SDMA, fósforo e urinálise',
       'Prescrição individualizada de dieta renal caseira ou seleção de ração terapêutica',
-      'Suplementação específica (ômega-3 EPA/DHA, quelantes de fósforo quando indicado)',
+      'Manejo com componentes específicos (ômega-3 EPA/DHA, quelantes de fósforo quando indicado)',
       'Consulta online em todo o Brasil por R$ 200,00 e acompanhamento por WhatsApp'
     ],
     detailedText: 'A alimentação é um dos pilares mais determinantes na sobrevida e qualidade de vida do cão ou gato com doença renal. O controle adequado de fósforo e a oferta de proteínas de altíssima digestibilidade diminuem a sobrecarga sobre os rins, reduzindo sintomas como náusea e perda de peso.',
@@ -187,9 +187,9 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
   'artrose-e-problemas-articulares-em-caes': {
     slug: 'artrose-e-problemas-articulares-em-caes',
     title: 'Nutrição para Cachorro com Artrose e Articulações | Dra. Thais Vieira',
-    headline: 'Dieta e Suplementação Anti-inflamatória para Cães com Artrose e Displasia',
-    description: 'Acompanhamento nutricional focado em saúde articular de cães idosos e com artrose. Controle de peso e suplementação nutracêutica direcionada.',
-    keywords: ['nutrição para cachorro com artrose', 'suplementação e dieta para artrose canina', 'cão com dor articular alimentação'],
+    headline: 'Dieta e Nutrientes Anti-inflamatórios para Cães com Artrose e Displasia',
+    description: 'Acompanhamento nutricional focado em saúde articular de cães idosos e com artrose. Controle de peso e suporte articular direcionado.',
+    keywords: ['nutrição para cachorro com artrose', 'nutrientes e dieta para artrose canina', 'cão com dor articular alimentação'],
     benefits: [
       'Ação anti-inflamatória natural através de EPA e DHA purificados',
       'Controle rígido do peso corporal para diminuir o estresse nas articulações',
@@ -285,14 +285,14 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     whatsIncluded: [
       'Análise completa da ingestão hídrica e comportamento do felino',
       'Plano de alimentação úmida, seca de alta qualidade ou Alimentação Natural',
-      'Suplementação obrigatória de taurina e vitaminas essenciais',
+      'Aporte obrigatório de taurina e nutrientes essenciais',
       'Consulta online por R$ 200,00 com suporte pós-atendimento no WhatsApp'
     ],
     detailedText: 'Os gatos possuem particularidades metabólicas únicas e necessitam de alta ingestão hídrica para proteger os rins. A consulta nutricional felina prescreve estratégias para aumentar o consumo de água e manter seu felino saudável e nutrido.',
     faqs: [
       {
         question: 'Gato pode comer Alimentação Natural com segurança?',
-        answer: 'Sim, mas exige rigor técnico com suplementação de taurina, cálcio e vitaminas. Nunca ofereça comida caseira sem cálculo por médica veterinária.'
+        answer: 'Sim, mas exige rigor técnico com balanceamento preciso de taurina, cálcio e outros nutrientes. Nunca ofereça comida caseira sem cálculo por médica veterinária.'
       }
     ],
     relatedLinks: [
@@ -345,7 +345,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     description: 'Aprenda como oferecer uma dieta caseira balanceada (cozida) formulada por médica veterinária. Nutrição de verdade, sem riscos de deficiências nutricionais.',
     keywords: ['alimentação natural para cães', 'dieta caseira balanceada cachorro', 'AN veterinária cães'],
     benefits: [
-      'Cardápio sob medida calculado com suplementação mineral e vitamínica exata',
+      'Cardápio sob medida calculado com equilíbrio nutricional exato',
       'Ingredientes frescos e palatáveis ideais para cães seletivos',
       'Excelente suporte para cães com alergias ou estômago sensível',
       'Acompanhamento veterinário com exames periódicos de controle'
@@ -359,14 +359,14 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     ],
     whatsIncluded: [
       'Formulações de cardápio cozido balanceado',
-      'Indicação e cálculo de suplementação vitamínica necessária',
+      'Cálculo e formulação completa das necessidades diárias',
       'Consulta online por R$ 200,00 e acompanhamento por WhatsApp'
     ],
     detailedText: 'A Alimentação Natural para cães traz vitalidade e saúde quando calculada corretamente por médica veterinária. Evite deficiências graves utilizando receitas genéricas de internet e tenha um plano balanceado para o seu cão.',
     faqs: [
       {
-        question: 'Comida caseira para cachorro precisa de suplemento?',
-        answer: 'Sim! Toda dieta caseira cozida para cães exige suplementação mineral e vitamínica calculada para não causar carências graves.'
+        question: 'Comida caseira para cachorro precisa de cálculo profissional?',
+        answer: 'Sim! Toda dieta caseira cozida para cães exige formulação completa calculada por médica veterinária para não causar carências graves.'
       }
     ],
     relatedLinks: [
@@ -384,7 +384,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     benefits: [
       'Preservação da saúde renal e do trato urinário inferior (FLUTD)',
       'Transição suave para evitar inapetência felina severa',
-      'Suplementação obrigatória de taurina, vitaminas e minerais essenciais',
+      'Aporte obrigatório de taurina e demais nutrientes essenciais',
       'Opções de dietas úmidas preparadas em casa ou rações úmidas selecionadas'
     ],
     formatKey: 'online',
@@ -395,7 +395,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Felinos necessitando de nutrição balanceada'
     ],
     whatsIncluded: [
-      'Cardápios felinos calculados com suplementação de taurina',
+      'Cardápios felinos calculados com inclusão balanceada de taurina',
       'Orientações para transição sem estresse',
       'Consulta online por R$ 200,00 com suporte pós-atendimento'
     ],
@@ -472,14 +472,14 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     whatsIncluded: [
       'Análise detalhada de exames laboratoriais, histórico e queixas clínicas',
       'Envio do plano alimentar completo em PDF com orientações de preparo ou marcas',
-      'Cálculo de suplementação vitamínico-mineral quando necessário',
+      'Cálculo e formulação sob medida quando necessário',
       'Suporte direto por WhatsApp durante a adaptação'
     ],
-    detailedText: 'A consulta nutricional veterinária completa é o formato indicado para pets com necessidades de saúde específicas, doenças diagnosticadas ou para quem busca dietas personalizadas e suplementadas sob medida.',
+    detailedText: 'A consulta nutricional veterinária completa é o formato indicado para pets com necessidades de saúde específicas, doenças diagnosticadas ou para quem busca dietas personalizadas e balanceadas sob medida.',
     faqs: [
       {
         question: 'Qual a diferença entre a consulta online e a escolha de ração?',
-        answer: 'A escolha de ração é um serviço avulso e direto (R$ 100) para pets saudáveis definirem a melhor marca e porção. A consulta online completa (R$ 200) abrange pets com doenças, dietas naturais personalizadas, suplementações e acompanhamento detalhado.'
+        answer: 'A escolha de ração é um serviço avulso e direto (R$ 100) para pets saudáveis definirem a melhor marca e porção. A consulta online completa (R$ 200) abrange pets com doenças, dietas naturais personalizadas, formulação completa e acompanhamento detalhado.'
       }
     ],
     relatedLinks: [
@@ -537,7 +537,7 @@ Ao buscar **qual ração dar para filhote**, atente-se às seguintes caracterís
 * **Nível Proteico Elevado:** Proteínas de alta digestibilidade para construção muscular e síntese tecidual.
 * **Balanço Cálcio e Fósforo:** Proporção milimetricamente ajustada para a ossificação correta (especialmente crítica em cães de porte grande e gigante).
 * **Grãos no Tamanho Certo:** Formato e textura adequados para a dentição decídua (dentes de leite) e facilidade de apreensão.
-* **Adição de DHA:** Ácido graxo essencial importante para o desenvolvimento do cérebro e da visão do filhote.
+* **Presença de DHA:** Ácido graxo essencial importante para o desenvolvimento do cérebro e da visão do filhote.
 
 ---
 
@@ -545,7 +545,7 @@ Ao buscar **qual ração dar para filhote**, atente-se às seguintes caracterís
 
 Ao caminhar pelo corredor de pet shop ou pesquisar na internet pela **melhor ração para filhote**, você encontrará diversas categorias comerciais:
 
-1. **Super Premium / Alta Nutrição:** Utilizam fontes de proteínas nobres e altamente digestíveis, possuem suplementação com prebióticos, DHA e menor necessidade de volume por refeição.
+1. **Super Premium / Alta Nutrição:** Utilizam fontes de proteínas nobres e altamente digestíveis, possuem enriquecimento com prebióticos, DHA e menor necessidade de volume por refeição.
 2. **Premium / Premium Especial:** Boa relação custo-benefício, com ingredientes selecionados e boa aceitação.
 3. **Standard ou Econômicas:** Geralmente possuem menor digestibilidade e requerem porções maiores para atingir o requerimento nutricional.
 
@@ -593,7 +593,7 @@ Caso queira trocar de marca, faça a **transição gradual ao longo de 7 dias**:
 1. **Deixar comida disponível o dia todo para cães:** Pode gerar seletividade alimentar, perda de interesse e obesidade precoce.
 2. **Oferecer leite de vaca:** Provoca diarreia severa devido à incapacidade de digerir o alto teor de lactose do leite bovino.
 3. **Oferecer alimentos proibidos:** Chocolate, cebola, alho, uva, xilitol e ossos cozidos são altamente tóxicos ou perigosos.
-4. **Introduzir Alimentação Natural sem prescrição médica:** A dieta caseira sem suplementação vitamínico-mineral calculada por uma médica veterinária com pós-graduação em nutrição animal causa deformidades ósseas irreversíveis em filhotes.
+4. **Introduzir Alimentação Natural sem prescrição médica:** A dieta caseira sem formulação balanceada calculada por uma médica veterinária com pós-graduação em nutrição animal causa deformidades ósseas irreversíveis em filhotes.
 
 ---
 
@@ -616,7 +616,7 @@ Caso queira um acompanhamento contínuo e mais amplo sobre todas as fases de cre
     aliases: ['alimentacao-natural-para-cachorro', 'alimentacao-natural-para-caes'],
     title: 'Alimentação Natural para Cães: O Que É, Vantagens e Cuidados Necessários',
     metaTitle: 'Alimentação Natural para Cães: Guia Completo | Dra. Thais Vieira',
-    metaDescription: 'Quer migrar para Alimentação Natural para cães com segurança? Saiba como funciona a dieta caseira cozida balanceada, suplementos obrigatórios e cuidados veterinários.',
+    metaDescription: 'Quer migrar para Alimentação Natural para cães com segurança? Saiba como funciona a dieta caseira cozida balanceada, nutrientes essenciais obrigatórios e cuidados veterinários.',
     mainKeyword: 'alimentação natural para cães',
     secondaryKeywords: ['dieta caseira cachorro', 'AN para cães', 'alimentação saudável cães'],
     category: 'Alimentação natural',
@@ -628,7 +628,7 @@ Caso queira um acompanhamento contínuo e mais amplo sobre todas as fases de cre
       role: 'Médica Veterinária com pós-graduação em nutrição animal',
       crmv: 'CRMV-SP 55784',
     },
-    summary: 'Saiba o que é a Alimentação Natural (AN) cozida para cães, quais os benefícios para cães com alergia ou seletivos, e por que o cálculo individualizado e a suplementação são vitais.',
+    summary: 'Saiba o que é a Alimentação Natural (AN) cozida para cães, quais os benefícios para cães com alergia ou seletivos, e por que o cálculo individualizado e o equilíbrio de nutrientes são vitais.',
     image: 'https://bonapetti.com.br/wp-content/uploads/2021/04/BannerHome.jpg',
     imageAlt: 'Cão feliz e saudável aguardando refeição caseira',
     internalLinks: [
@@ -639,7 +639,7 @@ Caso queira um acompanhamento contínuo e mais amplo sobre todas as fases de cre
     contentMarkdown: `
 A **Alimentação Natural (AN) para cães** vem conquistando milhares de tutores no Brasil. E não é para menos: refeições preparadas com ingredientes frescos, carnes de qualidade, legumes e carboidratos selecionados trazem visível melhoria na disposição, na pelagem e na digestão dos cães.
 
-Contudo, "alimentação natural" **não é dar restos de comida da mesa do tutor**. A nutrição canina é complexa e exige um balanço exato de aminoácidos, ácidos graxos, minerais e vitaminas.
+Contudo, "alimentação natural" **não é dar restos de comida da mesa do tutor**. A nutrição canina é complexa e exige um balanço rigoroso de proteínas, fontes energéticas e nutrientes essenciais.
 
 Neste artigo, você descobrirá como funciona a [alimentação natural para cães](/alimentacao-natural-para-caes/) sob prescrição médica veterinária.
 
@@ -652,9 +652,9 @@ A Alimentação Natural Cozida para cães consiste em uma dieta elaborada exclus
 Ela é composta por proporções calculadas de:
 1. **Proteínas de Alta Qualidade:** Peito de frango, carne bovina magra, peixes, ovos ou suíno.
 2. **Carboidratos e Fibras:** Batata-doce, mandioquinha, arroz integral, abóbora, chuchu, brócolis e cenoura.
-3. **Vísceras:** Fontes concentradas de vitaminas (como fígado bovino, coração e moela).
+3. **Vísceras:** Fontes concentradas de nutrientes (como fígado bovino, coração e moela).
 4. **Gorduras Boas:** Óleo de peixe (Ômega 3) e óleos vegetais específicos.
-5. **Suplemento Vitamínico-Mineral:** Item 100% obrigatório em todas as dietas caseiras.
+5. **Complemento Nutricional Balanceado:** Item 100% obrigatório em todas as dietas caseiras.
 
 ---
 
@@ -667,17 +667,17 @@ Ela é composta por proporções calculadas de:
 
 ---
 
-## O perigo da dieta caseira sem suplementação
+## O perigo da dieta caseira desequilibrada em nutrientes
 
-Nenhum alimento na natureza possui todos os nutrientes necessários nas proporções perfeitas para um cão. Carnes e vegetais cozidos isolados **não fornecem cálcio suficiente**, nem teores ideais de cobre, zinco, iodo, vitamina D e vitamina E.
+Nenhum alimento na natureza possui todos os nutrientes necessários nas proporções perfeitas para um cão. Carnes e vegetais cozidos isolados **não fornecem cálcio suficiente**, nem teores ideais de compostos fundamentais para a saúde canina.
 
-A falta do suplemento específico gera deficiências crônicas graves, levando a fraturas por desmineralização óssea, anemia, lesões de pele e alteração cardíaca.
+A falta do balanceamento nutricional adequado gera deficiências crônicas graves, levando a fraqueza óssea, anemia, lesões de pele e alteração cardíaca.
 
 ---
 
 ## Como iniciar o processo de transição?
 
-Antes de alterar a dieta do seu cão, agende uma [consulta nutricional pet online](/nutricao-pet-online/) ou presencial. A médica veterinária analisará os exames de sangue recentes do pet, avaliará o peso ideal e criará a receita exclusiva em gramas com o suplemento adequado.
+Antes de alterar a dieta do seu cão, agende uma [consulta nutricional pet online](/nutricao-pet-online/) ou presencial. A médica veterinária analisará os exames de sangue recentes do pet, avaliará o peso ideal e criará a receita exclusiva em gramas com o balanço de nutrientes adequado.
 
 *Aviso Legal: Artigo educativo. Nunca substitua a alimentação do seu cão sem supervisão veterinária.*
 `
@@ -722,7 +722,7 @@ Por isso, o investimento em [alimentação natural para gatos](/alimentacao-natu
 Diferente dos cães (que são carnívoros facultativos ou adaptáveis), os gatos necessitam obrigatoriamente de nutrientes encontrados nas proteínas animais:
 * **Taurina:** Aminoácido vital para o coração e retina.
 * **Arginina:** Indispensável para o ciclo da ureia.
-* **Vitamina A Pré-formada:** Felinos não convertem betacaroteno em vitamina A.
+* **Nutrientes de Origem Animal:** Felinos não convertem betacaroteno, necessitando de fontes animais ativas.
 * **Ácido Araquidônico:** Gordura essencial que só existe em tecidos animais.
 
 ---
@@ -847,7 +847,6 @@ No Brasil, os ingredientes devem ser descritos em **ordem decrescente de quantid
 
 * **Proteína Bruta (Mínimo):** Indica a quantidade total de proteína. Para cães adultos.
 * **Extrato Etéreo (Gordura):** Fornece energia e palatabilidade.
-* **Matéria Mineral / Cinzas:** Teor de minerais. Mantenha atenção para que não seja excessivamente elevado.
 
 ---
 
