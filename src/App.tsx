@@ -209,7 +209,6 @@ export default function App({ initialPath }: AppProps = {}) {
   
   // Carousel / Accordion / Format Tab States
   const [activeCategory, setActiveCategory] = useState(0);
-  const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [selectedFormatTab, setSelectedFormatTab] = useState<'online' | 'presencial' | 'racao'>('online');
 
   const categories = [
@@ -236,24 +235,6 @@ export default function App({ initialPath }: AppProps = {}) {
       img: "https://images.unsplash.com/photo-1554693190-38385b414383?q=80&w=1200&auto=format&fit=crop",
       desc: "Instabilidade renal, diabetes, distúrbios hepáticos e gastrintestinais exigem controle laboratorial de fósforo, glicemia e sódio. O manejo nutricional adequado auxilia no controle dessas condições.",
       highlight: "Nutrição Clínica"
-    }
-  ];
-
-  const testimonials = [
-    {
-      petName: "Quinha",
-      tutor: "Cão 🐶",
-      img: "https://capable-cyan-ejwmqx0j.edgeone.app/Captura%20de%20tela%202026-06-21%20145641.png"
-    },
-    {
-      petName: "Paçoca",
-      tutor: "Cão 🐶",
-      img: "https://excess-amber-bkfvumvw.edgeone.app/Captura%20de%20tela%202026-06-21%20145325.png"
-    },
-    {
-      petName: "Pitoco",
-      tutor: "Cão 🐶",
-      img: "https://labour-jade-ifgwubog.edgeone.app/Captura%20de%20tela%202026-06-21%20145906.png"
     }
   ];
 
@@ -1142,59 +1123,9 @@ export default function App({ initialPath }: AppProps = {}) {
             </FadeIn>
           </div>
 
-          {/* Testimonial slider / showcase */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center max-w-5xl mx-auto">
-            
-            {/* Left list controls */}
-            <div className="lg:col-span-5 flex flex-col gap-4 text-left">
-              {testimonials.map((test, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setActiveTestimonial(idx)}
-                  className={`p-5 rounded-2xl text-left transition-all duration-300 border flex items-center gap-4 cursor-pointer w-full select-none outline-none ${
-                    activeTestimonial === idx 
-                      ? 'bg-[#9B4DCA]/10 border-[#9B4DCA] text-[#111827] shadow-sm' 
-                      : 'bg-white border-stone-200/50 text-stone-700 font-semibold hover:bg-stone-50/50'
-                  }`}
-                >
-                  <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-stone-100 flex items-center justify-center font-bold text-lg">
-                    {test.tutor.includes("Gato") ? "🐱" : "🐶"}
-                  </div>
-                  <div>
-                    <h4 className="text-base font-bold font-display text-[#111827]">{test.petName}</h4>
-                    <p className="text-xs text-stone-500 font-semibold mt-0.5">{test.tutor}</p>
-                  </div>
-                </button>
-              ))}
-            </div>
-
-            {/* Right display content: Clean & minimalist premium display that showcases the real WhatsApp chats */}
-            <div className="lg:col-span-7 bg-[#1c1c1e] p-2 rounded-3xl flex flex-col justify-center overflow-hidden shadow-[0_20px_50px_-15px_rgba(0,0,0,0.15)] ring-1 ring-black/5 relative">
-              <div className="w-full bg-[#111111] rounded-2xl flex items-center justify-center relative overflow-hidden py-3 px-2" style={{ minHeight: "440px" }}>
-                {/* Subtle sheen highlight */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 pointer-events-none z-10" />
-                
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={activeTestimonial}
-                    initial={{ opacity: 0, scale: 0.97 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.97 }}
-                    transition={{ duration: 0.25 }}
-                    className="w-full h-full flex items-center justify-center"
-                  >
-                    <img 
-                      src={testimonials[activeTestimonial].img} 
-                      alt={`Real WhatsApp chat feedback from ${testimonials[activeTestimonial].petName}`} 
-                      className="w-full max-h-[440px] md:max-h-[480px] object-contain rounded-xl shadow-md" 
-                      referrerPolicy="no-referrer"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </motion.div>
-                </AnimatePresence>
-              </div>
-            </div>
+          {/* Elfsight Google Reviews Widget */}
+          <div className="max-w-5xl mx-auto bg-white/70 backdrop-blur-sm p-4 sm:p-6 rounded-3xl border border-stone-200/50 shadow-sm">
+            <div className="elfsight-app-05fb4d38-1440-4995-b350-6b4cdd19706a" data-elfsight-app-lazy></div>
           </div>
         </div>
       </section>
