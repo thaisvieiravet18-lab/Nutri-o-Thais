@@ -32,10 +32,49 @@
       <meta name="twitter:title" content="Nutrição Veterinária Online para Cães e Gatos | Dra. Thais Vieira" />
     <meta name="twitter:description" content="Consulta com nutricionista veterinária online para cães e gatos. Planos de alimentação natural, ração ou dieta mista com a Dra. Thais Vieira, CRMV-SP 55784." />
     
-      </head>
+        <script>
+      (function() {
+        var isBenign = function(msg) {
+          if (!msg || typeof msg !== 'string') return false;
+          return (
+            msg.indexOf('ResizeObserver loop') !== -1 ||
+            msg.indexOf('styled-components') !== -1
+          );
+        };
+
+        var suppress = function(e) {
+          if (!e) return;
+          var msg = (typeof e === 'string' ? e : (e.message || (e.error && e.error.message) || ''));
+          if (isBenign(msg)) {
+            if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+            if (e.preventDefault) e.preventDefault();
+            return true;
+          }
+        };
+
+        window.addEventListener('error', suppress, true);
+        window.addEventListener('unhandledrejection', function(e) {
+          var reason = e && (e.reason || e);
+          var msg = typeof reason === 'string' ? reason : (reason && reason.message) || '';
+          if (isBenign(msg)) {
+            if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+            if (e.preventDefault) e.preventDefault();
+          }
+        }, true);
+
+        var origOnError = window.onerror;
+        window.onerror = function(msg, url, line, col, error) {
+          if (isBenign(msg) || (error && isBenign(error.message))) {
+            return true;
+          }
+          if (origOnError) return origOnError.apply(this, arguments);
+        };
+      })();
+    </script>
+  </head>
   <body>
     <div id="root"></div>
-    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -79,7 +79,7 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
         },
         {
           title: "Hidratação Natural",
-          desc: "A presença de comida úmida ajuda a proteger o trato urinário e rins de cães e gatos de forma preventiva.",
+          desc: "A presença de comida úmida ajuda a proteger o trato urinário e apoiar os rins de cães e gatos com alta hidratação.",
           icon: <Heart className="text-amber-500" size={24} />
         }
       ],
@@ -100,7 +100,7 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
       id: "racao",
       tabLabel: "Ração de Alta Gama",
       title: "Ração Premium Otimizada",
-      desc: "Escolha científica da melhor ração do mercado (super premium ou terapêutica) e cálculo exato de quantidade para evitar sobrepeso.",
+      desc: "Escolha científica da melhor ração do mercado (super premium ou coadjuvante) e cálculo exato de quantidade para evitar sobrepeso.",
       icon: <Bone size={18} />,
       img: "https://petcare.com.br/wp-content/uploads/2023/08/cachorro-branco-e-marrom-faminto-com-orelhas-grandes-e-olhos-castanhos-prontos-para-comer-uma-tigela-cheia-de-comida-1.jpg",
       accentColor: "from-indigo-500 to-purple-600",
@@ -118,12 +118,12 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
       ],
       rightFeatures: [
         {
-          title: "Fórmulas Terapêuticas",
-          desc: "Prescrição de rações coadjuvantes específicas para o suporte de problemas renais, cardíacos ou alergias.",
+          title: "Fórmulas Coadjuvantes",
+          desc: "Orientação de rações coadjuvantes específicas para o suporte de necessidades renais, cardíacas ou alérgicas.",
           icon: <Heart className="text-indigo-500" size={24} />
         },
         {
-          title: "Prevenção de Obesidade",
+          title: "Controle do Peso Ideal",
           desc: "Mais segurança de que seu pet consome o volume exato, combatendo o sobrepeso silencioso de forma clínica.",
           icon: <Compass className="text-indigo-500" size={24} />
         }
@@ -133,7 +133,7 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
 
   useEffect(() => {
     const modes: ModeType[] = ["natural", "mista", "racao"];
-    const timer = setTimeout(() => {
+    const interval = setInterval(() => {
       setActiveMode((prev) => {
         const currentIndex = modes.indexOf(prev);
         const nextIndex = (currentIndex + 1) % modes.length;
@@ -141,8 +141,8 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
       });
     }, 7500); // 7.5 segundos para uma leitura confortável e tranquila
 
-    return () => clearTimeout(timer);
-  }, [activeMode]);
+    return () => clearInterval(interval);
+  }, []);
 
   const current = data[activeMode];
 

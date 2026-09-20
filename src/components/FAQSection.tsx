@@ -5,19 +5,19 @@ import { motion, AnimatePresence } from 'motion/react';
 export const faqs = [
   {
     question: "Como funciona a consulta nutricional veterinária online para cães e gatos?",
-    answer: "A consulta nutricional veterinária online para cães e gatos é realizada por videochamada pela Dra. Thais Vieira (médica veterinária com pós-graduação em nutrição animal). Avaliamos histórico de saúde, exames laboratoriais, rotina e preferências do tutor para prescrever um plano alimentar individualizado com Alimentação Natural (AN), Ração Terapêutica ou Dieta Mista."
+    answer: "A consulta nutricional veterinária online para cães e gatos é realizada por videochamada pela Dra. Thais Vieira (médica veterinária com pós-graduação em nutrição animal). Avaliamos histórico de saúde, exames laboratoriais, rotina e preferências do tutor para estruturar um plano alimentar individualizado com Alimentação Natural (AN), Ração Coadjuvante ou Dieta Mista."
   },
   {
     question: "Qual é a melhor ração para o meu cachorro ou gato?",
-    answer: "A indicação da ração ideal varia conforme espécie, raça, idade, nível de atividade e condições clínicas do pet (como doença renal, alergias ou obesidade). Na orientação para escolha de ração, indicamos as opções mais adequadas sem qualquer conflito de interesses."
+    answer: "A indicação da ração ideal varia conforme espécie, raça, idade, nível de atividade e necessidades clínicas do pet (como sensibilidade renal, alergias ou controle de peso). Na orientação para escolha de ração, indicamos as opções mais adequadas sem qualquer conflito de interesses."
   },
   {
     question: "Quanto dar de ração por dia para cães e gatos?",
-    answer: "A quantidade de ração depende da necessidade calórica diária do animal. No atendimento, calculamos a quantidade exata por refeição em gramas com base no peso ideal e gasto metabólico, prevenindo a obesidade e a desnutrição."
+    answer: "A quantidade de ração depende da necessidade calórica diária do animal. No atendimento, calculamos a quantidade exata por refeição em gramas com base no peso ideal e gasto metabólico, auxiliando no peso ideal e no equilíbrio nutricional."
   },
   {
-    question: "Como funciona a dieta para cachorro com doença renal ou gato com doença renal?",
-    answer: "Para o cão ou gato com doença renal crônica, elaboramos uma dieta com teores rigorosamente controlados de fósforo, sódio e proteína de altíssima digestibilidade, associando nutrientes e compostos específicos para proteger a função renal."
+    question: "Como funciona a dieta para cachorro com quadro renal ou gato com sensibilidade renal?",
+    answer: "Para o cão ou gato com sensibilidade renal crônica, elaboramos uma dieta com teores rigorosamente controlados de fósforo, sódio e proteína de altíssima digestibilidade, associando nutrientes de alta qualidade para apoiar a função renal."
   },
   {
     question: "Como é o controle de peso para cães e gatos obesos?",

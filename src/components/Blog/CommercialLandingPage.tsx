@@ -42,7 +42,7 @@ export const CommercialLandingPage: React.FC<CommercialLandingPageProps> = ({
   }, [landing, slugKey]);
 
   const priceVal = landing.price || 'R$ 200,00';
-  const disclaimer = landing.emergencyDisclaimer || 'Aviso: Esta consulta nutricional veterinária é destinada ao acompanhamento preventivo e clínico nutricional. Não substitui atendimento médico veterinário emergencial presencial.';
+  const disclaimer = landing.emergencyDisclaimer || 'Aviso: Esta consulta nutricional veterinária é destinada ao acompanhamento nutricional de rotina e suporte alimentar. Não substitui atendimento médico veterinário emergencial presencial.';
 
   return (
     <div className="min-h-screen bg-[#FAF8F5] pt-24 pb-20 text-[#374151]">
@@ -148,7 +148,7 @@ export const CommercialLandingPage: React.FC<CommercialLandingPageProps> = ({
             {priceVal}
           </div>
           <p className="text-stone-600 text-sm max-w-md mx-auto mb-6">
-            Atendimento médico veterinário nutricional 100% personalizado, com análise de exames, prescrição sob medida e acompanhamento via WhatsApp.
+            Atendimento médico veterinário nutricional 100% personalizado, com análise de exames, plano alimentar sob medida e acompanhamento via WhatsApp.
           </p>
           <button
             onClick={() => onOpenConsulta(landing.formatKey)}

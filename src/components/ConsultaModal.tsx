@@ -65,12 +65,12 @@ export const ConsultaModal = ({
     }
     
     const goals: { [key: string]: string } = {
-      preventive: 'Saúde preventiva / Checklist nutricional',
+      preventive: 'Saúde diária / Checklist nutricional',
       natural: 'Transição para Alimentação Natural (AN)',
       mixed: 'Transição para dieta mista (Ração + AN)',
-      obesity: 'Tratamento de obesidade / Controle de peso',
+      obesity: 'Manejo de sobrepeso / Controle de peso',
       allergy: 'Investigação de alergia alimentar / Coceira',
-      disease: 'Suporte nutricional para doença (diabetes/renal/etc)',
+      disease: 'Suporte nutricional para casos específicos (diabetes/renal/etc)',
       other: 'Outro assunto nutricional'
     };
 
@@ -100,12 +100,12 @@ export const ConsultaModal = ({
 
   const handleWhatsAppRedirect = () => {
     const goals: { [key: string]: string } = {
-      preventive: 'Saúde preventiva / Checklist nutricional',
+      preventive: 'Saúde diária / Checklist nutricional',
       natural: 'Transição para Alimentação Natural (AN)',
       mixed: 'Transição para dieta mista (Ração + AN)',
-      obesity: 'Tratamento de obesidade / Controle de peso',
+      obesity: 'Manejo de sobrepeso / Controle de peso',
       allergy: 'Investigação de alergia alimentar / Coceira',
-      disease: 'Suporte nutricional para doença (diabetes/renal/etc)',
+      disease: 'Suporte nutricional para casos específicos (diabetes/renal/etc)',
       other: 'Outro assunto nutricional'
     };
 
@@ -205,12 +205,12 @@ export const ConsultaModal = ({
                     <label className="block text-xs font-bold text-stone-600 mb-1">Foco Principal da Consulta</label>
                     <select name="mensagem" className="modal-input !mb-0 bg-stone-50 text-stone-800" value={reason}
                       onChange={(e) => setReason(e.target.value)}>
-                      <option value="preventive">Saúde preventiva / Ração ideal e quantidades</option>
+                      <option value="preventive">Saúde e rotina / Ração ideal e quantidades</option>
                       <option value="natural">Quero transicionar para Alimentação Natural (AN)</option>
                       <option value="mixed">Quero transicionar para dieta mista (Ração + AN)</option>
-                      <option value="obesity">Tratamento de obesidade / Sobrepeso silencioso</option>
+                      <option value="obesity">Manejo de sobrepeso / Apoio ao peso ideal</option>
                       <option value="allergy">Investigação de alergia alimentar / Coceiras / Pele sensível</option>
-                      <option value="disease">Doença crônica (Diabetes, Doença Renal, Hepática, Gastrointestinal)</option>
+                      <option value="disease">Acompanhamento específico (Diabetes, Suporte Renal, Hepático, Gastrointestinal)</option>
                       <option value="other">Outra demanda específica</option>
                     </select>
                   </div>

@@ -140,3 +140,13 @@ body {
 #paymentBrick_container {
   @apply min-h-[400px];
 }
+
+/* GPU-accelerated connecting beam animation */
+@keyframes beamTravel {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(350%); }
+}
+
+.animate-beam {
+  animation: beamTravel 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}

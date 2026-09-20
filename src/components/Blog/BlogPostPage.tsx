@@ -149,6 +149,18 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
           <span className="text-stone-800 font-bold truncate max-w-[200px]">{article.title}</span>
         </div>
 
+        {/* Featured Hero Banner Image */}
+        <div className="rounded-3xl overflow-hidden shadow-lg mb-8 border border-stone-200/60 aspect-[16/9] max-h-[460px] bg-stone-100">
+          <img
+            src={article.image}
+            alt={article.imageAlt}
+            className="w-full h-full object-cover object-center"
+            referrerPolicy="no-referrer"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+
         {/* Article Meta Header */}
         <header className="text-left space-y-4 mb-8">
           <div className="flex flex-wrap items-center gap-3">
@@ -202,15 +214,6 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
           </div>
         </header>
 
-        {/* Featured Image */}
-        <div className="rounded-3xl overflow-hidden shadow-lg mb-10 border border-stone-200/60 max-h-[480px]">
-          <img
-            src={article.image}
-            alt={article.imageAlt}
-            className="w-full h-full object-cover"
-          />
-        </div>
-
         {/* Article Markdown Body */}
         <div
           onClick={handleContainerClick}
@@ -258,7 +261,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
           <div className="text-xs text-amber-900 font-medium leading-relaxed space-y-1">
             <p className="font-bold uppercase tracking-wider">Aviso de Responsabilidade Veterinária:</p>
             <p>
-              Este artigo tem caráter estritamente educativo e informativo. Nenhuma orientação online substitui a avaliação clínica individualizada realizada por um médico veterinário. Em casos de filhotes, idosos, gatos com inapetência, suspeita de alergia alimentar, doença renal, obesidade ou necessidade de ração terapêutica, consulte sempre um médico veterinário.
+           
             </p>
           </div>
         </section>

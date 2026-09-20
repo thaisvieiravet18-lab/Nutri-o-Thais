@@ -68,7 +68,7 @@ export const BlogIndexPage: React.FC<BlogIndexPageProps> = ({
           </div>
 
           <h1 className="text-3xl md:text-5xl font-black font-display text-[#111827] mb-4 tracking-tight leading-tight">
-            Blog de Nutrição Pet
+            Blog de Nutrição Veterinária
           </h1>
 
           <p className="text-stone-600 text-base md:text-lg font-medium max-w-2xl mb-8 leading-relaxed">
