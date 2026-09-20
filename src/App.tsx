@@ -214,9 +214,9 @@ export default function App({ initialPath }: AppProps = {}) {
 
   const categories = [
     {
-      title: "Longevidade & Bem-Estar",
+      title: "Saúde & Bem-Estar por Fase de Vida",
       img: "https://images.unsplash.com/photo-1573024027027-a82b1b0f783e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      desc: "A saúde começa no pote. Pequenos ajustes na rotina nutricional de cães e gatos garantem que o seu companheiro continue ativo, alegre e viva muito mais anos ao seu lado de forma saudável.",
+      desc: "A saúde começa no prato. Ajustes na rotina nutricional de cães e gatos auxiliam na manutenção da vitalidade e no bem-estar em cada etapa do desenvolvimento.",
       highlight: "Cuidado Clínico Ativo"
     },
     {
@@ -415,51 +415,57 @@ export default function App({ initialPath }: AppProps = {}) {
             animate={{ x: "-50%" }}
             transition={{ 
               ease: "linear", 
-              duration: 22, 
+              duration: 24, 
               repeat: Infinity 
             }}
             style={{ willChange: "transform" }}
-            className="flex gap-16 md:gap-24 items-center shrink-0 pr-16 text-white font-black uppercase text-[10px] sm:text-xs tracking-[0.22em] font-sans"
+            className="flex gap-8 md:gap-12 items-center shrink-0 pr-8 text-white font-bold uppercase text-[10px] sm:text-xs tracking-[0.18em] font-sans"
+            role="marquee"
+            aria-label="Serviços de Nutrição Veterinária"
           >
             {/* Repetition Part 1 */}
             <div className="flex items-center gap-2 shrink-0">
-               <Sparkles size={11} className="text-amber-200 fill-amber-200 animate-pulse shrink-0" />
-              <span>Alimentação Natural</span>
+              <Sparkles size={11} className="text-amber-200 fill-amber-200 shrink-0" />
+              <span>Alimentação natural para cães e gatos</span>
             </div>
+            <span className="text-white/40 shrink-0 select-none">•</span>
             <div className="flex items-center gap-2 shrink-0">
-               <Sparkles size={11} className="text-amber-200 fill-amber-200 animate-pulse shrink-0" />
-              <span>Dieta Mista</span>
+              <Sparkles size={11} className="text-amber-200 fill-amber-200 shrink-0" />
+              <span>Alimentação mista</span>
             </div>
+            <span className="text-white/40 shrink-0 select-none">•</span>
             <div className="flex items-center gap-2 shrink-0">
-               <Sparkles size={11} className="text-amber-200 fill-amber-200 animate-pulse shrink-0" />
-              <span>Orientação de Ração</span>
+              <Sparkles size={11} className="text-amber-200 fill-amber-200 shrink-0" />
+              <span>Orientação de ração</span>
             </div>
+            <span className="text-white/40 shrink-0 select-none">•</span>
             <div className="flex items-center gap-2 shrink-0">
-               <Sparkles size={11} className="text-amber-200 fill-amber-200 animate-pulse shrink-0" />
-              <span>Cães e Gatos</span>
+              <Sparkles size={11} className="text-amber-200 fill-amber-200 shrink-0" />
+              <span>Atendimento online e presencial</span>
             </div>
-            <div className="flex items-center gap-2 shrink-0">
-               <Sparkles size={11} className="text-amber-200 fill-amber-200 animate-pulse shrink-0" />
-              <span>Online e Presencial</span>
-            </div>
+            <span className="text-white/40 shrink-0 select-none">•</span>
 
             {/* Repetition Part 2 to guarantee infinite flow */}
             <div className="flex items-center gap-2 shrink-0">
-               <Sparkles size={11} className="text-amber-200 fill-amber-200 animate-pulse shrink-0" />
-              <span>Alimentação Natural</span>
+              <Sparkles size={11} className="text-amber-200 fill-amber-200 shrink-0" />
+              <span>Alimentação natural para cães e gatos</span>
             </div>
+            <span className="text-white/40 shrink-0 select-none">•</span>
             <div className="flex items-center gap-2 shrink-0">
-               <Sparkles size={11} className="text-amber-200 fill-amber-200 animate-pulse shrink-0" />
-              <span>Dieta Mista</span>
+              <Sparkles size={11} className="text-amber-200 fill-amber-200 shrink-0" />
+              <span>Alimentação mista</span>
             </div>
+            <span className="text-white/40 shrink-0 select-none">•</span>
             <div className="flex items-center gap-2 shrink-0">
-               <Sparkles size={11} className="text-amber-200 fill-amber-200 animate-pulse shrink-0" />
-              <span>Orientação de Ração</span>
+              <Sparkles size={11} className="text-amber-200 fill-amber-200 shrink-0" />
+              <span>Orientação de ração</span>
             </div>
+            <span className="text-white/40 shrink-0 select-none">•</span>
             <div className="flex items-center gap-2 shrink-0">
-               <Sparkles size={11} className="text-amber-200 fill-amber-200 animate-pulse shrink-0" />
-              <span>Online e Presencial</span>
+              <Sparkles size={11} className="text-amber-200 fill-amber-200 shrink-0" />
+              <span>Atendimento online e presencial</span>
             </div>
+            <span className="text-white/40 shrink-0 select-none">•</span>
           </motion.div>
         </div>
       </div>

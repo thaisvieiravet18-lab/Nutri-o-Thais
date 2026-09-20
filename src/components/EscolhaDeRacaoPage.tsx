@@ -309,7 +309,7 @@ export const EscolhaDeRacaoPage: React.FC<EscolhaDeRacaoPageProps> = ({
                 </p>
                 <div className="pt-3 text-xs text-stone-500 flex items-center gap-1">
                   <CheckCircle2 size={14} className="text-[#a338b9]" />
-                  <span>Evita sobrepeso silencioso no futuro</span>
+                  <span>Ajuda a acompanhar as porções e o peso</span>
                 </div>
               </div>
             </div>
@@ -377,7 +377,7 @@ export const EscolhaDeRacaoPage: React.FC<EscolhaDeRacaoPageProps> = ({
               </div>
               <div className="pt-1">
                 <p className="text-stone-800 text-sm sm:text-base font-semibold leading-relaxed">
-                  Como fazer a troca de ração sem o pet passar mal.
+                  Orientações para transição gradual e acompanhamento da tolerância.
                 </p>
               </div>
             </div>

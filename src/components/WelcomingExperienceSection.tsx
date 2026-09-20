@@ -61,7 +61,7 @@ export function WelcomingExperienceSection({ setIsModalOpen, openConsulta }: Wel
     {
       number: "3",
       stepBadge: "3º Passo",
-      title: "Você não recebe o plano e precisa descobrir sozinho como fazê lo funcionar.",
+      title: "Você recebe o plano e acompanhamento para colocá-lo em prática.",
       badgeColor: "from-[#a338b9] to-purple-500",
       circleRing: "border-[#a338b9] shadow-[0_0_30px_rgba(163,56,185,0.45)]",
       pillClass: "bg-purple-400/20 text-purple-300 border-purple-400/40",

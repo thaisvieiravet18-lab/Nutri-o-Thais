@@ -22,7 +22,7 @@ export function FooterCTA({ setIsModalOpen, openConsulta }: FooterCTAProps) {
       <div className="absolute inset-0 -z-10 w-full h-full overflow-hidden">
         <img 
           src="https://images.pexels.com/photos/8434727/pexels-photo-8434727.jpeg?auto=compress&cs=tinysrgb&w=1200&q=70" 
-          alt="Fundo Veterinário Longevidade" 
+          alt="Atendimento nutricional veterinário para cães e gatos" 
           className="w-full h-full object-cover object-center"
           referrerPolicy="no-referrer"
           loading="lazy"
@@ -41,17 +41,17 @@ export function FooterCTA({ setIsModalOpen, openConsulta }: FooterCTAProps) {
           <div className="inline-flex items-center gap-2 bg-[#a338b9]/25 border border-[#a338b9]/35 px-4.5 py-1.5 rounded-full backdrop-blur-md">
             <Heart size={14} className="text-[#ff7ae2] fill-[#ff7ae2]" />
             <span className="text-[11px] font-black text-[#d4abe4] tracking-[0.25em] uppercase font-sans">
-              Longevidade & Conexão
+              Saúde & Bem-Estar
             </span>
           </div>
         </FadeIn>
 
         <FadeIn delay={0.1}>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-black font-display tracking-tight max-w-3xl mx-auto leading-tight text-white">
-            Mais saúde, disposição e anos ao seu lado
+            Cuidado nutricional para cada fase da vida
           </h2>
           <p className="text-stone-300 text-sm md:text-base leading-relaxed font-sans max-w-2xl mx-auto mt-4">
-            Cada refeição é uma oportunidade de cuidar da saúde, prevenir doenças e oferecer mais qualidade de vida para quem sempre te espera com alegria.
+            Cada refeição é planejada para atender às necessidades nutricionais do seu cão ou gato, com plano individualizado e acompanhamento contínuo.
           </p>
         </FadeIn>
 
@@ -95,7 +95,7 @@ export function FooterCTA({ setIsModalOpen, openConsulta }: FooterCTAProps) {
             </span>
             <span className="text-stone-600 hidden sm:inline">•</span>
             <span className="flex items-center gap-1.5">
-              <Check size={14} className="text-purple-300" /> Por mais anos ao seu lado
+              <Check size={14} className="text-purple-300" /> Acompanhamento nutricional individualizado
             </span>
           </div>
         </FadeIn>

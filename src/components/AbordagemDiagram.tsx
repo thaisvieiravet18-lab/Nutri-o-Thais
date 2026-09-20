@@ -41,12 +41,12 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
       leftFeatures: [
         {
           title: "Comida de Verdade",
-          desc: "Carnes nobres, vegetais funcionais e zero conservantes artificiais ou corantes. Saúde pura na tigela.",
+          desc: "Seleção cuidadosa de carnes, vegetais funcionais e sem conservantes artificiais ou corantes.",
           icon: <ChefHat className="text-emerald-500" size={24} />
         },
         {
-          title: "Digestibilidade Máxima",
-          desc: "Nutrientes altamente absorvíveis que resultam em fezes mais firmes, menos odor e pele visivelmente saudável.",
+          title: "Avaliação da Digestibilidade e Tolerância",
+          desc: "Ingredientes selecionados para boa absorção, com acompanhamento da consistência das fezes, odor e aspecto da pele.",
           icon: <ShieldCheck className="text-emerald-500" size={24} />
         }
       ],
@@ -79,7 +79,7 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
         },
         {
           title: "Hidratação Natural",
-          desc: "A presença de comida úmida ajuda a proteger o trato urinário e apoiar os rins de cães e gatos com alta hidratação.",
+          desc: "Avaliação da alimentação e da ingestão de água, utilizando alimentos úmidos para favorecer a hidratação de cães e gatos.",
           icon: <Heart className="text-amber-500" size={24} />
         }
       ],
@@ -157,7 +157,7 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
           Seu pet também merece comida de verdade
         </h3>
         <p className="text-stone-700 font-semibold text-sm md:text-base leading-relaxed max-w-2xl mx-auto font-sans">
-          Acreditamos que a alimentação ideal transforma a saúde do seu pet. Seja qual for a rotina e o organismo dele, planejamos a nutrição perfeita com base científica e carinho.
+          Acreditamos que a alimentação ideal apoia a saúde do seu pet. Seja qual for a rotina e o organismo dele, planejamos um plano alimentar individualizado com base técnica e carinho.
         </p>
       </div>
 

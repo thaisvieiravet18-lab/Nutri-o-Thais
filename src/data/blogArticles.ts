@@ -17,10 +17,10 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     description: 'Atendimento nutricional veterinário para emagrecimento pet saudável. Plano alimentar individualizado para controle de peso de cães e gatos.',
     keywords: ['consulta nutricional veterinária online cachorro obeso', 'plano alimentar para cachorro obeso', 'acompanhamento nutricional para pet obeso'],
     benefits: [
-      'Cálculo calórico exato para perda progressiva e segura de gordura',
+      'Cálculo calórico direcionado para perda progressiva e segura de gordura',
       'Plano alimentar individualizado (Ração Específica ou Alimentação Natural)',
       'Estratégias para aumento da saciedade e redução da ansiedade por comida',
-      'Preservação da massa muscular durante o processo de emagrecimento'
+      'Acompanhamento do peso e da condição muscular durante o processo de emagrecimento'
     ],
     formatKey: 'online',
     price: 'R$ 200,00',
@@ -82,7 +82,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     whatsIncluded: [
       'Análise criteriosa de todas as proteíno-fontes e alimentos já consumidos',
       'Elaboração de protocolo de Dieta de Exclusão ou ração hipoalergênica',
-      'Guia prático de petiscos permitidos sem risco de contaminação cruzada',
+      'Guia prático de petiscos permitidos com orientações para reduzir o risco de contaminação cruzada',
       'Consulta particular 100% online por R$ 200,00 com suporte via WhatsApp'
     ],
     detailedText: 'As reações adversas ao alimento podem se manifestar na pele ou no trato gastrointestinal do seu cão ou gato. O manejo nutricional com uma médica veterinária com pós-graduação em nutrição animal permite conduzir a dieta de eliminação de forma criteriosa, devolvendo o conforto, a saúde da pele e o bem-estar do pet sem palpiteiras ou testes aleatórios.',
@@ -111,7 +111,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     benefits: [
       'Controle rigoroso dos níveis de fósforo, sódio e ureia no sangue',
       'Manutenção do apetite e estímulo à palatabilidade para pets seletivos',
-      'Estratégias avançadas para hidratação e proteção da função renal restante',
+      'Estratégias nutricionais para favorecer a hidratação e apoiar a função renal',
       'Ajustes de dieta conforme o estágio IRIS do quadro renal'
     ],
     formatKey: 'online',
@@ -238,7 +238,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
-      'Tutores de cães filhotes, adultos ou idosos buscando saúde e longevidade',
+      'Tutores de cães filhotes, adultos ou idosos buscando plano nutricional adequado',
       'Cães com paladar exigente ou enjoados de ração seca',
       'Cães com problemas de saúde que necessitam de dieta especial',
       'Tutores que moram em qualquer região do Brasil'
@@ -249,7 +249,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Análise da rotina, exames clínicos e preferências do cão',
       'Atendimento por R$ 200,00 com suporte direto por WhatsApp'
     ],
-    detailedText: 'Oferecer a nutrição certa ao seu cão transforma sua energia, pelagem, digestão e longevidade. Na consulta online com a Dra. Thais Vieira, você recebe uma orientação clara, humana e técnica, ajustada às suas possibilidades e à rotina da sua família.',
+    detailedText: 'Oferecer a nutrição adequada ao seu cão apoia a disposição, pelagem e digestão em todas as fases da vida. Na consulta online com a Dra. Thais Vieira, você recebe uma orientação clara, humana e técnica, ajustada às suas possibilidades e à rotina da sua família.',
     faqs: [
       {
         question: 'Como é feita a avaliação na consulta online para cães?',
@@ -362,7 +362,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Cálculo e formulação completa das necessidades diárias',
       'Consulta online por R$ 200,00 e acompanhamento por WhatsApp'
     ],
-    detailedText: 'A Alimentação Natural para cães traz vitalidade e saúde quando calculada corretamente por médica veterinária. Evite desequilíbrios na rotina alimentar utilizando receitas genéricas de internet e tenha um plano balanceado para o seu cão.',
+    detailedText: 'A Alimentação Natural para cães traz vitalidade e saúde quando calculada corretamente por médica veterinária. Evite utilizar receitas genéricas da internet; procure um plano alimentar individualizado para o seu cão.',
     faqs: [
       {
         question: 'Comida caseira para cachorro precisa de cálculo profissional?',
@@ -429,7 +429,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     whoIsItFor: [
       'Pets diagnosticados com condições de saúde que exigem ração especial',
       'Tutores em dúvida sobre qual marca ou linha de ração coadjuvante escolher',
-      'Animais com recusa alimentar em relação à ração medicamentosa'
+      'Animais com recusa alimentar em relação à ração coadjuvante'
     ],
     whatsIncluded: [
       'Indicação da marca e quantidade diária ideal',
@@ -458,7 +458,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     benefits: [
       'Atendimento 100% online por videochamada no conforto do seu lar',
       'Plano alimentar completo e individualizado para cães e gatos',
-      'Cálculo calórico e de gramatura exata para saúde e longevidade',
+      'Cálculo calórico e de gramatura exata para suporte nutricional integral',
       'Acompanhamento contínuo por WhatsApp com a Dra. Thais Vieira'
     ],
     formatKey: 'online',
@@ -479,7 +479,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     faqs: [
       {
         question: 'Qual a diferença entre a consulta online e a escolha de ração?',
-        answer: 'A escolha de ração é um serviço avulso e direto (R$ 100) para pets saudáveis definirem a melhor marca e porção. A consulta online completa (R$ 200) abrange pets com acompanhamento de saúde, dietas naturais personalizadas, formulação completa e acompanhamento detalhado.'
+        answer: 'A escolha de ração é uma orientação nutricional avulsa (R$ 150) para selecionar a ração mais adequada, calcular porções e planejar a transição. Já a consulta nutricional completa (R$ 200) abrange plano alimentar individualizado (Alimentação Natural, mista ou ração coadjuvante), avaliação clínica e 30 dias de acompanhamento por WhatsApp.'
       }
     ],
     relatedLinks: [
@@ -660,10 +660,10 @@ Ela é composta por proporções calculadas de:
 
 ## Principais Benefícios da Alimentação Natural
 
-* **Alta Palatabilidade:** Excelente aceitação por cães exigentes ou seletivos.
-* **Melhoria da Qualidade das Fezes:** Menor volume e odor reduzido devido à alta digestibilidade dos ingredientes.
-* **Pele Calma e Pelagem Brilhante:** Auxilia no manejo de cães com dermatites e sensibilidade alimentar.
-* **Aumento da Ingestão de Água:** Os alimentos cozidos contêm cerca de 70% a 80% de umidade natural.
+* **Alta Palatabilidade:** Boa aceitação por cães exigentes ou com apetite seletivo.
+* **Avaliação da Digestibilidade e Qualidade das Fezes:** Ingredientes de alta digestibilidade que auxiliam na consistência das fezes e na absorção de nutrientes, com acompanhamento individual.
+* **Suporte à Saúde da Pele e Pelagem:** Auxilia no manejo nutricional de cães com dermatites e sensibilidade alimentar.
+* **Aumento da Ingestão de Água:** Alimentos cozidos contêm cerca de 70% a 80% de umidade natural, auxiliando na hidratação diária.
 
 ---
 
@@ -707,7 +707,7 @@ Antes de alterar a dieta do seu cão, agende uma [consulta nutricional pet onlin
       { url: '/alimentacao-natural-para-gatos/', text: 'alimentação natural para gatos' },
       { url: '/nutricao-pet-online/', text: 'consulta nutricional pet online' },
     ],
-    ctaText: 'Proteja os rins do seu gato com um plano alimentar personalizado. Agende uma consulta com a Dra. Thais Vieira.',
+    ctaText: 'Apoie o manejo nutricional e a hidratação do seu gato com um plano alimentar personalizado. Agende uma consulta com a Dra. Thais Vieira.',
     contentMarkdown: `
 Os felinos possuem uma fisiologia fascinante e única. Originários de ancestrais do deserto, os gatos não possuem o reflexo de sede tão aguçado quanto os cães. Na natureza, eles obtêm a maior parte da água consumindo suas presas (compostas por cerca de 70% de água).
 
@@ -730,8 +730,8 @@ Diferente dos cães (que são carnívoros facultativos ou adaptáveis), os gatos
 ## 2. Benefícios da Dieta Úmida e Alimentação Natural
 
 1. **Hidratação Constante:** A água está inserida na própria refeição.
-2. **Proteção Renal e Urinária:** Aumenta o volume urinário e diminui a densidade dos sais urinários.
-3. **Controle de Peso:** Proteínas com baixos carboidratos mantêm a massa magra sem gerar picos glicêmicos.
+2. **Suporte Renal e Hidratação Urinária:** Aumenta o volume urinário e auxilia na diluição dos solutos urinários.
+3. **Controle de Peso:** Proteínas com teores balanceados de carboidratos apoiam a manutenção da condição corporal.
 
 ---
 
