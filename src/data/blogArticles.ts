@@ -85,7 +85,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Guia prático de petiscos permitidos com orientações para reduzir o risco de contaminação cruzada',
       'Consulta particular 100% online por R$ 200,00 com suporte via WhatsApp'
     ],
-    detailedText: 'As reações adversas ao alimento podem se manifestar na pele ou no trato gastrointestinal do seu cão ou gato. O manejo nutricional com uma médica veterinária com pós-graduação em nutrição animal permite conduzir a dieta de eliminação de forma criteriosa, devolvendo o conforto, a saúde da pele e o bem-estar do pet sem palpiteiras ou testes aleatórios.',
+    detailedText: 'As reações adversas ao alimento podem se manifestar na pele ou no trato gastrointestinal do seu cão ou gato. O manejo nutricional com uma médica veterinária com pós-graduação em nutrição animal permite conduzir a dieta de eliminação de forma criteriosa, com acompanhamento da resposta individual ao plano alimentar, sem palpiteiras ou testes aleatórios.',
     faqs: [
       {
         question: 'Como saber se meu cachorro tem alergia alimentar?',
@@ -379,10 +379,10 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     slug: 'alimentacao-natural-para-gatos',
     title: 'Alimentação Natural para Gatos | Dra. Thais Vieira',
     headline: 'Alimentação Natural e Úmida com Foco em Saúde Renal dos Gatos',
-    description: 'Dietas carnívoras estritas com alta hidratação para felinos. Proteja a saúde urinária do seu gato com orientação de médica veterinária com pós-graduação em nutrição animal.',
+    description: 'Dietas carnívoras estritas com alta hidratação para felinos. Orientação individualizada sobre alimentação e ingestão de água com médica veterinária com pós-graduação em nutrição animal.',
     keywords: ['alimentação natural para gatos', 'dieta úmida gatos renal', 'nutrição felina'],
     benefits: [
-      'Preservação da saúde renal e do trato urinário inferior (FLUTD)',
+      'Orientação individualizada sobre alimentação e ingestão de água',
       'Transição suave para evitar inapetência felina severa',
       'Aporte obrigatório de taurina e demais nutrientes essenciais',
       'Opções de dietas úmidas preparadas em casa ou rações úmidas selecionadas'
@@ -637,7 +637,7 @@ Caso queira um acompanhamento contínuo e mais amplo sobre todas as fases de cre
     ],
     ctaText: 'Quer migrar para a Alimentação Natural com segurança? Agende sua avaliação com a Dra. Thais Vieira.',
     contentMarkdown: `
-A **Alimentação Natural (AN) para cães** vem conquistando milhares de tutores no Brasil. E não é para menos: refeições preparadas com ingredientes frescos, carnes de qualidade, legumes e carboidratos selecionados trazem visível melhoria na disposição, na pelagem e na digestão dos cães.
+A **Alimentação Natural (AN) para cães** vem conquistando milhares de tutores no Brasil. E não é para menos: refeições preparadas com ingredientes frescos, carnes de qualidade, legumes e carboidratos selecionados permitem uma avaliação atenta e o acompanhamento contínuo da disposição, da pelagem e da digestão dos cães, respeitando a individualidade de cada organismo.
 
 Contudo, "alimentação natural" **não é dar restos de comida da mesa do tutor**. A nutrição canina é complexa e exige um balanço rigoroso de proteínas, fontes energéticas e nutrientes essenciais.
 
@@ -786,7 +786,7 @@ Por isso, obter uma [orientação para ração coadjuvante](/racao-terapeutica-p
 1. **Rações Renais (Renal / Kidney):** Possuem teor reduzido de fósforo e proteína de altíssima digestibilidade para apoiar a função dos rins em cães e gatos idosos ou com sensibilidade renal.
 2. **Rações Hipoalergênicas (Hypoallergenic / Anallergenic):** Utilizam proteínas hidrolisadas (quebradas em partículas tão pequenas que o sistema imunológico não as reconhece como alergênico) para investigar e controlar dermatite atópica e sensibilidade alimentar.
 3. **Rações Gastrointestinais (Gastrointestinal / Intestinal):** Baixo teor de gordura, alta digestibilidade e fibras prebióticas para apoiar a mucosa intestinal após episódios de vômitos ou fezes amolecidas.
-4. **Rações para Obesidade e Saciedade (Satiety / Weight Management):** Ricas em fibras e proteínas, projetadas para promover perda de gordura preservando massa muscular sem passar fome.
+4. **Rações para Obesidade e Saciedade (Satiety / Weight Management):** Ricas em fibras e proteínas, projetadas para promover perda de gordura com acompanhamento do peso, da saciedade e da condição muscular.
 
 ---
 
