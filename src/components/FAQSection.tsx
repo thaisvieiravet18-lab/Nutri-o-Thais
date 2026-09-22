@@ -21,7 +21,7 @@ export const faqs = [
   },
   {
     question: "Como é o controle de peso para cães e gatos obesos?",
-    answer: "O emagrecimento de cães e gatos com sobrepeso ou obesidade é conduzido com plano nutricional individualizado formulado pela médica veterinária. O plano promove saciedade através de fibras e micronutrientes, com acompanhamento do peso e da condição muscular."
+    answer: "O emagrecimento de cães e gatos com sobrepeso ou obesidade é conduzido com plano nutricional individualizado estruturado pela médica veterinária. O plano promove saciedade através de fibras e nutrientes selecionados, com acompanhamento do peso e da condição muscular."
   },
   {
     question: "Posso misturar ração com alimentação natural?",

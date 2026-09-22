@@ -49,13 +49,13 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       },
       {
         question: 'Qual o valor da consulta nutricional particular?',
-        answer: 'O investimento da consulta nutricional veterinária particular é de R$ 200,00, incluindo avaliação completa, formulação da dieta e suporte direto por WhatsApp.'
+        answer: 'O investimento da consulta nutricional veterinária particular é de R$ 200,00, incluindo avaliação completa, elaboração do plano alimentar e suporte direto por WhatsApp.'
       }
     ],
     relatedLinks: [
       { url: '/consulta-nutricional-online-para-caes', text: 'Consulta nutricional para cães' },
       { url: '/artrose-e-problemas-articulares-em-caes', text: 'Nutrição para cães com artrose' },
-      { url: '/racao-terapeutica-para-caes-e-gatos', text: 'Rações coadjuvantes de peso' }
+      { url: '/racao-coadjuvante-para-caes-e-gatos', text: 'Rações coadjuvantes de peso' }
     ],
     emergencyDisclaimer: 'Aviso: Esta consulta nutricional veterinária é destinada ao acompanhamento nutricional de rotina e suporte alimentar. Não substitui atendimento médico veterinário emergencial presencial.'
   },
@@ -67,7 +67,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     keywords: ['consulta para cachorro com alergia alimentar', 'orientação de ração para cachorro com alergia', 'alergia alimentar cão e gato'],
     benefits: [
       'Identificação precisa de potenciais ingredientes alergênicos na dieta',
-      'Formulação de Dieta de Exclusão com proteína inédita ou hidrolisada',
+      'Planejamento de Dieta de Exclusão com proteína inédita ou hidrolisada',
       'Redução de coceiras, otites de repetição e diarreias de origem alimentar',
       'Acompanhamento semanal da resposta dermatológica e digestiva'
     ],
@@ -98,7 +98,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     ],
     relatedLinks: [
       { url: '/alimentacao-natural-para-caes', text: 'Alimentação Natural para Cães' },
-      { url: '/racao-terapeutica-para-caes-e-gatos', text: 'Orientação sobre rações hipoalergênicas' }
+      { url: '/racao-coadjuvante-para-caes-e-gatos', text: 'Orientação sobre rações hipoalergênicas' }
     ],
     emergencyDisclaimer: 'Aviso: Esta consulta não substitui atendimento emergencial médico veterinário presencial em casos de anafilaxia ou prostração aguda.'
   },
@@ -124,8 +124,8 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     ],
     whatsIncluded: [
       'Avaliação minuciosa de exames de ureia, creatinina, SDMA, fósforo e urinálise',
-      'Formulação individualizada de dieta renal caseira ou seleção de ração coadjuvante',
-      'Manejo com componentes específicos (ômega-3 EPA/DHA, quelantes de fósforo quando indicado)',
+      'Planejamento individualizado de dieta renal caseira ou seleção de ração coadjuvante',
+      'Manejo com ajuste nutricional individualizado e balanceamento de fósforo',
       'Consulta online em todo o Brasil por R$ 200,00 e acompanhamento por WhatsApp'
     ],
     detailedText: 'A alimentação é um dos pilares mais determinantes na sobrevida e qualidade de vida do cão ou gato com suporte renal. O controle adequado de fósforo e a oferta de proteínas de altíssima digestibilidade diminuem a sobrecarga sobre os rins, reduzindo sintomas como náusea e perda de peso.',
@@ -153,7 +153,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     keywords: ['alimentação para cachorro com problema no fígado', 'dieta personalizada para cachorro doente', 'nutrição veterinária hepática'],
     benefits: [
       'Proporções adequadas de proteína para regeneração sem causar encefalopatia',
-      'Suporte lipídico controlado e micronutrientes antioxidantes',
+      'Suporte nutricional e lipídico controlado',
       'Redução da sobrecarga metabólica sobre o tecido hepático',
       'Estímulo ao consumo alimentar em pacientes com inapetência'
     ],
@@ -168,14 +168,14 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     whatsIncluded: [
       'Análise do histórico clínico e exames bioquímicos e de ultrassom',
       'Plano alimentar individualizado com porções e horários fracionados',
-      'Orientações sobre rações hepáticas e formulação de dieta caseira cozida',
+      'Orientações sobre rações hepáticas e planejamento de dieta caseira cozida',
       'Consulta 100% online por R$ 200,00 com acompanhamento via WhatsApp'
     ],
     detailedText: 'O fígado desempenha centenas de funções metabólicas vitais. Quando afetado por inflamações ou gordura, a nutrição torna-se indispensável para fornecer energia e aminoácidos essenciais para a reparação celular, evitando o acúmulo de toxinas no organismo.',
     faqs: [
       {
         question: 'Cachorro com problema no fígado precisa mudar de comida?',
-        answer: 'Sim. A dieta precisa ser ajustada em teor proteico, lipídico e antioxidante para auxiliar no bem-estar hepático sem sobrecarregar o órgão.'
+        answer: 'Sim. A dieta precisa ser ajustada em teor proteico e perfil nutricional para auxiliar no bem-estar hepático sem sobrecarregar o órgão.'
       }
     ],
     relatedLinks: [
@@ -187,13 +187,13 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
   'artrose-e-problemas-articulares-em-caes': {
     slug: 'artrose-e-problemas-articulares-em-caes',
     title: 'Nutrição para Cachorro com Artrose e Articulações | Dra. Thais Vieira',
-    headline: 'Dieta e Nutrientes Anti-inflamatórios para Cães com Artrose e Displasia',
+    headline: 'Dieta e Plano Alimentar para Cães com Artrose e Displasia',
     description: 'Acompanhamento nutricional focado em saúde articular de cães idosos e com artrose. Controle de peso e suporte articular direcionado.',
-    keywords: ['nutrição para cachorro com artrose', 'nutrientes e dieta para artrose canina', 'cão com dor articular alimentação'],
+    keywords: ['nutrição para cachorro com artrose', 'dieta para artrose canina', 'cão com dor articular alimentação'],
     benefits: [
-      'Ação anti-inflamatória natural através de EPA e DHA purificados',
-      'Controle rígido do peso corporal para diminuir o estresse nas articulações',
-      'Fortalecimento da cartilagem articular e suporte ao cão idoso',
+      'Controle do peso corporal para diminuir a sobrecarga nas articulações',
+      'Plano alimentar balanceado e suporte ao cão idoso',
+      'Acompanhamento nutricional contínuo da rotina do cão',
       'Melhoria no conforto e disposição do animal nas caminhadas'
     ],
     formatKey: 'online',
@@ -206,15 +206,15 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     ],
     whatsIncluded: [
       'Análise do grau de mobilidade e histórico de saúde do cão',
-      'Plano alimentar individualizado focado no peso ideal e modulação inflamatória',
-      'Manejo com ácidos graxos essenciais específicos (ômega-3)',
+      'Plano alimentar individualizado focado no peso ideal e nutrição adequada',
+      'Orientações sobre manejo nutricional e escolhas alimentares seguras',
       'Consulta online para todo o Brasil por R$ 200,00 com suporte no WhatsApp'
     ],
-    detailedText: 'A artrose em cães causa dor crônica e perda da mobilidade. Uma dieta equilibrada com ácidos graxos essenciais aliada à manutenção do peso magro reduz o impacto contínuo sobre as articulações do pet.',
+    detailedText: 'A artrose em cães causa dor crônica e perda da mobilidade. Uma dieta equilibrada aliada à manutenção do peso magro reduz o impacto contínuo sobre as articulações do pet.',
     faqs: [
       {
-        question: 'A alimentação pode diminuir as dores da artrose no cachorro?',
-        answer: 'Sim! Ao manter o cão no peso ideal e incluir compostos nutricionais como ômega-3 em teores adequados, diminui-se a sobrecarga mecânica e a inflamação nas articulações.'
+        question: 'A alimentação pode ajudar o cachorro com artrose?',
+        answer: 'Sim! Ao manter o cão no peso ideal através de um plano nutricional balanceado, diminui-se a sobrecarga mecânica nas articulações.'
       }
     ],
     relatedLinks: [
@@ -227,11 +227,11 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     slug: 'consulta-nutricional-online-para-caes',
     title: 'Consulta Nutricional Online para Cães | Dra. Thais Vieira',
     headline: 'Consulta Nutricional Veterinária Online para Cães',
-    description: 'Atendimento nutricional dedicado a cães de todas as idades. Formulação de Alimentação Natural, escolha de ração e dietas especiais em todo o Brasil.',
+    description: 'Atendimento nutricional dedicado a cães de todas as idades. Planejamento de Alimentação Natural, escolha de ração e dietas especiais em todo o Brasil.',
     keywords: ['nutrição veterinária online para cães e gatos', 'consulta nutricional online cães', 'alimentação natural para cachorro suporte'],
     benefits: [
       'Análise de perfil de raça, idade, porte e nível de atividade física',
-      'Indicação da ração comercial ideal ou formulação de Alimentação Natural',
+      'Indicação da ração comercial ideal ou planejamento de Alimentação Natural',
       'Gramatura exata por refeição e cálculo de petiscos saudáveis',
       'Atendimento 100% online no conforto da sua casa sem estressar o cão'
     ],
@@ -285,14 +285,14 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     whatsIncluded: [
       'Análise completa da ingestão hídrica e comportamento do felino',
       'Plano de alimentação úmida, seca de alta qualidade ou Alimentação Natural',
-      'Aporte obrigatório de taurina e nutrientes essenciais',
+      'Balanceamento nutricional completo respeitando a fisiologia felina',
       'Consulta online por R$ 200,00 com suporte pós-atendimento no WhatsApp'
     ],
     detailedText: 'Os gatos possuem particularidades metabólicas únicas e necessitam de alta ingestão hídrica para proteger os rins. A consulta nutricional felina orienta estratégias para aumentar o consumo de água e manter seu felino saudável e nutrido.',
     faqs: [
       {
         question: 'Gato pode comer Alimentação Natural com segurança?',
-        answer: 'Sim, mas exige rigor técnico com balanceamento preciso de taurina, cálcio e outros nutrientes. Nunca ofereça comida caseira sem cálculo por médica veterinária.'
+        answer: 'Sim, mas exige rigor técnico com cálculo criterioso por médica veterinária para atender a todos os nutrientes essenciais da espécie.'
       }
     ],
     relatedLinks: [
@@ -305,7 +305,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     slug: 'nutricao-pet-online',
     title: 'Consulta Nutricional Pet Online | Dra. Thais Vieira',
     headline: 'Consulta Nutricional Pet Online para Cães e Gatos em Todo o Brasil',
-    description: 'Atendimento nutricional veterinário 100% online. Formulação de dietas personalizadas, cálculo preciso de porções e acompanhamento contínuo para a saúde do seu pet.',
+    description: 'Atendimento nutricional veterinário 100% online. Planejamento de dietas personalizadas, cálculo preciso de porções e acompanhamento contínuo para a saúde do seu pet.',
     keywords: ['consulta nutricional pet online', 'nutrição veterinária online', 'dieta personalizada para cães e gatos'],
     benefits: [
       'Atendimento no conforto do seu lar sem estressar seu pet',
@@ -342,7 +342,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     slug: 'alimentacao-natural-para-caes',
     title: 'Alimentação Natural para Cães | Dra. Thais Vieira',
     headline: 'Alimentação Natural Balanceada e Segura para Cães',
-    description: 'Aprenda como oferecer uma dieta caseira balanceada (cozida) formulada por médica veterinária. Nutrição de verdade, com nutrição completa e segura.',
+    description: 'Aprenda como oferecer uma dieta caseira balanceada (cozida) planejada por médica veterinária. Nutrição de verdade, com nutrição completa e segura.',
     keywords: ['alimentação natural para cães', 'dieta caseira balanceada cachorro', 'AN veterinária cães'],
     benefits: [
       'Cardápio sob medida calculado com equilíbrio nutricional exato',
@@ -358,15 +358,15 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Tutores que desejam oferecer comida de verdade com respaldo médico'
     ],
     whatsIncluded: [
-      'Formulações de cardápio cozido balanceado',
-      'Cálculo e formulação completa das necessidades diárias',
+      'Elaboração de cardápio cozido balanceado',
+      'Cálculo e planejamento completo das necessidades diárias',
       'Consulta online por R$ 200,00 e acompanhamento por WhatsApp'
     ],
-    detailedText: 'A Alimentação Natural para cães traz vitalidade e saúde quando calculada corretamente por médica veterinária. Evite utilizar receitas genéricas da internet; procure um plano alimentar individualizado para o seu cão.',
+    detailedText: 'A Alimentação Natural para cães traz vitalidade e saúde quando calculada corretamente por médica veterinária. Evite utilizar orientações genéricas da internet; procure um plano alimentar individualizado para o seu cão.',
     faqs: [
       {
         question: 'Comida caseira para cachorro precisa de cálculo profissional?',
-        answer: 'Sim! Toda dieta caseira cozida para cães exige formulação completa calculada por médica veterinária para não causar carências graves.'
+        answer: 'Sim! Toda dieta caseira cozida para cães exige planejamento completo calculado por médica veterinária para não causar carências graves.'
       }
     ],
     relatedLinks: [
@@ -384,7 +384,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     benefits: [
       'Orientação individualizada sobre alimentação e ingestão de água',
       'Transição suave para evitar inapetência felina severa',
-      'Aporte obrigatório de taurina e demais nutrientes essenciais',
+      'Atendimento integral às exigências nutricionais felinas',
       'Opções de dietas úmidas preparadas em casa ou rações úmidas selecionadas'
     ],
     formatKey: 'online',
@@ -395,15 +395,15 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Felinos necessitando de nutrição balanceada'
     ],
     whatsIncluded: [
-      'Cardápios felinos calculados com inclusão balanceada de taurina',
+      'Cardápios felinos calculados de acordo com a espécie',
       'Orientações para transição sem estresse',
       'Consulta online por R$ 200,00 com suporte pós-atendimento'
     ],
-    detailedText: 'Os gatos necessitam de proteína animal de alto valor biológico e hidratação adequada. A Alimentação Natural felina é formulada respeitando suas necessidades fisiológicas únicas.',
+    detailedText: 'Os gatos necessitam de proteína animal de alto valor biológico e hidratação adequada. A Alimentação Natural felina é planejada respeitando suas necessidades fisiológicas únicas.',
     faqs: [
       {
         question: 'Posso dar comida humana para o meu gato?',
-        answer: 'Não. Alimentos temperados ou não balanceados podem causar intoxicação ou carências graves de taurina.'
+        answer: 'Não. Alimentos com temperos inadequados ou sem balanceamento correto podem trazer prejuízos à saúde do gato.'
       }
     ],
     relatedLinks: [
@@ -412,8 +412,8 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     ],
     emergencyDisclaimer: 'Aviso: Não substitui atendimento emergencial presencial.'
   },
-  'racao-terapeutica-para-caes-e-gatos': {
-    slug: 'racao-terapeutica-para-caes-e-gatos',
+  'racao-coadjuvante-para-caes-e-gatos': {
+    slug: 'racao-coadjuvante-para-caes-e-gatos',
     title: 'Orientação para Ração Coadjuvante Especial | Dra. Thais Vieira',
     headline: 'Plano e Orientação para Ração Coadjuvante em Cães e Gatos',
     description: 'Orientação e acompanhamento técnico para rações coadjuvantes (renais, hipoalergênicas, saciedade, gastrointestinais). O alimento como suporte nutricional diário.',
@@ -436,11 +436,11 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Técnicas para melhorar a aceitação da ração coadjuvante',
       'Consulta online por R$ 200,00 e acompanhamento WhatsApp'
     ],
-    detailedText: 'Rações coadjuvantes são aliadas importantes para condições como sensibilidade renal, pele sensível e sobrepeso. A orientação profissional individualizada proporciona que seu pet receba a dosagem diária correta.',
+    detailedText: 'Rações coadjuvantes são aliadas importantes para condições como sensibilidade renal, pele sensível e sobrepeso. A orientação profissional individualizada proporciona que seu pet receba a quantidade diária correta.',
     faqs: [
       {
         question: 'Ração coadjuvante precisa de indicação veterinária?',
-        answer: 'Sim, pois contêm formulações específicas para necessidades clínicas e não devem ser usadas sem acompanhamento profissional.'
+        answer: 'Sim, pois contêm composições específicas para necessidades clínicas e não devem ser usadas sem acompanhamento profissional.'
       }
     ],
     relatedLinks: [
@@ -453,7 +453,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     slug: 'consulta-online',
     title: 'Consulta Nutricional Veterinária Online | Dra. Thais Vieira',
     headline: 'Consulta Nutricional Veterinária Online para Cães e Gatos em Todo o Brasil',
-    description: 'Atendimento veterinário clínico 100% online. Formulação de dietas personalizadas, cálculo preciso de porções e acompanhamento contínuo para cães e gatos.',
+    description: 'Atendimento veterinário clínico 100% online. Planejamento de dietas personalizadas, cálculo preciso de porções e acompanhamento contínuo para cães e gatos.',
     keywords: ['consulta nutricional veterinária online', 'consulta online pet nutrição', 'veterinária nutrição animal online'],
     benefits: [
       'Atendimento 100% online por videochamada no conforto do seu lar',
@@ -472,7 +472,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     whatsIncluded: [
       'Análise detalhada de exames laboratoriais, histórico e queixas clínicas',
       'Envio do plano alimentar completo em PDF com orientações de preparo ou marcas',
-      'Cálculo e formulação sob medida quando necessário',
+      'Cálculo e planejamento alimentar sob medida quando necessário',
       'Suporte direto por WhatsApp durante a adaptação'
     ],
     detailedText: 'A consulta nutricional veterinária completa é o formato indicado para pets com necessidades clínicas específicas ou para quem busca dietas personalizadas e balanceadas sob medida.',
@@ -529,15 +529,15 @@ Neste guia prático preparado com autoridade médica veterinária, você vai ent
 
 ## 1. Por que os filhotes precisam de ração específica?
 
-Filhotes **não são adultos pequenos**. As necessidades de energia, proteínas, cálcio, fósforo e ácidos graxos essenciais (como DHA) são significativamente maiores na fase de crescimento.
+Filhotes **não são adultos pequenos**. As necessidades de energia, proteínas, cálcio e fósforo são significativamente maiores na fase de crescimento.
 
-Oferecer ração de adulto para um filhote pode provocar déficits graves, estagnação no ganho de peso ou problemas no desenvolvimento esquelético. 
+Oferecer ração de adulto para um filhote pode provocar déficits, estagnação no ganho de peso ou problemas no desenvolvimento esquelético. 
 
 Ao buscar **qual ração dar para filhote**, atente-se às seguintes características fundamentais:
 * **Nível Proteico Elevado:** Proteínas de alta digestibilidade para construção muscular e síntese tecidual.
-* **Balanço Cálcio e Fósforo:** Proporção milimetricamente ajustada para a ossificação correta (especialmente crítica em cães de porte grande e gigante).
+* **Balanço Cálcio e Fósforo:** Proporção ajustada para a ossificação correta (especialmente crítica em cães de porte grande e gigante).
 * **Grãos no Tamanho Certo:** Formato e textura adequados para a dentição decídua (dentes de leite) e facilidade de apreensão.
-* **Presença de DHA:** Ácido graxo essencial importante para o desenvolvimento do cérebro e da visão do filhote.
+* **Perfil Nutricional Completo:** Alimento desenvolvido especificamente para suportar o desenvolvimento saudável do filhote.
 
 ---
 
@@ -545,7 +545,7 @@ Ao buscar **qual ração dar para filhote**, atente-se às seguintes caracterís
 
 Ao caminhar pelo corredor de pet shop ou pesquisar na internet pela **melhor ração para filhote**, você encontrará diversas categorias comerciais:
 
-1. **Super Premium / Alta Nutrição:** Utilizam fontes de proteínas nobres e altamente digestíveis, possuem formulação com prebióticos, DHA e menor necessidade de volume por refeição.
+1. **Super Premium / Alta Nutrição:** Utilizam fontes de proteínas nobres e altamente digestíveis, com excelente aproveitamento e menor necessidade de volume por refeição.
 2. **Premium / Premium Especial:** Boa relação custo-benefício, com ingredientes selecionados e boa aceitação.
 3. **Standard ou Econômicas:** Geralmente possuem menor digestibilidade e requerem porções maiores para atingir o requerimento nutricional.
 
@@ -593,7 +593,7 @@ Caso queira trocar de marca, faça a **transição gradual ao longo de 7 dias**:
 1. **Deixar comida disponível o dia todo para cães:** Pode gerar seletividade alimentar, perda de interesse e obesidade precoce.
 2. **Oferecer leite de vaca:** Provoca diarreia severa devido à incapacidade de digerir o alto teor de lactose do leite bovino.
 3. **Oferecer alimentos proibidos:** Chocolate, cebola, alho, uva, xilitol e ossos cozidos são altamente tóxicos ou perigosos.
-4. **Introduzir Alimentação Natural sem acompanhamento profissional:** A dieta caseira sem formulação balanceada calculada por uma médica veterinária com pós-graduação em nutrição animal causa deformidades ósseas irreversíveis em filhotes.
+4. **Introduzir Alimentação Natural sem acompanhamento profissional:** A dieta caseira sem planejamento balanceado calculado por uma médica veterinária com pós-graduação em nutrição animal causa prejuízos ao crescimento em filhotes.
 
 ---
 
@@ -647,13 +647,13 @@ Neste artigo, você descobrirá como funciona a [alimentação natural para cãe
 
 ## O que é a Alimentação Natural Cozida?
 
-A Alimentação Natural Cozida para cães consiste em uma dieta elaborada exclusivamente com alimentos próprios para consumo animal, preparados sem sal excessivo, sem temperos tóxicos (como alho e cebola) e formulada sob medida por uma médica veterinária com pós-graduação em nutrição animal.
+A Alimentação Natural Cozida para cães consiste em uma dieta elaborada exclusivamente com alimentos próprios para consumo animal, preparados sem sal excessivo, sem temperos tóxicos (como alho e cebola) e calculada sob medida por uma médica veterinária com pós-graduação em nutrição animal.
 
 Ela é composta por proporções calculadas de:
 1. **Proteínas de Alta Qualidade:** Peito de frango, carne bovina magra, peixes, ovos ou suíno.
 2. **Carboidratos e Fibras:** Batata-doce, mandioquinha, arroz integral, abóbora, chuchu, brócolis e cenoura.
-3. **Vísceras:** Fontes concentradas de nutrientes (como fígado bovino, coração e moela).
-4. **Gorduras Boas:** Óleo de peixe (Ômega 3) e óleos vegetais específicos.
+3. **Vísceras:** Fontes de nutrientes fundamentais (como fígado bovino, coração e moela).
+4. **Fontes Lipídicas Saudáveis:** Óleos específicos e gorduras boas dos próprios alimentos.
 5. **Equilíbrio Nutricional Integral:** Item 100% fundamental em todas as dietas caseiras.
 
 ---
@@ -669,7 +669,7 @@ Ela é composta por proporções calculadas de:
 
 ## O perigo da dieta caseira desequilibrada em nutrientes
 
-Nenhum alimento na natureza possui todos os nutrientes necessários nas proporções perfeitas para um cão. Carnes e vegetais cozidos isolados **não fornecem cálcio suficiente**, nem teores ideais de compostos fundamentais para a saúde canina.
+Nenhum alimento isolado possui todos os nutrientes necessários nas proporções perfeitas para um cão. Carnes e vegetais cozidos sem cálculo prévio não fornecem um aporte equilibrado para a saúde canina.
 
 A falta do balanceamento nutricional adequado gera desequilíbrios graves, levando a fraqueza óssea, anemia, lesões de pele e alteração cardíaca.
 
@@ -677,7 +677,7 @@ A falta do balanceamento nutricional adequado gera desequilíbrios graves, levan
 
 ## Como iniciar o processo de transição?
 
-Antes de alterar a dieta do seu cão, agende uma [consulta nutricional pet online](/nutricao-pet-online/) ou presencial. A médica veterinária analisará os exames de sangue recentes do pet, avaliará o peso ideal e criará a receita exclusiva em gramas com o balanço de nutrientes adequado.
+Antes de alterar a dieta do seu cão, agende uma [consulta nutricional pet online](/nutricao-pet-online/) ou presencial. A médica veterinária analisará os exames recentes do pet, avaliará o peso ideal e criará o cardápio exclusivo em gramas com o balanço de nutrientes adequado.
 
 *Aviso Legal: Artigo educativo. Nunca substitua a alimentação do seu cão sem supervisão veterinária.*
 `
@@ -719,11 +719,9 @@ Por isso, o investimento em [alimentação natural para gatos](/alimentacao-natu
 
 ## 1. O Gato é um Carnívoro Estrito
 
-Diferente dos cães (que são carnívoros facultativos ou adaptáveis), os gatos necessitam obrigatoriamente de nutrientes encontrados nas proteínas animais:
-* **Taurina:** Aminoácido vital para o coração e retina.
-* **Arginina:** Indispensável para o ciclo da ureia.
-* **Nutrientes de Origem Animal:** Felinos não convertem betacaroteno, necessitando de fontes animais ativas.
-* **Ácido Araquidônico:** Gordura essencial que só existe em tecidos animais.
+Diferente dos cães (que são carnívoros adaptáveis), os gatos dependem fisiologicamente de proteínas de origem animal para o funcionamento adequado de seu organismo.
+
+Por isso, dietas exclusivamente vegetarianas ou restos caseiros não atendem à fisiologia de um felino e colocam sua saúde em risco.
 
 ---
 
@@ -747,14 +745,14 @@ Por esse motivo, toda mudança de dieta felina deve ser orientada com técnicas 
 `
   },
   {
-    id: 'racao-terapeutica-para-caes-e-gatos-guia',
-    slug: 'racao-terapeutica-para-caes-e-gatos-guia',
-    aliases: ['racao-terapeutica-para-caes-e-gatos'],
+    id: 'racao-coadjuvante-para-caes-e-gatos-guia',
+    slug: 'racao-coadjuvante-para-caes-e-gatos-guia',
+    aliases: ['racao-coadjuvante-para-caes-e-gatos'],
     title: 'Ração Coadjuvante para Cães e Gatos: Quando Usar e Por Que Precisa de Orientação Veterinária',
     metaTitle: 'Ração Coadjuvante para Cães e Gatos | Dra. Thais Vieira',
     metaDescription: 'O que são rações coadjuvantes? Entenda quando são indicadas para necessidades renais, pele sensível, digestivas e de peso.',
     mainKeyword: 'orientação para ração coadjuvante',
-    secondaryKeywords: ['ração medicamentosa cães', 'ração renal gatos', 'ração hipoalergênica', 'nutrição clínica veterinária'],
+    secondaryKeywords: ['ração coadjuvante cães', 'ração renal gatos', 'ração hipoalergênica', 'nutrição clínica veterinária'],
     category: 'Rações coadjuvantes',
     intent: 'Tutor de pet em acompanhamento procurando entender a indicação de ração coadjuvante.',
     publishDate: '2026-07-05',
@@ -768,33 +766,33 @@ Por esse motivo, toda mudança de dieta felina deve ser orientada com técnicas 
     image: 'https://images.pexels.com/photos/8434744/pexels-photo-8434744.jpeg',
     imageAlt: 'Veterinária cuidando carinhosamente de um paciente pet',
     internalLinks: [
-      { url: '/racao-terapeutica-para-caes-e-gatos/', text: 'orientação para ração coadjuvante' },
+      { url: '/racao-coadjuvante-para-caes-e-gatos/', text: 'orientação para ração coadjuvante' },
       { url: '/nutricao-pet-online/', text: 'consulta nutricional pet online' },
     ],
     ctaText: 'Seu pet recebeu indicação de ração especial? Agende uma orientação de ração com a Dra. Thais Vieira.',
     contentMarkdown: `
-As **rações coadjuvantes** (também chamadas de rações especiais) são formulações nutricionais desenvolvidas especificamente para apoiar o bem-estar de cães e gatos com alterações clínicas em acompanhamento.
+As **rações coadjuvantes** (também chamadas de rações especiais) são opções nutricionais desenvolvidas especificamente para apoiar o bem-estar de cães e gatos com alterações clínicas em acompanhamento.
 
-Diferente das rações de manutenção diária, as rações coadjuvantes possuem ajustes minuciosos nos níveis de fósforo, sódio, proteínas, fibras, eletrólitos e densidade calórica.
+Diferente das rações de manutenção diária, as rações coadjuvantes possuem ajustes minuciosos nos níveis de fósforo, sódio, proteínas, fibras e densidade calórica.
 
-Por isso, obter uma [orientação para ração coadjuvante](/racao-terapeutica-para-caes-e-gatos/) com uma médica veterinária é um passo indispensável para apoiar a saúde do animal sem causar outros desequilíbrios.
+Por isso, obter uma [orientação para ração coadjuvante](/racao-coadjuvante-para-caes-e-gatos/) com uma médica veterinária é um passo indispensável para apoiar a saúde do animal sem causar outros desequilíbrios.
 
 ---
 
 ## Principais Linhas Coadjuvantes e Suas Indicações
 
 1. **Rações Renais (Renal / Kidney):** Possuem teor reduzido de fósforo e proteína de altíssima digestibilidade para apoiar a função dos rins em cães e gatos idosos ou com sensibilidade renal.
-2. **Rações Hipoalergênicas (Hypoallergenic / Anallergenic):** Utilizam proteínas hidrolisadas (quebradas em partículas tão pequenas que o sistema imunológico não as reconhece como alergênico) para investigar e controlar dermatite atópica e sensibilidade alimentar.
-3. **Rações Gastrointestinais (Gastrointestinal / Intestinal):** Baixo teor de gordura, alta digestibilidade e fibras prebióticas para apoiar a mucosa intestinal após episódios de vômitos ou fezes amolecidas.
+2. **Rações Hipoalergênicas (Hypoallergenic / Anallergenic):** Utilizam proteínas hidrolisadas (quebradas em partículas menores) para auxiliar no manejo de sensibilidade alimentar.
+3. **Rações Gastrointestinais (Gastrointestinal / Intestinal):** Baixo teor de gordura, alta digestibilidade e fibras funcionais para apoiar o trato digestivo.
 4. **Rações para Obesidade e Saciedade (Satiety / Weight Management):** Ricas em fibras e proteínas, projetadas para promover perda de gordura com acompanhamento do peso, da saciedade e da condição muscular.
 
 ---
 
 ## Por que elas NÃO devem ser oferecidas por conta própria?
 
-Dar uma ração renal para um cão saudável pode causar privação protéica indesejada. Da mesma forma, oferecer uma ração para obesidade em um filhote em crescimento pode prejudicar seu desenvolvimento.
+Dar uma ração renal para um cão saudável pode causar restrição protéica indesejada. Da mesma forma, oferecer uma ração para obesidade em um filhote em crescimento pode prejudicar seu desenvolvimento.
 
-Através de uma [consulta nutricional pet online](/nutricao-pet-online/), avaliamos o diagnóstico médico, ajustamos a dose diária exata e definimos o tempo de uso necessário.
+Através de uma [consulta nutricional pet online](/nutricao-pet-online/), avaliamos a necessidade do animal, calculamos a porção diária exata em gramas e acompanhamos a evolução.
 
 ---
 
@@ -843,10 +841,10 @@ No Brasil, os ingredientes devem ser descritos em **ordem decrescente de quantid
 
 ---
 
-## Níveis de Garantia: O que significam?
+## Níveis Nutricionais no Rótulo: O que significam?
 
-* **Proteína Bruta (Mínimo):** Indica a quantidade total de proteína. Para cães adultos.
-* **Extrato Etéreo (Gordura):** Fornece energia e palatabilidade.
+* **Proteína Bruta (Mínimo):** Indica a quantidade total de proteína para a fase do animal.
+* **Teor de Gordura (Lipídeos):** Fornece energia e palatabilidade para a rotina diária.
 
 ---
 
@@ -866,9 +864,9 @@ Conheça o nosso serviço exclusivo de [escolha de ração](/escolha-de-racao) p
     slug: 'como-funciona-consulta-nutricional-online',
     title: 'Como Funciona a Consulta Nutricional Pet Online? Guia Completo para Tutores',
     metaTitle: 'Como Funciona a Consulta Nutricional Pet Online | Dra. Thais Vieira',
-    metaDescription: 'Entenda os passos da teleconsulta nutricional veterinária: anamnese, formulação de dieta individualizada e suporte contínuo via WhatsApp.',
+    metaDescription: 'Entenda os passos da teleconsulta nutricional veterinária: anamnese, elaboração de dieta individualizada e suporte contínuo via WhatsApp.',
     mainKeyword: 'consulta nutricional pet online',
-    secondaryKeywords: ['nutrição veterinária online', 'telemedicina veterinária nutrição', 'atendimento veterinário whatsapp'],
+    secondaryKeywords: ['nutrição veterinária online', 'orientação nutricional pet online', 'atendimento veterinário whatsapp'],
     category: 'Nutrição veterinária online',
     intent: 'Tutor considerando agendar teleconsulta nutricional mas curioso sobre o formato e a eficácia.',
     publishDate: '2026-06-20',
@@ -969,7 +967,7 @@ A quantidade diária em gramas deve ser calculada de acordo com o peso corporal 
 
 ## 4. Como acertar na escolha da ração sem gastar à toa
 
-Você não precisa gastar fortunas em rações importadas para dar uma vida saudável ao seu pet resgatado. O essencial é encontrar uma fórmula com boa digestibilidade, proteínas de qualidade e que caiba confortavelmente no seu orçamento mensal.
+Você não precisa gastar fortunas em rações importadas para dar uma vida saudável ao seu pet resgatado. O essencial é encontrar uma ração com boa digestibilidade, proteínas de qualidade e que caiba confortavelmente no seu orçamento mensal.
 
 Para não perder tempo com tentativa e erro nem desperdiçar pacotes de ração, você pode contar com o serviço de [escolha de ração para cães e gatos](/escolha-de-racao) da Dra. Thais Vieira. 
 

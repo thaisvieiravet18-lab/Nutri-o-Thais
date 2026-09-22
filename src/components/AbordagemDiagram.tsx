@@ -118,13 +118,13 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
       ],
       rightFeatures: [
         {
-          title: "Fórmulas Coadjuvantes",
+          title: "Rações Coadjuvantes",
           desc: "Orientação de rações coadjuvantes específicas para o suporte de necessidades renais, cardíacas ou alérgicas.",
           icon: <Heart className="text-indigo-500" size={24} />
         },
         {
           title: "Controle do Peso Ideal",
-          desc: "Mais segurança de que seu pet consome o volume exato, combatendo o sobrepeso silencioso de forma clínica.",
+          desc: "Mais segurança de que seu pet consome o volume exato, prevenindo o sobrepeso com acompanhamento individual.",
           icon: <Compass className="text-indigo-500" size={24} />
         }
       ]

@@ -98,13 +98,13 @@ export function MeuPrimeiroPetNotification() {
               ))}
             </div>
 
-            {/* Call to action text block */}
-            <div className="bg-red-500/10 border border-red-500/20 p-3.5 rounded-2xl space-y-1">
-              <p className="text-[10px] font-black text-red-400 tracking-wider uppercase font-sans flex items-center justify-center md:justify-start gap-1.5">
-                <AlertCircle size={11} /> ATENÇÃO TUTOR
+            {/* Information guidance block */}
+            <div className="bg-amber-500/10 border border-amber-500/20 p-3.5 rounded-2xl space-y-1">
+              <p className="text-[10px] font-black text-amber-300 tracking-wider uppercase font-sans flex items-center justify-center md:justify-start gap-1.5">
+                <AlertCircle size={11} /> EQUILÍBRIO DIÁRIO
               </p>
-              <p className="text-xs font-bold text-red-200/95 leading-relaxed font-sans">
-                Seu pet pode estar comendo <span className="text-orange-300 font-extrabold underline decoration-orange-400/40">mais ou menos</span> do que precisa e você nem percebeu ainda.
+              <p className="text-xs font-bold text-amber-100/95 leading-relaxed font-sans">
+                O cálculo correto da porção diária em gramas <span className="text-amber-300 font-extrabold underline decoration-amber-400/40">previne o sobrepeso</span> e mantém seu pet com energia e disposição.
               </p>
             </div>
 

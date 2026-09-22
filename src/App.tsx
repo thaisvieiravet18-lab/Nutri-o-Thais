@@ -37,6 +37,7 @@ import { AbordagemDiagram } from './components/AbordagemDiagram';
 import { safeLocalStorage } from './lib/storage';
 import { WelcomingExperienceSection } from './components/WelcomingExperienceSection';
 import { FooterCTA } from './components/FooterCTA';
+import { PrivacyPolicyModal } from './components/PrivacyPolicyModal';
 
 // Blog components and data integration
 import { BlogIndexPage } from './components/Blog/BlogIndexPage';
@@ -211,24 +212,26 @@ export default function App({ initialPath }: AppProps = {}) {
   // Carousel / Accordion / Format Tab States
   const [activeCategory, setActiveCategory] = useState(0);
   const [selectedFormatTab, setSelectedFormatTab] = useState<'online' | 'presencial' | 'racao'>('online');
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
+  const [privacyModalTab, setPrivacyModalTab] = useState<'privacy' | 'terms'>('privacy');
 
   const categories = [
     {
       title: "Saúde & Bem-Estar por Fase de Vida",
       img: "https://images.unsplash.com/photo-1573024027027-a82b1b0f783e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "A saúde começa no prato. Ajustes na rotina nutricional de cães e gatos auxiliam na manutenção da vitalidade e no bem-estar em cada etapa do desenvolvimento.",
-      highlight: "Cuidado Clínico Ativo"
+      highlight: "Nutrição por Fase de Vida"
     },
     {
       title: "Controle de Peso & Obesidade",
       img: "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?q=80&w=1200&auto=format&fit=crop",
-      desc: "A obesidade em pets não é apenas estética — trata-se de uma inflamação crônica silenciosa. Desenvolvemos planejamentos de emagrecimento focados em saciedade sem sofrimento.",
+      desc: "A obesidade em pets não é apenas estética — representa uma condição importante de sobrepeso. Desenvolvemos planejamentos de emagrecimento focados em saciedade e conforto.",
       highlight: "Emagrecimento com Saúde"
     },
     {
       title: "Pele Sensível & Alergias",
       img: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=1200&auto=format&fit=crop",
-      desc: "Coceira constante, queda de pelo e vermelhidão costumam estar associados à escolha incorreta de ingredientes. Isolamos agentes causadores com dieta balanceada de alívio real.",
+      desc: "Coceira constante, queda de pelo e vermelhidão costumam estar associados à escolha incorreta de ingredientes. Identificamos os alimentos mais adequados com dieta balanceada e segura.",
       highlight: "Pele Saudável e Macia"
     },
     {
@@ -1196,7 +1199,7 @@ export default function App({ initialPath }: AppProps = {}) {
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigateTo('/racao-terapeutica-para-caes-e-gatos/')} className="hover:text-[#a338b9] text-left cursor-pointer border-none bg-transparent p-0">
+                  <button onClick={() => navigateTo('/racao-coadjuvante-para-caes-e-gatos/')} className="hover:text-[#a338b9] text-left cursor-pointer border-none bg-transparent p-0">
                     Ração Coadjuvante
                   </button>
                 </li>
@@ -1209,12 +1212,27 @@ export default function App({ initialPath }: AppProps = {}) {
             </div>
 
             <div className="md:col-span-2 space-y-4">
-              <h4 className="text-[10px] font-bold tracking-widest uppercase text-[#111827]">Legal & Ética</h4>
-              <p className="leading-relaxed text-stone-600">
-                As consultas e orientações nutricionais e os artigos do blog têm caráter educativo e não substituem o acompanhamento clínico veterinário presencial em casos de urgência ou condições graves do animal.
+              <h4 className="text-[10px] font-bold tracking-widest uppercase text-[#111827]">Legal & Transparência</h4>
+              <p className="leading-relaxed text-stone-600 text-xs">
+                As consultas e orientações nutricionais têm caráter educativo e não substituem o acompanhamento clínico presencial em casos de urgência ou condições graves do animal.
               </p>
-              <p className="text-stone-500 font-semibold text-[11px]">
-                Dra. Thais Vieira • CRMV-SP 55784
+              <div className="flex flex-col gap-2 pt-1 text-xs">
+                <button 
+                  onClick={() => { setPrivacyModalTab('privacy'); setIsPrivacyModalOpen(true); }}
+                  className="text-[#a338b9] hover:text-[#ff2eb7] hover:underline text-left cursor-pointer border-none bg-transparent p-0 font-semibold"
+                >
+                  Política de Privacidade (LGPD)
+                </button>
+                <button 
+                  onClick={() => { setPrivacyModalTab('terms'); setIsPrivacyModalOpen(true); }}
+                  className="text-[#a338b9] hover:text-[#ff2eb7] hover:underline text-left cursor-pointer border-none bg-transparent p-0 font-semibold"
+                >
+                  Termos de Uso & Responsabilidade
+                </button>
+              </div>
+              <p className="text-stone-500 font-semibold text-[11px] pt-1">
+                Dra. Thais Vieira • CRMV-SP 55784<br />
+                Contato: thaisvieiravet18@gmail.com
               </p>
             </div>
 
@@ -1222,6 +1240,20 @@ export default function App({ initialPath }: AppProps = {}) {
 
           <div className="border-t border-stone-200/40 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px]">
             <p>© {new Date().getFullYear()} Dra. Thais Vieira • CRMV-SP 55784. Todos os direitos reservados.</p>
+            <div className="flex gap-4">
+              <button 
+                onClick={() => { setPrivacyModalTab('privacy'); setIsPrivacyModalOpen(true); }} 
+                className="text-stone-500 hover:text-stone-700 underline cursor-pointer border-none bg-transparent p-0"
+              >
+                Privacidade
+              </button>
+              <button 
+                onClick={() => { setPrivacyModalTab('terms'); setIsPrivacyModalOpen(true); }} 
+                className="text-stone-500 hover:text-stone-700 underline cursor-pointer border-none bg-transparent p-0"
+              >
+                Termos
+              </button>
+            </div>
             <p className="font-medium">Isenção absoluta de comissões de marketing de rações industriais.</p>
           </div>
         </div>
@@ -1230,6 +1262,7 @@ export default function App({ initialPath }: AppProps = {}) {
       {/* Interactive Modal instances */}
       <ConsultaModal isOpen={isConsultaOpen} onClose={() => setIsConsultaOpen(false)} initialFormat={consultaFormat} />
       <PaymentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <PrivacyPolicyModal isOpen={isPrivacyModalOpen} onClose={() => setIsPrivacyModalOpen(false)} defaultTab={privacyModalTab} />
 
       {/* Dynamic WhatsApp attention-grabber float */}
       <WhatsAppFloat />

@@ -42,7 +42,6 @@ export function getSeoDataForPath(pathname: string): SeoData {
           'url': canonicalUrl,
           'image': DEFAULT_IMAGE,
           'description': description,
-          'medicalSpecialty': 'Veterinary',
           'address': {
             '@type': 'PostalAddress',
             'addressLocality': 'São Paulo',

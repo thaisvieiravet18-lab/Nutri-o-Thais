@@ -118,7 +118,7 @@ export function WelcomingExperienceSection({ setIsModalOpen, openConsulta }: Wel
 
           <FadeIn delay={0.15}>
             <p className="text-stone-300 text-base sm:text-lg leading-relaxed font-sans">
-              Entre tantas rações, receitas e dicas da internet, é normal se sentir perdido. 
+              Entre tantas rações, opções e dicas da internet, é normal se sentir perdido. 
               <span className="text-amber-200 font-semibold"> Veja como é simples o caminho até a alimentação ideal do seu pet:</span>
             </p>
           </FadeIn>
@@ -310,7 +310,7 @@ export function WelcomingExperienceSection({ setIsModalOpen, openConsulta }: Wel
                   onClick={() => setIsModalOpen(true)}
                   className="px-7 py-4 bg-gradient-to-r from-[#ff2eb7] via-[#a338b9] to-[#ff841f] hover:from-[#ff4ac1] hover:to-[#ff9b44] text-white font-black rounded-2xl text-xs sm:text-sm uppercase tracking-wider shadow-[0_12px_32px_rgba(255,46,183,0.4)] hover:shadow-[0_16px_40px_rgba(255,46,183,0.6)] transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer border-none"
                 >
-                  <span>Garantir Vaga</span>
+                  <span>Agendar Consulta</span>
                   <ArrowRight size={16} />
                 </button>
                 <span className="text-[11px] text-stone-400 text-center md:text-right">
