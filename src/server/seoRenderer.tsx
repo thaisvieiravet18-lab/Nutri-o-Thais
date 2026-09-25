@@ -172,10 +172,10 @@ export function getSeoDataForPath(pathname: string): SeoData {
             },
             {
               '@type': 'Question',
-              'name': 'Meu pet tem um diagnóstico específico. Serve para ele?',
+              'name': 'Meu pet tem necessidades nutricionais específicas. Serve para ele?',
               'acceptedAnswer': {
                 '@type': 'Answer',
-                'text': 'Nesse caso não. A dieta precisa ser calculada individualmente, então o indicado é a consulta nutricional completa.'
+                'text': 'Nesse caso, a dieta precisa ser calculada de forma individualizada com acompanhamento contínuo, então o mais indicado é a consulta nutricional completa.'
               }
             },
             {
@@ -424,7 +424,7 @@ export function getSeoDataForPath(pathname: string): SeoData {
 
   // Fallback for unknown routes
   const title = 'Consulta Nutricional Veterinária Online para Cães e Gatos | Dra. Thais Vieira';
-  const description = 'A consulta nutricional veterinária online para cães e gatos com a Dra. Thais Vieira oferece nutrição veterinária, alimentação natural, dieta para cão renal, gato renal, alergias, controle de peso e indicação de ração.';
+  const description = 'Consulta nutricional veterinária online para cães e gatos com a Dra. Thais Vieira. Orientação de ração, alimentação natural balanceada e acompanhamento individualizado.';
   const canonicalUrl = `${DOMAIN}${cleanPath}`;
   const h1 = 'Consulta Nutricional Veterinária Online para Cães e Gatos';
 

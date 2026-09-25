@@ -104,7 +104,7 @@ export function MeuPrimeiroPetNotification() {
                 <AlertCircle size={11} /> EQUILÍBRIO DIÁRIO
               </p>
               <p className="text-xs font-bold text-amber-100/95 leading-relaxed font-sans">
-                O cálculo correto da porção diária em gramas <span className="text-amber-300 font-extrabold underline decoration-amber-400/40">previne o sobrepeso</span> e mantém seu pet com energia e disposição.
+                O cálculo correto da porção diária em gramas <span className="text-amber-300 font-extrabold underline decoration-amber-400/40">garante a quantidade ideal</span> e mantém seu pet com energia e vitalidade.
               </p>
             </div>
 

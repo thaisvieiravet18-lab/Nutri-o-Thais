@@ -33,14 +33,14 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
     natural: {
       id: "natural",
       tabLabel: "Comida Natural",
-      title: "Comida de verdade para uma vida plena",
+      title: "Alimentação Natural Balanceada para uma Vida Saudável",
       desc: "Ingredientes frescos e cozidos sob medida, calculados de forma completa para cobrir todas as necessidades individuais do seu pet.",
       icon: <Leaf size={18} />,
       img: "https://f.i.uol.com.br/fotografia/2021/03/18/16161104516053e373991f0_1616110451_3x2_md.jpg",
       accentColor: "from-emerald-500 to-teal-600",
       leftFeatures: [
         {
-          title: "Comida de Verdade",
+          title: "Ingredientes Selecionados",
           desc: "Seleção cuidadosa de carnes, vegetais funcionais e sem conservantes artificiais ou corantes.",
           icon: <ChefHat className="text-emerald-500" size={24} />
         },
@@ -100,7 +100,7 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
       id: "racao",
       tabLabel: "Ração de Alta Gama",
       title: "Ração Premium Otimizada",
-      desc: "Escolha científica da melhor ração do mercado (super premium ou coadjuvante) e cálculo exato de quantidade para evitar sobrepeso.",
+      desc: "Escolha criteriosa da melhor ração do mercado (Super Premium ou Premium Especial) e cálculo exato de quantidade para manter o peso ideal.",
       icon: <Bone size={18} />,
       img: "https://petcare.com.br/wp-content/uploads/2023/08/cachorro-branco-e-marrom-faminto-com-orelhas-grandes-e-olhos-castanhos-prontos-para-comer-uma-tigela-cheia-de-comida-1.jpg",
       accentColor: "from-indigo-500 to-purple-600",
@@ -118,13 +118,13 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
       ],
       rightFeatures: [
         {
-          title: "Rações Coadjuvantes",
-          desc: "Orientação de rações coadjuvantes específicas para o suporte de necessidades renais, cardíacas ou alérgicas.",
+          title: "Fórmulas Específicas",
+          desc: "Orientação de rações de alta nutrição para a fase de vida, porte e nível de atividade do seu pet.",
           icon: <Heart className="text-indigo-500" size={24} />
         },
         {
           title: "Controle do Peso Ideal",
-          desc: "Mais segurança de que seu pet consome o volume exato, prevenindo o sobrepeso com acompanhamento individual.",
+          desc: "Mais segurança de que seu pet consome o volume exato, mantendo o equilíbrio nutricional com acompanhamento individual.",
           icon: <Compass className="text-indigo-500" size={24} />
         }
       ]
@@ -154,7 +154,7 @@ export function AbordagemDiagram({ openConsulta }: AbordagemDiagramProps) {
           Como Alimentar seu Companheiro
         </span>
         <h3 className="text-3xl md:text-5xl font-black text-[#111827] font-display uppercase tracking-tight">
-          Seu pet também merece comida de verdade
+          Nutrição Saudável e Balanceada para seu Pet
         </h3>
         <p className="text-stone-700 font-semibold text-sm md:text-base leading-relaxed max-w-2xl mx-auto font-sans">
           Acreditamos que a alimentação ideal apoia a saúde do seu pet. Seja qual for a rotina e o organismo dele, planejamos um plano alimentar individualizado com base técnica e carinho.

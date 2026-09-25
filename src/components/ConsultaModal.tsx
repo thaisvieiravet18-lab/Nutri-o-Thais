@@ -65,12 +65,12 @@ export const ConsultaModal = ({
     }
     
     const goals: { [key: string]: string } = {
-      preventive: 'Saúde diária / Checklist nutricional',
-      natural: 'Transição para Alimentação Natural (AN)',
+      preventive: 'Saúde diária / Ração ideal e porção exata',
+      natural: 'Transição para Alimentação Natural Balanceada',
       mixed: 'Transição para dieta mista (Ração + AN)',
-      obesity: 'Manejo de sobrepeso / Controle de peso',
-      allergy: 'Investigação de alergia alimentar / Coceira',
-      disease: 'Suporte nutricional para casos específicos (diabetes/renal/etc)',
+      weight: 'Ajuste calórico e peso ideal',
+      sensitivity: 'Sensibilidade alimentar / Pele e pelagem',
+      senior: 'Nutrição para cães e gatos idosos',
       other: 'Outro assunto nutricional'
     };
 
@@ -100,12 +100,12 @@ export const ConsultaModal = ({
 
   const handleWhatsAppRedirect = () => {
     const goals: { [key: string]: string } = {
-      preventive: 'Saúde diária / Checklist nutricional',
-      natural: 'Transição para Alimentação Natural (AN)',
+      preventive: 'Saúde diária / Ração ideal e porção exata',
+      natural: 'Transição para Alimentação Natural Balanceada',
       mixed: 'Transição para dieta mista (Ração + AN)',
-      obesity: 'Manejo de sobrepeso / Controle de peso',
-      allergy: 'Investigação de alergia alimentar / Coceira',
-      disease: 'Suporte nutricional para casos específicos (diabetes/renal/etc)',
+      weight: 'Ajuste calórico e peso ideal',
+      sensitivity: 'Sensibilidade alimentar / Pele e pelagem',
+      senior: 'Nutrição para cães e gatos idosos',
       other: 'Outro assunto nutricional'
     };
 
@@ -205,13 +205,13 @@ export const ConsultaModal = ({
                     <label className="block text-xs font-bold text-stone-600 mb-1">Foco Principal da Consulta</label>
                     <select name="mensagem" className="modal-input !mb-0 bg-stone-50 text-stone-800" value={reason}
                       onChange={(e) => setReason(e.target.value)}>
-                      <option value="preventive">Saúde e rotina / Ração ideal e quantidades</option>
-                      <option value="natural">Quero transicionar para Alimentação Natural (AN)</option>
+                      <option value="preventive">Saúde diária / Ração ideal e porção exata</option>
+                      <option value="natural">Quero transicionar para Alimentação Natural Balanceada</option>
                       <option value="mixed">Quero transicionar para dieta mista (Ração + AN)</option>
-                      <option value="obesity">Manejo de sobrepeso / Apoio ao peso ideal</option>
-                      <option value="allergy">Investigação de alergia alimentar / Coceiras / Pele sensível</option>
-                      <option value="disease">Acompanhamento específico (Diabetes, Suporte Renal, Hepático, Gastrointestinal)</option>
-                      <option value="other">Outra demanda específica</option>
+                      <option value="weight">Ajuste calórico e peso ideal</option>
+                      <option value="sensitivity">Sensibilidade alimentar / Pele e pelagem</option>
+                      <option value="senior">Nutrição especializada para cão ou gato idoso</option>
+                      <option value="other">Outra demanda nutricional personalizada</option>
                     </select>
                   </div>
                   <button 

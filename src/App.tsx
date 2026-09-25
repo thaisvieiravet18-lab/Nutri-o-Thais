@@ -223,22 +223,22 @@ export default function App({ initialPath }: AppProps = {}) {
       highlight: "Nutrição por Fase de Vida"
     },
     {
-      title: "Controle de Peso & Obesidade",
+      title: "Equilíbrio e Peso Ideal",
       img: "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?q=80&w=1200&auto=format&fit=crop",
-      desc: "A obesidade em pets não é apenas estética — representa uma condição importante de sobrepeso. Desenvolvemos planejamentos de emagrecimento focados em saciedade e conforto.",
-      highlight: "Emagrecimento com Saúde"
+      desc: "Ajustamos a densidade calórica e as porções diárias de forma individualizada, promovendo saciedade, energia e vitalidade com uma rotina alimentar equilibrada.",
+      highlight: "Manutenção do Peso Ideal"
     },
     {
-      title: "Pele Sensível & Alergias",
+      title: "Pele e Pelagem Saudáveis",
       img: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=1200&auto=format&fit=crop",
-      desc: "Coceira constante, queda de pelo e vermelhidão costumam estar associados à escolha incorreta de ingredientes. Identificamos os alimentos mais adequados com dieta balanceada e segura.",
-      highlight: "Pele Saudável e Macia"
+      desc: "Ingredientes selecionados e de alta tolerância biológica que favorecem o brilho dos pelos, a maciez e o conforto diário para o seu companheiro.",
+      highlight: "Pelagem Brilhante e Sedosa"
     },
     {
-      title: "Suporte Nutricional Específico",
+      title: "Suporte Nutricional Individualizado",
       img: "https://images.unsplash.com/photo-1554693190-38385b414383?q=80&w=1200&auto=format&fit=crop",
-      desc: "Sensibilidade renal, diabetes, quadros hepáticos e gastrintestinais exigem controle de fósforo, glicemia e sódio. O manejo alimentar adequado auxilia no bem-estar diário.",
-      highlight: "Nutrição Clínica"
+      desc: "Planos alimentares específicos para pets idosos ou com rotinas diferenciadas, priorizando a ingestão hídrica, fibras funcionais e alta digestibilidade.",
+      highlight: "Nutrição Especializada"
     }
   ];
 
@@ -266,7 +266,7 @@ export default function App({ initialPath }: AppProps = {}) {
       if (metaDesc) {
         metaDesc.setAttribute(
           'content',
-          'A consulta nutricional veterinária online para cães e gatos com a Dra. Thais Vieira oferece nutrição veterinária, alimentação natural, dieta para cão renal, gato renal, alergias, controle de peso e indicação de ração.'
+          'Consulta nutricional veterinária online para cães e gatos com a Dra. Thais Vieira. Orientação de ração, alimentação natural balanceada e acompanhamento individualizado.'
         );
       }
     }
@@ -691,22 +691,22 @@ export default function App({ initialPath }: AppProps = {}) {
                 footerText: "Filhotes • Adultos • Idosos"
               },
               {
-                title: "Casos Especiais e Cuidados Clínicos",
-                subtitle: "Nutrição clínica personalizada",
-                desc: "Dieta para cães e gatos com alergia alimentar, controle de peso, diabetes, suporte renal, hepático e outras condições que pedem atenção na alimentação.",
+                title: "Sensibilidades e Rotinas Especiais",
+                subtitle: "Nutrição individualizada",
+                desc: "Alimentação sob medida para pets com exigências alimentares específicas, focando na tolerância digestiva e no bem-estar diário.",
                 img: "https://images.unsplash.com/photo-1614621494969-757f4acbe726?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dp",
-                badge: "SUPORTE CLÍNICO",
+                badge: "ROTINA ESPECIAL",
                 action: () => openConsulta('online'),
-                footerText: "Rim • Alergia • Diabetes • Mais"
+                footerText: "Digestão • Tolerância • Vitalidade"
               },
               {
-                title: "Controle de Peso",
-                subtitle: "Emagrecer ou ganhar massa com segurança",
-                desc: "Nem passar fome, nem comer demais. Monto o plano de emagrecimento do cão ou gato obeso respeitando o ritmo dele.",
+                title: "Controle e Peso Ideal",
+                subtitle: "Porções adequadas e saciedade",
+                desc: "Nem passar fome, nem comer demais. Monto o plano alimentar ideal calculando porções exatas e respeitando o ritmo e energia do pet.",
                 img: "https://images.unsplash.com/photo-1644178488613-555a71c24e16?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dp",
-                badge: "CONTROLE DE PESO",
+                badge: "PESO IDEAL",
                 action: () => openConsulta('online'),
-                footerText: "Obesidade • Magreza"
+                footerText: "Porção Ideal • Saciedade"
               },
               {
                 title: "Nutrição para gatos",
@@ -877,7 +877,7 @@ export default function App({ initialPath }: AppProps = {}) {
               Qual atendimento é o certo para o seu pet?
             </h2>
             <p className="text-stone-700 font-semibold text-sm md:text-base leading-relaxed font-sans max-w-2xl text-center mt-2 mx-auto">
-              Cada pet chega com uma necessidade diferente. Se o seu já tem um diagnóstico clínico, como renal, alergia ou diabetes, ou precisa de controle de peso, o caminho é a consulta de nutrição veterinária. Se a dúvida é qual ração escolher e quanto oferecer, a orientação de ração atende perfeitamente. Veja qual faz mais sentido para vocês:
+              Cada pet chega com uma necessidade diferente. Se você busca um plano nutricional sob medida, transição para alimentação natural balanceada ou acompanhamento contínuo, o caminho é a consulta de nutrição veterinária. Se a dúvida é qual ração comercial escolher e a porção diária ideal, a orientação de ração atende com agilidade. Veja qual faz mais sentido para vocês:
             </p>
           </div>
 
@@ -1199,8 +1199,8 @@ export default function App({ initialPath }: AppProps = {}) {
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigateTo('/racao-coadjuvante-para-caes-e-gatos/')} className="hover:text-[#a338b9] text-left cursor-pointer border-none bg-transparent p-0">
-                    Ração Coadjuvante
+                  <button onClick={() => navigateTo('/como-escolher-a-melhor-racao/')} className="hover:text-[#a338b9] text-left cursor-pointer border-none bg-transparent p-0">
+                    Como Escolher Ração
                   </button>
                 </li>
                 <li>

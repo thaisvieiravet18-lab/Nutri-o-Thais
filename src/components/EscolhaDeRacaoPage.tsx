@@ -55,10 +55,10 @@ const FAQ_SCHEMA_JSON = {
     },
     {
       "@type": "Question",
-      "name": "Meu pet tem um diagnóstico específico. Serve para ele?",
+      "name": "Meu pet tem necessidades nutricionais específicas. Serve para ele?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nesse caso não. A dieta precisa ser calculada individualmente, então o indicado é a consulta nutricional completa."
+        "text": "Nesse caso, a dieta precisa ser calculada de forma individualizada com acompanhamento contínuo, então o mais indicado é a consulta nutricional completa."
       }
     },
     {
@@ -408,7 +408,7 @@ export const EscolhaDeRacaoPage: React.FC<EscolhaDeRacaoPageProps> = ({
 
           <div className="bg-amber-50/70 border border-amber-200/80 rounded-2xl p-5 sm:p-6 mb-6">
             <p className="text-stone-800 font-medium text-sm sm:text-base leading-relaxed">
-              Se o seu pet já tem algum diagnóstico clínico em acompanhamento, se você quer fazer alimentação natural, ou se ele precisa de plano de emagrecimento, esse não é o atendimento certo. Nesses casos a dieta precisa ser calculada individualmente, e isso é a consulta nutricional completa.
+              Se o seu pet necessita de acompanhamento contínuo, se você deseja fazer alimentação natural balanceada, ou se busca um cálculo calórico aprofundado, o formato mais indicado é a consulta nutricional completa. Dieta individualizada e suporte contínuo para o bem-estar do seu pet.
             </p>
           </div>
 
@@ -561,7 +561,7 @@ export const EscolhaDeRacaoPage: React.FC<EscolhaDeRacaoPageProps> = ({
                 onClick={() => toggleFaq(3)}
                 className="w-full flex justify-between items-center text-left py-2 font-bold text-stone-900 hover:text-[#a338b9] transition-colors cursor-pointer border-none bg-transparent"
               >
-                <span className="font-display text-base sm:text-lg pr-4">Meu pet tem um diagnóstico específico. Serve para ele?</span>
+                <span className="font-display text-base sm:text-lg pr-4">Meu pet tem necessidades nutricionais específicas. Serve para ele?</span>
                 <span className="shrink-0 text-[#a338b9]">
                   {openFaq === 3 ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                 </span>
@@ -569,7 +569,7 @@ export const EscolhaDeRacaoPage: React.FC<EscolhaDeRacaoPageProps> = ({
               {openFaq === 3 && (
                 <div className="pt-2 pb-2 text-stone-700 text-sm sm:text-base leading-relaxed">
                   <p>
-                    Nesse caso não. A dieta precisa ser calculada individualmente, então o indicado é a consulta nutricional completa.
+                    Nesse caso, a dieta precisa ser calculada de forma individualizada com acompanhamento contínuo, então o mais indicado é a consulta nutricional completa.
                   </p>
                 </div>
               )}

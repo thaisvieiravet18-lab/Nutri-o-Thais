@@ -3,7 +3,7 @@ export type BlogCategory =
   | 'Escolha de ração'
   | 'Gatos'
   | 'Filhotes'
-  | 'Rações coadjuvantes'
+  | 'Rações especiais'
   | 'Nutrição veterinária online';
 
 export interface BlogArticle {

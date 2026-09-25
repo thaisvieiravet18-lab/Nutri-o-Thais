@@ -17,8 +17,8 @@ const TESTIMONIALS: Testimonial[] = [
     pet: 'Tutor(a) do Thor (Golden Retriever)',
     location: 'São Paulo - SP',
     rating: 5,
-    badge: 'Controle de Peso e Ração',
-    text: 'A Dra. Thais transformou a saúde do Thor! Ele estava com sobrepeso e vivia com problemas de pele. Com a orientação precisa da ração e das porções em gramas, ele emagreceu com saúde e tem muito mais energia.'
+    badge: 'Orientação de Ração e Rotina',
+    text: 'A Dra. Thais transformou a rotina do Thor! Ajustamos a ração ideal para a fase dele e calculamos as porções em gramas diárias. O Thor agora come nos horários certos, tem a pelagem linda e muito mais disposição para brincar.'
   },
   {
     name: 'Rodrigo Pires',

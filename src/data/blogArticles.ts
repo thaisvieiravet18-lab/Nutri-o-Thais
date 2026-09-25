@@ -5,47 +5,47 @@ export const BLOG_CATEGORIES = [
   'Escolha de ração',
   'Gatos',
   'Filhotes',
-  'Rações coadjuvantes',
+  'Rações especiais',
   'Nutrição veterinária online',
 ] as const;
 
 export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
-  'obesidade-em-caes-e-gatos': {
-    slug: 'obesidade-em-caes-e-gatos',
-    title: 'Consulta para Cachorro e Gato Obeso | Dra. Thais Vieira',
-    headline: 'Consulta Nutricional Veterinária Online para Cães e Gatos Obesos',
-    description: 'Atendimento nutricional veterinário para emagrecimento pet saudável. Plano alimentar individualizado para controle de peso de cães e gatos.',
-    keywords: ['consulta nutricional veterinária online cachorro obeso', 'plano alimentar para cachorro obeso', 'acompanhamento nutricional para pet obeso'],
+  'controle-de-peso-em-caes-e-gatos': {
+    slug: 'controle-de-peso-em-caes-e-gatos',
+    title: 'Consulta Nutricional para Peso Ideal | Dra. Thais Vieira',
+    headline: 'Orientação Nutricional Veterinária Online para Equilíbrio e Peso Ideal',
+    description: 'Atendimento nutricional veterinário para manutenção do peso ideal. Plano alimentar individualizado e cálculo de porções para cães e gatos.',
+    keywords: ['consulta nutricional veterinária online peso ideal', 'plano alimentar para cães peso saudável', 'acompanhamento nutricional pet'],
     benefits: [
-      'Cálculo calórico direcionado para perda progressiva e segura de gordura',
-      'Plano alimentar individualizado (Ração Específica ou Alimentação Natural)',
-      'Estratégias para aumento da saciedade e redução da ansiedade por comida',
-      'Acompanhamento do peso e da condição muscular durante o processo de emagrecimento'
+      'Cálculo calórico direcionado para manutenção do peso saudável e saciedade',
+      'Plano alimentar individualizado (Ração Selecionada ou Alimentação Natural)',
+      'Estratégias para aumento da saciedade e rotina equilibrada de refeições',
+      'Acompanhamento do peso e da condição corporal ao longo do tempo'
     ],
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
-      'Cães e gatos com sobrepeso ou obesidade já diagnosticada',
-      'Pets que ganharam peso após castração ou mudança de rotina',
-      'Animais com dificuldade de mobilidade devido ao excesso de peso',
-      'Tutores que tentaram reduzir a ração mas o pet continua sem emagrecer'
+      'Cães e gatos precisando de ajuste calórico na rotina diária',
+      'Pets que alteraram o peso após castração ou mudança de rotina',
+      'Animais precisando de porções calculadas com precisão',
+      'Tutores que buscam equilíbrio nutricional e hábitos saudáveis para o pet'
     ],
     whatsIncluded: [
-      'Análise detalhada do histórico de saúde, exames e rotina do pet',
+      'Análise detalhada da rotina e hábitos do pet',
       'Elaboração de plano alimentar individualizado (ração ideal, Alimentação Natural ou mista)',
-      'Meta de peso gradativa e tabela de fracionamento das refeições',
+      'Tabela de fracionamento das refeições e porção diária exata em gramas',
       'Atendimento 100% online por médica veterinária para todo o Brasil',
       'Suporte e acompanhamento contínuo pós-consulta via WhatsApp'
     ],
-    detailedText: 'O sobrepeso pet é uma condição clínica persistente que reduz a expectativa e a qualidade de vida de cães e gatos, sobrecarregando articulações, coração e fígado. Apenas reduzir a quantidade da ração comum sem orientação técnica pode desbalancear a dieta. Com o acompanhamento nutricional individualizado da Dra. Thais Vieira, calculamos a energia necessária para que seu amigo perca gordura mantendo-se nutrido, ativo e satisfeito.',
+    detailedText: 'Manter o peso ideal apoia a vitalidade e a disposição de cães e gatos, favorecendo a mobilidade e o bem-estar diário. Reduzir a quantidade de comida sem orientação técnica pode desbalancear os nutrientes. Com o acompanhamento individualizado da Dra. Thais Vieira, calculamos a energia necessária para que seu amigo fique nutrido, ativo e satisfeito.',
     faqs: [
       {
-        question: 'Como funciona o emagrecimento de cães e gatos na consulta online?',
-        answer: 'Na consulta online, a Dra. Thais avalia a rotina, fotos, vídeos, peso atual e exames laboratoriais do pet. Em seguida, calcula a necessidade calórica exata para uma perda de peso gradativa e estrutura o plano alimentar ideal.'
+        question: 'Como funciona o acompanhamento de peso na consulta online?',
+        answer: 'Na consulta online, a Dra. Thais avalia a rotina, fotos, peso atual e perfil do pet. Em seguida, calcula a necessidade calórica exata e estrutura o plano alimentar ideal.'
       },
       {
-        question: 'Meu pet vai passar fome durante a dieta?',
-        answer: 'Não. O plano alimentar é elaborado priorizando alimentos ou rações com alto teor de fibras e proteínas de qualidade, promovendo saciedade sem privação de nutrientes.'
+        question: 'Meu pet vai passar fome durante o processo?',
+        answer: 'Não. O plano alimentar é elaborado priorizando alimentos ou rações com teores adequados de fibras e proteínas de qualidade, promovendo saciedade sem privação de nutrientes.'
       },
       {
         question: 'Qual o valor da consulta nutricional particular?',
@@ -54,174 +54,167 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     ],
     relatedLinks: [
       { url: '/consulta-nutricional-online-para-caes', text: 'Consulta nutricional para cães' },
-      { url: '/artrose-e-problemas-articulares-em-caes', text: 'Nutrição para cães com artrose' },
-      { url: '/racao-coadjuvante-para-caes-e-gatos', text: 'Rações coadjuvantes de peso' }
+      { url: '/alimentacao-natural-para-caes', text: 'Alimentação Natural para cães' },
+      { url: '/como-escolher-a-melhor-racao', text: 'Como escolher a melhor ração' }
     ],
     emergencyDisclaimer: 'Aviso: Esta consulta nutricional veterinária é destinada ao acompanhamento nutricional de rotina e suporte alimentar. Não substitui atendimento médico veterinário emergencial presencial.'
   },
-  'alergia-alimentar-em-caes-e-gatos': {
-    slug: 'alergia-alimentar-em-caes-e-gatos',
-    title: 'Consulta para Cachorro com Alergia Alimentar | Dra. Thais Vieira',
-    headline: 'Manejo Nutricional e Dieta de Exclusão para Cães e Gatos Alérgicos',
-    description: 'Manejo e suporte nutricional da alergia e intolerância alimentar em pets. Orientações de ração hipoalergênica e Alimentação Natural de exclusão.',
-    keywords: ['consulta para cachorro com alergia alimentar', 'orientação de ração para cachorro com alergia', 'alergia alimentar cão e gato'],
+  'sensibilidade-alimentar-em-caes-e-gatos': {
+    slug: 'sensibilidade-alimentar-em-caes-e-gatos',
+    title: 'Consulta para Pets com Sensibilidade Alimentar | Dra. Thais Vieira',
+    headline: 'Planejamento Nutricional e Ingredientes Selecionados para Cães e Gatos',
+    description: 'Manejo nutricional para pets com sensibilidade a ingredientes. Orientações de rações de alta tolerância e Alimentação Natural balanceada.',
+    keywords: ['consulta para cachorro com sensibilidade alimentar', 'orientação de ração ingredientes selecionados', 'nutrição cão e gato sensível'],
     benefits: [
-      'Identificação precisa de potenciais ingredientes alergênicos na dieta',
-      'Planejamento de Dieta de Exclusão com proteína inédita ou hidrolisada',
-      'Redução de coceiras, otites de repetição e diarreias de origem alimentar',
-      'Acompanhamento semanal da resposta dermatológica e digestiva'
+      'Identificação criteriosa de ingredientes com melhor aceitação digestiva',
+      'Planejamento de dieta com fontes nobres e selecionadas de proteína',
+      'Apoio à maciez e brilho da pelagem e conforto digestivo',
+      'Acompanhamento do bem-estar diário do pet'
     ],
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
-      'Cães e gatos com coceira crônica na pele, patas ou orelhas',
-      'Pets com episódios frequentes de vômito, diarreia ou fezes amolecidas',
-      'Animais em investigação de DDA (Dermatite de Causa Alimentar)',
-      'Tutores buscando opções de Alimentação Natural Hipoalergênica'
+      'Cães e gatos com histórico de sensibilidade a certos alimentos ou fezes amolecidas',
+      'Pets que precisam de ingredientes selecionados e digestão suave',
+      'Tutores buscando opções de Alimentação Natural com proteína selecionada'
     ],
     whatsIncluded: [
-      'Análise criteriosa de todas as proteíno-fontes e alimentos já consumidos',
-      'Elaboração de protocolo de Dieta de Exclusão ou ração hipoalergênica',
-      'Guia prático de petiscos permitidos com orientações para reduzir o risco de contaminação cruzada',
+      'Análise criteriosa de todas as proteínas e alimentos já consumidos',
+      'Elaboração de planejamento com ingredientes de alta tolerância',
+      'Guia prático de petiscos permitidos e seguros',
       'Consulta particular 100% online por R$ 200,00 com suporte via WhatsApp'
     ],
-    detailedText: 'As reações adversas ao alimento podem se manifestar na pele ou no trato gastrointestinal do seu cão ou gato. O manejo nutricional com uma médica veterinária com pós-graduação em nutrição animal permite conduzir a dieta de eliminação de forma criteriosa, com acompanhamento da resposta individual ao plano alimentar, sem palpiteiras ou testes aleatórios.',
+    detailedText: 'Sensibilidades alimentares podem impactar a vitalidade e a digestão do seu cão ou gato. O acompanhamento nutricional com uma médica veterinária com pós-graduação em nutrição animal permite selecionar os melhores ingredientes de forma criteriosa e segura.',
     faqs: [
       {
-        question: 'Como saber se meu cachorro tem alergia alimentar?',
-        answer: 'Sinais comuns incluem coceira constante (especialmente nas patas, focinho e região ventral), otites recorrentes e fezes moles. A confirmação é feita através da dieta de exclusão orientada por veterinário.'
+        question: 'A Alimentação Natural ajuda pets com sensibilidade?',
+        answer: 'Sim! A Alimentação Natural permite selecionar proteínas nobres e vegetais frescos, sem corantes ou conservantes artificiais.'
       },
       {
-        question: 'A Alimentação Natural ajuda em cães alérgicos?',
-        answer: 'Sim! A Alimentação Natural permite selecionar uma única fonte de proteína inédita e um carboidrato puro, sem corantes industriais ou ingredientes artificiais.'
+        question: 'Como é feita a adaptação do cardápio?',
+        answer: 'Apresentamos uma fonte protéica selecionada e carboidratos de alta digestibilidade de forma gradual para avaliar a tolerância do organismo.'
       }
     ],
     relatedLinks: [
       { url: '/alimentacao-natural-para-caes', text: 'Alimentação Natural para Cães' },
-      { url: '/racao-coadjuvante-para-caes-e-gatos', text: 'Orientação sobre rações hipoalergênicas' }
+      { url: '/como-escolher-a-melhor-racao', text: 'Como escolher a melhor ração' }
     ],
-    emergencyDisclaimer: 'Aviso: Esta consulta não substitui atendimento emergencial médico veterinário presencial em casos de anafilaxia ou prostração aguda.'
+    emergencyDisclaimer: 'Aviso: Esta consulta não substitui atendimento emergencial médico veterinário presencial em casos de prostração aguda.'
   },
-  'doenca-renal-em-caes-e-gatos': {
-    slug: 'doenca-renal-em-caes-e-gatos',
-    title: 'Nutrição Veterinária para Cão e Gato Renal | Dra. Thais Vieira',
-    headline: 'Consulta Nutricional Veterinária para Cães e Gatos Renais',
-    description: 'Acompanhamento nutricional para cães e gatos com sensibilidade renal crônica. Dieta renal personalizada com controle de fósforo, proteína nobre e hidratação.',
-    keywords: ['nutrição veterinária cachorro com necessidade renal', 'dieta para gato com suporte renal veterinário', 'consulta nutricional veterinária para cão renal'],
+  'nutricao-especializada-para-caes-e-gatos': {
+    slug: 'nutricao-especializada-para-caes-e-gatos',
+    title: 'Nutrição Especializada e Hidratação para Pets Idosos | Dra. Thais Vieira',
+    headline: 'Consulta Nutricional Veterinária com Foco em Hidratação e Equilíbrio',
+    description: 'Acompanhamento nutricional focado em hidratação, proteínas nobres e equilíbrio de nutrientes para cães e gatos idosos.',
+    keywords: ['nutrição veterinária cães idosos', 'dieta úmida felina hidratação', 'consulta nutricional veterinária hidratação'],
     benefits: [
-      'Controle rigoroso dos níveis de fósforo, sódio e ureia no sangue',
-      'Manutenção do apetite e estímulo à palatabilidade para pets seletivos',
-      'Estratégias nutricionais para favorecer a hidratação e apoiar a função renal',
-      'Ajustes de dieta conforme o estágio IRIS do quadro renal'
+      'Balanceamento criterioso de fósforo, sódio e proteínas de alta digestibilidade',
+      'Estímulo ao apetite e alta palatabilidade para pets exigentes',
+      'Estratégias nutricionais com alimentos úmidos para favorecer a hidratação diária',
+      'Ajustes graduais respeitando a rotina do animal'
     ],
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
-      'Cães e gatos com diagnóstico recente de sensibilidade renal crônica',
-      'Pets renais que perderam o interesse pela ração renal comercial',
-      'Gatos renais necessitando de maior aporte de líquidos e dieta úmida',
-      'Tutores que desejam associar a Alimentação Natural Renal ao suporte clínico'
+      'Cães e gatos idosos que necessitam de acompanhamento nutricional dedicado',
+      'Pets que precisam aumentar o consumo hídrico diário',
+      'Tutores que desejam associar Alimentação Natural ou úmida ao dia a dia'
     ],
     whatsIncluded: [
-      'Avaliação minuciosa de exames de ureia, creatinina, SDMA, fósforo e urinálise',
-      'Planejamento individualizado de dieta renal caseira ou seleção de ração coadjuvante',
-      'Manejo com ajuste nutricional individualizado e balanceamento de fósforo',
+      'Avaliação minuciosa da rotina e perfil nutricional do pet',
+      'Planejamento individualizado com alimentos úmidos e opções de alta digestibilidade',
       'Consulta online em todo o Brasil por R$ 200,00 e acompanhamento por WhatsApp'
     ],
-    detailedText: 'A alimentação é um dos pilares mais determinantes na sobrevida e qualidade de vida do cão ou gato com suporte renal. O controle adequado de fósforo e a oferta de proteínas de altíssima digestibilidade diminuem a sobrecarga sobre os rins, reduzindo sintomas como náusea e perda de peso.',
+    detailedText: 'A alimentação e a ingestão adequada de água são pilares determinantes para o conforto e a qualidade de vida do pet. Proteínas de alta digestibilidade e nutrientes balanceados proporcionam maior vitalidade diária.',
     faqs: [
       {
-        question: 'Gato ou cão renal pode comer Alimentação Natural?',
-        answer: 'Sim, desde que a dieta seja estritamente calculada por médica veterinária para conter teores restritos e seguros de fósforo e proteínas de alta qualidade.'
+        question: 'Alimentos úmidos ajudam na hidratação?',
+        answer: 'Sim! Dietas naturais e alimentos úmidos contêm alto percentual de umidade natural, auxiliando no equilíbrio hídrico diário do cão e do gato.'
       },
       {
-        question: 'Por que o fósforo é tão importante na dieta renal?',
-        answer: 'Rins comprometidos perdem a capacidade de excretar o excesso de fósforo, o que gera náuseas, inapetência e acelera a progressão da lesão renal. Controlar o fósforo pela dieta é crucial.'
+        question: 'Gatos idosos aceitam bem a transição?',
+        answer: 'Com as orientações certas e transição passo a passo, a maioria dos felinos passa a aceitar com facilidade a dieta mais úmida e apetitosa.'
       }
     ],
     relatedLinks: [
       { url: '/alimentacao-natural-para-gatos', text: 'Alimentação Natural para Gatos' },
-      { url: '/problemas-hepaticos-em-caes-e-gatos', text: 'Suporte nutricional hepático' }
+      { url: '/nutricao-pet-online', text: 'Consulta nutricional pet online' }
     ],
-    emergencyDisclaimer: 'Aviso: Em episódios de crises renais agudas, anúria ou vômitos persistentes, procure atendimento emergencial em hospital veterinário presencial.'
+    emergencyDisclaimer: 'Aviso: Em episódios de urgência, procure hospital veterinário presencial imediatamente.'
   },
-  'problemas-hepaticos-em-caes-e-gatos': {
-    slug: 'problemas-hepaticos-em-caes-e-gatos',
-    title: 'Alimentação para Cachorro com Problema no Fígado | Dra. Thais Vieira',
-    headline: 'Manejo Nutricional Veterinário para Cães e Gatos com Necessidade Hepática',
-    description: 'Dieta e nutrição veterinária para pets com alterações nas enzimas hepáticas, hepatopatias e gordura no fígado. Atendimento online para todo o Brasil.',
-    keywords: ['alimentação para cachorro com problema no fígado', 'dieta personalizada para cachorro doente', 'nutrição veterinária hepática'],
+  'nutricao-leve-para-caes-e-gatos': {
+    slug: 'nutricao-leve-para-caes-e-gatos',
+    title: 'Nutrição de Fácil Digestão e Perfil Balanceado | Dra. Thais Vieira',
+    headline: 'Manejo Nutricional Veterinário com Fácil Digestão e Gorduras Controladas',
+    description: 'Dieta e nutrição veterinária com proteínas nobres de alta absorção e lipídios balanceados. Atendimento online para todo o Brasil.',
+    keywords: ['alimentação de fácil digestão para cães', 'dieta personalizada para pet', 'nutrição veterinária equilibrada'],
     benefits: [
-      'Proporções adequadas de proteína para regeneração sem causar encefalopatia',
-      'Suporte nutricional e lipídico controlado',
-      'Redução da sobrecarga metabólica sobre o tecido hepático',
-      'Estímulo ao consumo alimentar em pacientes com inapetência'
+      'Proporções adequadas de proteína de alto valor biológico',
+      'Perfil lipídico balanceado e controlado',
+      'Refeições leves que proporcionam bem-estar digestivo',
+      'Estímulo ao consumo alimentar com preparações palatáveis'
     ],
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
-      'Cães e gatos com exames alterados de ALT, FA, GGT ou bilirrubina',
-      'Pets com diagnóstico de hepatite, lipidose hepática felina ou sobrecarga',
-      'Animais em acompanhamento prolongado precisando de suporte',
-      'Tutores buscando plano alimentar clínico seguro'
+      'Pets que precisam de refeições leves e de alta digestibilidade',
+      'Tutores buscando plano alimentar individualizado e seguro'
     ],
     whatsIncluded: [
-      'Análise do histórico clínico e exames bioquímicos e de ultrassom',
+      'Análise da rotina alimentar e perfil do pet',
       'Plano alimentar individualizado com porções e horários fracionados',
-      'Orientações sobre rações hepáticas e planejamento de dieta caseira cozida',
       'Consulta 100% online por R$ 200,00 com acompanhamento via WhatsApp'
     ],
-    detailedText: 'O fígado desempenha centenas de funções metabólicas vitais. Quando afetado por inflamações ou gordura, a nutrição torna-se indispensável para fornecer energia e aminoácidos essenciais para a reparação celular, evitando o acúmulo de toxinas no organismo.',
+    detailedText: 'Uma alimentação leve e equilibrada fornece energia e nutrientes essenciais de fácil assimilação para manter a disposição diária do animal.',
     faqs: [
       {
-        question: 'Cachorro com problema no fígado precisa mudar de comida?',
-        answer: 'Sim. A dieta precisa ser ajustada em teor proteico e perfil nutricional para auxiliar no bem-estar hepático sem sobrecarregar o órgão.'
+        question: 'Como saber se a dieta é de fácil digestão?',
+        answer: 'Selecionamos ingredientes cozidos de alta pureza e proteínas nobres com excelente absorção metabólica.'
       }
     ],
     relatedLinks: [
-      { url: '/doenca-renal-em-caes-e-gatos', text: 'Nutrição para pets renais' },
+      { url: '/consulta-nutricional-online-para-caes', text: 'Consulta nutricional para cães' },
       { url: '/nutricao-pet-online', text: 'Consulta nutricional pet online' }
     ],
-    emergencyDisclaimer: 'Aviso: Esta consulta não substitui atendimento hospitalar de emergência para icterícia severa ou prostração intensa.'
+    emergencyDisclaimer: 'Aviso: Esta consulta não substitui atendimento hospitalar de emergência presencial.'
   },
-  'artrose-e-problemas-articulares-em-caes': {
-    slug: 'artrose-e-problemas-articulares-em-caes',
-    title: 'Nutrição para Cachorro com Artrose e Articulações | Dra. Thais Vieira',
-    headline: 'Dieta e Plano Alimentar para Cães com Artrose e Displasia',
-    description: 'Acompanhamento nutricional focado em saúde articular de cães idosos e com artrose. Controle de peso e suporte articular direcionado.',
-    keywords: ['nutrição para cachorro com artrose', 'dieta para artrose canina', 'cão com dor articular alimentação'],
+  'nutricao-e-mobilidade-para-caes': {
+    slug: 'nutricao-e-mobilidade-para-caes',
+    title: 'Nutrição e Mobilidade Ativa para Cães | Dra. Thais Vieira',
+    headline: 'Dieta e Plano Alimentar para Apoio à Vitalidade e Mobilidade Canina',
+    description: 'Acompanhamento nutricional focado em peso ideal e mobilidade saudável de cães adultos e idosos. Atendimento online em todo o Brasil.',
+    keywords: ['nutrição para mobilidade cães', 'dieta saudável cão idoso', 'peso ideal cachorro vitalidade'],
     benefits: [
-      'Controle do peso corporal para diminuir a sobrecarga nas articulações',
-      'Plano alimentar balanceado e suporte ao cão idoso',
+      'Controle do peso corporal para favorecer a leveza nos passeios',
+      'Plano alimentar balanceado com suporte à vitalidade',
       'Acompanhamento nutricional contínuo da rotina do cão',
-      'Melhoria no conforto e disposição do animal nas caminhadas'
+      'Mais conforto e disposição para brincadeiras'
     ],
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
-      'Cães idosos com dificuldade para levantar ou mancar ao caminhar',
-      'Cães diagnosticados com osteoartrose, displasia coxofemoral ou de cotovelo',
-      'Raças de grande porte com predisposição a desgaste articular',
-      'Tutores que desejam nutrição com foco em bem-estar articular'
+      'Cães adultos e idosos precisando manter a disposição e vitalidade',
+      'Raças de grande porte com rotina ativa de passeios',
+      'Tutores que desejam nutrição com foco em bem-estar geral'
     ],
     whatsIncluded: [
-      'Análise do grau de mobilidade e histórico de saúde do cão',
+      'Análise do grau de mobilidade e histórico de rotina do cão',
       'Plano alimentar individualizado focado no peso ideal e nutrição adequada',
       'Orientações sobre manejo nutricional e escolhas alimentares seguras',
       'Consulta online para todo o Brasil por R$ 200,00 com suporte no WhatsApp'
     ],
-    detailedText: 'A artrose em cães causa dor crônica e perda da mobilidade. Uma dieta equilibrada aliada à manutenção do peso magro reduz o impacto contínuo sobre as articulações do pet.',
+    detailedText: 'A manutenção do peso corporal ideal aliada a nutrientes de qualidade promove energia e disposição para caminhadas confortáveis em todas as fases da vida canina.',
     faqs: [
       {
-        question: 'A alimentação pode ajudar o cachorro com artrose?',
-        answer: 'Sim! Ao manter o cão no peso ideal através de um plano nutricional balanceado, diminui-se a sobrecarga mecânica nas articulações.'
+        question: 'A alimentação auxilia na disposição do cão?',
+        answer: 'Sim! Ao manter o cão no peso ideal através de um plano nutricional balanceado, favorece-se o conforto e o prazer nas caminhadas diárias.'
       }
     ],
     relatedLinks: [
-      { url: '/obesidade-em-caes-e-gatos', text: 'Controle de peso em cães' },
-      { url: '/consulta-nutricional-online-para-caes', text: 'Consulta nutricional para cães' }
+      { url: '/consulta-nutricional-online-para-caes', text: 'Consulta nutricional para cães' },
+      { url: '/como-escolher-a-melhor-racao', text: 'Como escolher a melhor ração' }
     ],
-    emergencyDisclaimer: 'Aviso: Em episódios de dor articular aguda e incapacidade de locomoção, consulte o veterinário ortopedista presencialmente.'
+    emergencyDisclaimer: 'Aviso: Em casos de dor aguda ou dificuldade para caminhar, consulte o veterinário ortopedista presencialmente.'
   },
   'consulta-nutricional-online-para-caes': {
     slug: 'consulta-nutricional-online-para-caes',
@@ -240,7 +233,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     whoIsItFor: [
       'Tutores de cães filhotes, adultos ou idosos buscando plano nutricional adequado',
       'Cães com paladar exigente ou enjoados de ração seca',
-      'Cães com problemas de saúde que necessitam de dieta especial',
+      'Cães com paladar exigente ou rotinas alimentares específicas',
       'Tutores que moram em qualquer região do Brasil'
     ],
     whatsIncluded: [
@@ -258,7 +251,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     ],
     relatedLinks: [
       { url: '/alimentacao-natural-para-caes', text: 'Alimentação Natural para cães' },
-      { url: '/obesidade-em-caes-e-gatos', text: 'Emagrecimento de cães' }
+      { url: '/como-escolher-a-melhor-racao', text: 'Como escolher a melhor ração' }
     ],
     emergencyDisclaimer: 'Aviso: Esta consulta nutricional online não substitui atendimento emergencial presencial.'
   },
@@ -266,7 +259,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     slug: 'consulta-nutricional-online-para-gatos',
     title: 'Consulta Nutricional Online para Gatos | Dra. Thais Vieira',
     headline: 'Consulta Nutricional Veterinária Online para Felinos',
-    description: 'Atendimento nutricional para gatos focado em saúde renal, cuidado com o trato urinário, hidratação e transição para alimentação úmida ou natural.',
+    description: 'Atendimento nutricional para gatos focado em alta hidratação, cuidado com a ingestão hídrica e transição para alimentação úmida ou natural.',
     keywords: ['consulta nutricional online para gato', 'nutrição felina', 'dieta para gatos online'],
     benefits: [
       'Foco total na fisiologia carnívora estrita e hidratação do gato',
@@ -279,7 +272,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     whoIsItFor: [
       'Tutores de gatos que bebem pouca água ou têm histórico de cistite/cálculos',
       'Gatos castrados com tendência ao ganho de peso',
-      'Gatos idosos ou renais precisando de acompanhamento profissional',
+      'Gatos idosos precisando de acompanhamento nutricional profissional',
       'Tutores querendo introduzir sachês de qualidade ou Alimentação Natural'
     ],
     whatsIncluded: [
@@ -288,7 +281,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Balanceamento nutricional completo respeitando a fisiologia felina',
       'Consulta online por R$ 200,00 com suporte pós-atendimento no WhatsApp'
     ],
-    detailedText: 'Os gatos possuem particularidades metabólicas únicas e necessitam de alta ingestão hídrica para proteger os rins. A consulta nutricional felina orienta estratégias para aumentar o consumo de água e manter seu felino saudável e nutrido.',
+    detailedText: 'Os gatos possuem particularidades metabólicas únicas e necessitam de alta ingestão hídrica para manter a hidratação e o bem-estar. A consulta nutricional felina orienta estratégias para aumentar o consumo de água e manter seu felino saudável e nutrido.',
     faqs: [
       {
         question: 'Gato pode comer Alimentação Natural com segurança?',
@@ -297,7 +290,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     ],
     relatedLinks: [
       { url: '/alimentacao-natural-para-gatos', text: 'Alimentação Natural para Gatos' },
-      { url: '/doenca-renal-em-caes-e-gatos', text: 'Cuidados com gato renal' }
+      { url: '/alimentacao-natural-para-gatos', text: 'Alimentação Natural para Gatos' }
     ],
     emergencyDisclaimer: 'Aviso: Em casos de obstrução urinária felina (gato sem conseguir urinar), procure hospital veterinário imediatamente.'
   },
@@ -325,7 +318,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Cálculo e envio de plano alimentar completo',
       'Atendimento particular por R$ 200,00 e suporte direto no WhatsApp'
     ],
-    detailedText: 'A consulta nutricional pet online aproxima a medicina veterinária e o atendimento clínico individualizado da sua casa. Com análise de rotina e acompanhamento atencioso, oferecemos um plano alimentar sob medida para o seu companheiro.',
+    detailedText: 'A consulta nutricional pet online aproxima a orientação veterinária qualificada e o atendimento individualizado da sua casa. Com análise de rotina e acompanhamento atencioso, oferecemos um plano alimentar sob medida para o seu companheiro.',
     faqs: [
       {
         question: 'Qual o valor da consulta online?',
@@ -347,15 +340,15 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     benefits: [
       'Cardápio sob medida calculado com equilíbrio nutricional exato',
       'Ingredientes frescos e palatáveis ideais para cães seletivos',
-      'Excelente suporte para cães com alergias ou estômago sensível',
+      'Excelente suporte para cães com paladar exigente ou digestão sensível',
       'Acompanhamento veterinário com exames periódicos de controle'
     ],
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
       'Cães seletivos que rejeitam ração seca',
-      'Cães com alergias alimentares ou estômago sensível',
-      'Tutores que desejam oferecer comida de verdade com respaldo médico'
+      'Cães com paladar exigente ou digestão sensível',
+      'Tutores que desejam oferecer alimentação natural balanceada com acompanhamento veterinário'
     ],
     whatsIncluded: [
       'Elaboração de cardápio cozido balanceado',
@@ -370,7 +363,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       }
     ],
     relatedLinks: [
-      { url: '/alergia-alimentar-em-caes-e-gatos', text: 'Alergia alimentar em cães' },
+      { url: '/como-escolher-a-melhor-racao', text: 'Como escolher a melhor ração' },
       { url: '/consulta-nutricional-online-para-caes', text: 'Consulta para cães' }
     ],
     emergencyDisclaimer: 'Aviso: Não substitui atendimento emergencial presencial.'
@@ -378,9 +371,9 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
   'alimentacao-natural-para-gatos': {
     slug: 'alimentacao-natural-para-gatos',
     title: 'Alimentação Natural para Gatos | Dra. Thais Vieira',
-    headline: 'Alimentação Natural e Úmida com Foco em Saúde Renal dos Gatos',
+    headline: 'Alimentação Natural e Úmida com Alta Hidratação para Gatos',
     description: 'Dietas carnívoras estritas com alta hidratação para felinos. Orientação individualizada sobre alimentação e ingestão de água com médica veterinária com pós-graduação em nutrição animal.',
-    keywords: ['alimentação natural para gatos', 'dieta úmida gatos renal', 'nutrição felina'],
+    keywords: ['alimentação natural para gatos', 'dieta úmida gatos hidratação', 'nutrição felina'],
     benefits: [
       'Orientação individualizada sobre alimentação e ingestão de água',
       'Transição suave para evitar inapetência felina severa',
@@ -407,45 +400,45 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       }
     ],
     relatedLinks: [
-      { url: '/doenca-renal-em-caes-e-gatos', text: 'Gatos com sensibilidade renal' },
+      { url: '/nutricao-pet-online', text: 'Consulta nutricional pet online' },
       { url: '/consulta-nutricional-online-para-gatos', text: 'Consulta online para gatos' }
     ],
     emergencyDisclaimer: 'Aviso: Não substitui atendimento emergencial presencial.'
   },
-  'racao-coadjuvante-para-caes-e-gatos': {
-    slug: 'racao-coadjuvante-para-caes-e-gatos',
-    title: 'Orientação para Ração Coadjuvante Especial | Dra. Thais Vieira',
-    headline: 'Plano e Orientação para Ração Coadjuvante em Cães e Gatos',
-    description: 'Orientação e acompanhamento técnico para rações coadjuvantes (renais, hipoalergênicas, saciedade, gastrointestinais). O alimento como suporte nutricional diário.',
-    keywords: ['orientação para ração coadjuvante', 'ração coadjuvante cães gatos', 'nutrição clínica veterinária'],
+  'racoes-especiais-para-caes-e-gatos': {
+    slug: 'racoes-especiais-para-caes-e-gatos',
+    title: 'Orientação para Rações Especiais e Super Premium | Dra. Thais Vieira',
+    headline: 'Plano e Orientação para Rações Especiais em Cães e Gatos',
+    description: 'Orientação e acompanhamento técnico para rações especiais e Super Premium adaptadas às necessidades de cada fase de vida.',
+    keywords: ['orientação para ração especial', 'ração super premium cães gatos', 'nutrição balanceada veterinária'],
     benefits: [
-      'Indicação precisa da linha coadjuvante certa para a fase do pet',
-      'Manejamento de transição para aceitação por animais doentes',
-      'Alinhamento do suporte nutricional com a equipe veterinária assistente',
-      'Monitoramento de peso e marcadores biológicos'
+      'Indicação precisa da linha certa para a fase de vida e porte do pet',
+      'Manejamento de transição gradual para ótima aceitação',
+      'Alinhamento do suporte nutricional à rotina da família',
+      'Monitoramento de peso e condição corporal'
     ],
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
-      'Pets diagnosticados com condições de saúde que exigem ração especial',
-      'Tutores em dúvida sobre qual marca ou linha de ração coadjuvante escolher',
-      'Animais com recusa alimentar em relação à ração coadjuvante'
+      'Pets que necessitam de opções de nutrição de alta densidade',
+      'Tutores em dúvida sobre qual marca ou linha escolher',
+      'Animais com paladar seletivo em relação à ração seca'
     ],
     whatsIncluded: [
-      'Indicação da marca e quantidade diária ideal',
-      'Técnicas para melhorar a aceitação da ração coadjuvante',
+      'Indicação da marca e porção diária ideal em gramas',
+      'Técnicas para melhorar a aceitação da nova ração',
       'Consulta online por R$ 200,00 e acompanhamento WhatsApp'
     ],
-    detailedText: 'Rações coadjuvantes são aliadas importantes para condições como sensibilidade renal, pele sensível e sobrepeso. A orientação profissional individualizada proporciona que seu pet receba a quantidade diária correta.',
+    detailedText: 'Rações especiais e Super Premium contêm alta densidade nutricional e ingredientes selecionados. A orientação profissional individualizada proporciona que seu pet receba a quantidade diária correta.',
     faqs: [
       {
-        question: 'Ração coadjuvante precisa de indicação veterinária?',
-        answer: 'Sim, pois contêm composições específicas para necessidades clínicas e não devem ser usadas sem acompanhamento profissional.'
+        question: 'Ração especial precisa de acompanhamento profissional?',
+        answer: 'Sim, contar com orientação veterinária assegura a escolha da linha ideal para o porte, idade e rotina, evitando gastos desnecessários.'
       }
     ],
     relatedLinks: [
-      { url: '/obesidade-em-caes-e-gatos', text: 'Plano para pet obeso' },
-      { url: '/doenca-renal-em-caes-e-gatos', text: 'Manejo renal' }
+      { url: '/escolha-de-racao', text: 'Escolha de Ração' },
+      { url: '/como-escolher-a-melhor-racao', text: 'Como escolher a melhor ração' }
     ],
     emergencyDisclaimer: 'Aviso: Não substitui atendimento emergencial presencial.'
   },
@@ -464,8 +457,8 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
-      'Pets com acompanhamento clínico (renais, alérgicos, hepáticos, gastrointestinais)',
-      'Cães e gatos precisando de plano de emagrecimento saudável',
+      'Pets com necessidades nutricionais específicas (fase de vida, porte ou sensibilidade digestiva)',
+      'Cães e gatos precisando de porções calculadas e peso ideal',
       'Tutores que desejam migrar para Alimentação Natural balanceada ou dieta mista',
       'Tutores que buscam acompanhamento veterinário completo e contínuo'
     ],
@@ -479,7 +472,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     faqs: [
       {
         question: 'Qual a diferença entre a consulta online e a escolha de ração?',
-        answer: 'A escolha de ração é uma orientação nutricional avulsa (R$ 150) para selecionar a ração mais adequada, calcular porções e planejar a transição. Já a consulta nutricional completa (R$ 200) abrange plano alimentar individualizado (Alimentação Natural, mista ou ração coadjuvante), avaliação clínica e 30 dias de acompanhamento por WhatsApp.'
+        answer: 'A escolha de ração é uma orientação nutricional avulsa (R$ 150) para selecionar a ração mais adequada, calcular porções e planejar a transição. Já a consulta nutricional completa (R$ 200) abrange plano alimentar individualizado (Alimentação Natural, mista ou ração selecionada), avaliação de rotina e 30 dias de acompanhamento por WhatsApp.'
       }
     ],
     relatedLinks: [
@@ -570,13 +563,13 @@ O estômago do filhote é pequeno e sua capacidade de armazenamento é limitada,
 Ambas podem e devem fazer parte do estímulo alimentar positivo do filhote! 
 
 * **Ração Seca:** Prática, auxilia no estímulo da mastigação.
-* **Ração Úmida:** Essencial especialmente para **gatos filhotes**, pois aumenta a ingestão hídrica natural e favorece a saúde renal e urinária ao longo da vida.
+* **Ração Úmida:** Essencial especialmente para **gatos filhotes**, pois aumenta a ingestão hídrica natural e favorece a hidratação e vitalidade ao longo da vida.
 
 Ao introduzir alimento úmido, certifique-se de que a embalagem informe "alimento completo para filhotes" (e não apenas petisco ocasional).
 
 ---
 
-## 5. Transição Alimentar: Evite diarreias e desconfortos
+## 5. Transição Alimentar: Evite desconfortos gastrointestinais
 
 Ao trazer o filhote para casa, mantenha inicialmente a mesma ração que ele comia no canil ou abrigo por pelo menos 5 a 7 dias. Mudar o ambiente e a alimentação simultaneamente causa estresse e desconforto digestivo.
 
@@ -590,8 +583,8 @@ Caso queira trocar de marca, faça a **transição gradual ao longo de 7 dias**:
 
 ## 6. Erros comuns no primeiro pet que você deve evitar
 
-1. **Deixar comida disponível o dia todo para cães:** Pode gerar seletividade alimentar, perda de interesse e obesidade precoce.
-2. **Oferecer leite de vaca:** Provoca diarreia severa devido à incapacidade de digerir o alto teor de lactose do leite bovino.
+1. **Deixar comida disponível o dia todo para cães:** Pode gerar seletividade alimentar, perda de interesse e ganho desordenado de peso.
+2. **Oferecer leite de vaca:** Provoca forte sensibilidade gastrointestinal devido à incapacidade de digerir o alto teor de lactose do leite bovino.
 3. **Oferecer alimentos proibidos:** Chocolate, cebola, alho, uva, xilitol e ossos cozidos são altamente tóxicos ou perigosos.
 4. **Introduzir Alimentação Natural sem acompanhamento profissional:** A dieta caseira sem planejamento balanceado calculado por uma médica veterinária com pós-graduação em nutrição animal causa prejuízos ao crescimento em filhotes.
 
@@ -607,7 +600,7 @@ Caso queira um acompanhamento contínuo e mais amplo sobre todas as fases de cre
 
 ---
 
-*Aviso Legal: Este artigo possui caráter estritamente educativo e não substitui a consulta médica veterinária presencial ou teleorientação com exame clínico individualizado. Em caso de apatia, recusa alimentar, diarreia ou vômitos em filhotes, procure atendimento veterinário imediato.*
+*Aviso Legal: Este artigo possui caráter estritamente educativo e não substitui a consulta médica veterinária presencial ou teleorientação com exame profissional individualizado. Em caso de apatia, recusa alimentar persistente ou mal-estar em filhotes, procure atendimento veterinário imediato.*
 `
   },
   {
@@ -628,7 +621,7 @@ Caso queira um acompanhamento contínuo e mais amplo sobre todas as fases de cre
       role: 'Médica Veterinária com pós-graduação em nutrição animal',
       crmv: 'CRMV-SP 55784',
     },
-    summary: 'Saiba o que é a Alimentação Natural (AN) cozida para cães, quais os benefícios para cães com alergia ou seletivos, e por que o cálculo individualizado e o equilíbrio de nutrientes são vitais.',
+    summary: 'Saiba o que é a Alimentação Natural (AN) cozida para cães, quais os benefícios para cães com paladar exigente ou digestão sensível, e por que o cálculo individualizado e o equilíbrio de nutrientes são vitais.',
     image: 'https://bonapetti.com.br/wp-content/uploads/2021/04/BannerHome.jpg',
     imageAlt: 'Cão feliz e saudável aguardando refeição caseira',
     internalLinks: [
@@ -662,7 +655,7 @@ Ela é composta por proporções calculadas de:
 
 * **Alta Palatabilidade:** Boa aceitação por cães exigentes ou com apetite seletivo.
 * **Avaliação da Digestibilidade e Qualidade das Fezes:** Ingredientes de alta digestibilidade que auxiliam na consistência das fezes e na absorção de nutrientes, com acompanhamento individual.
-* **Suporte à Saúde da Pele e Pelagem:** Auxilia no manejo nutricional de cães com dermatites e sensibilidade alimentar.
+* **Suporte à Pele e Pelagem:** Promove maciez e brilho nos pelos e bem-estar digestivo com ingredientes selecionados.
 * **Aumento da Ingestão de Água:** Alimentos cozidos contêm cerca de 70% a 80% de umidade natural, auxiliando na hidratação diária.
 
 ---
@@ -686,11 +679,11 @@ Antes de alterar a dieta do seu cão, agende uma [consulta nutricional pet onlin
     id: 'alimentacao-natural-e-umida-para-gatos',
     slug: 'alimentacao-natural-e-umida-para-gatos',
     aliases: ['alimentacao-natural-para-gatos-e-segura', 'alimentacao-natural-para-gatos'],
-    title: 'Alimentação Natural e Úmida para Gatos: Hidratação e Saúde Renal em Equilíbrio',
+    title: 'Alimentação Natural e Úmida para Gatos: Hidratação e Equilíbrio Nutricional',
     metaTitle: 'Alimentação Natural e Úmida para Gatos | Dra. Thais Vieira',
-    metaDescription: 'Descubra como a alimentação natural e as rações úmidas protegem a saúde renal e urinária dos gatos. Entenda as necessidades carnívoras felinas.',
+    metaDescription: 'Descubra como a alimentação natural e as rações úmidas favorecem a hidratação e o bem-estar dos gatos. Entenda as necessidades carnívoras felinas.',
     mainKeyword: 'alimentação natural para gatos',
-    secondaryKeywords: ['dieta úmida gatos', 'saúde renal felina', 'nutrição para gatos', 'gato não bebe água'],
+    secondaryKeywords: ['dieta úmida gatos', 'hidratação felina', 'nutrição para gatos', 'gato não bebe água'],
     category: 'Gatos',
     intent: 'Tutor de gatos preocupado com consumo de água, cálculos urinários e nutrição carnívora estrita.',
     publishDate: '2026-07-10',
@@ -700,7 +693,7 @@ Antes de alterar a dieta do seu cão, agende uma [consulta nutricional pet onlin
       role: 'Médica Veterinária com pós-graduação em nutrição animal',
       crmv: 'CRMV-SP 55784',
     },
-    summary: 'Os gatos são carnívoros estritos com baixa sede natural. Descubra como a dieta úmida e a Alimentação Natural para gatos auxiliam na saúde renal e urinária.',
+    summary: 'Os gatos são carnívoros estritos com baixa sede natural. Descubra como a dieta úmida e a Alimentação Natural para gatos auxiliam na hidratação e vitalidade.',
     image: 'https://images.pexels.com/photos/38151497/pexels-photo-38151497.jpeg',
     imageAlt: 'Gato hidratado e saudável olhando atentamente',
     internalLinks: [
@@ -711,7 +704,7 @@ Antes de alterar a dieta do seu cão, agende uma [consulta nutricional pet onlin
     contentMarkdown: `
 Os felinos possuem uma fisiologia fascinante e única. Originários de ancestrais do deserto, os gatos não possuem o reflexo de sede tão aguçado quanto os cães. Na natureza, eles obtêm a maior parte da água consumindo suas presas (compostas por cerca de 70% de água).
 
-Quando um gato alimenta-se exclusivamente de ração seca (que contém apenas cerca de 8% a 10% de umidade), ele raramente compensa bebendo água suficiente no potinho. Isso gera urina muito concentrada, abrindo portas para cristais urinários, obstruções uretrais e sobrecarga renal.
+Quando um gato alimenta-se exclusivamente de ração seca (que contém apenas cerca de 8% a 10% de umidade), ele raramente compensa bebendo água suficiente no potinho. Isso gera urina muito concentrada, aumentando o risco de baixa hidratação crônica e urina excessivamente concentrada.
 
 Por isso, o investimento em [alimentação natural para gatos](/alimentacao-natural-para-gatos/) e rações úmidas completas é uma das decisões de saúde mais inteligentes que um tutor pode tomar.
 
@@ -728,14 +721,14 @@ Por isso, dietas exclusivamente vegetarianas ou restos caseiros não atendem à 
 ## 2. Benefícios da Dieta Úmida e Alimentação Natural
 
 1. **Hidratação Constante:** A água está inserida na própria refeição.
-2. **Suporte Renal e Hidratação Urinária:** Aumenta o volume urinário e auxilia na diluição dos solutos urinários.
+2. **Hidratação e Bem-Estar Urinário:** Aumenta o volume hídrico diário e auxilia no equilíbrio dos fluidos corporais.
 3. **Controle de Peso:** Proteínas com teores balanceados de carboidratos apoiam a manutenção da condição corporal.
 
 ---
 
 ## 3. Cuidado com a Inapetência Felina!
 
-Gatos são extremamente neo-fóbicos (têm receio de alimentos novos). Se a transição alimentar for feita de forma brusca e o gato passar mais de 24 a 48 horas sem comer, ele corre o risco de desenvolver **Lipidose Hepática**, uma complicação grave.
+Gatos são extremamente neo-fóbicos (têm receio de alimentos novos). Se a transição alimentar for feita de forma brusca e o gato passar mais de 24 a 48 horas sem comer, ele corre o risco de desidratação e fraqueza severa.
 
 Por esse motivo, toda mudança de dieta felina deve ser orientada com técnicas de transição comportamental e nutricional desenvolvidas em uma [consulta nutricional pet online](/nutricao-pet-online/).
 
@@ -745,16 +738,16 @@ Por esse motivo, toda mudança de dieta felina deve ser orientada com técnicas 
 `
   },
   {
-    id: 'racao-coadjuvante-para-caes-e-gatos-guia',
-    slug: 'racao-coadjuvante-para-caes-e-gatos-guia',
-    aliases: ['racao-coadjuvante-para-caes-e-gatos'],
-    title: 'Ração Coadjuvante para Cães e Gatos: Quando Usar e Por Que Precisa de Orientação Veterinária',
-    metaTitle: 'Ração Coadjuvante para Cães e Gatos | Dra. Thais Vieira',
-    metaDescription: 'O que são rações coadjuvantes? Entenda quando são indicadas para necessidades renais, pele sensível, digestivas e de peso.',
-    mainKeyword: 'orientação para ração coadjuvante',
-    secondaryKeywords: ['ração coadjuvante cães', 'ração renal gatos', 'ração hipoalergênica', 'nutrição clínica veterinária'],
-    category: 'Rações coadjuvantes',
-    intent: 'Tutor de pet em acompanhamento procurando entender a indicação de ração coadjuvante.',
+    id: 'racoes-especiais-para-caes-e-gatos-guia',
+    slug: 'racoes-especiais-para-caes-e-gatos-guia',
+    aliases: ['racoes-especiais-para-caes-e-gatos'],
+    title: 'Rações Especiais e Super Premium para Cães e Gatos: Como Escolher a Melhor Linha',
+    metaTitle: 'Rações Especiais para Cães e Gatos | Dra. Thais Vieira',
+    metaDescription: 'O que são rações especiais e Super Premium? Entenda como escolher a linha ideal para idade, porte e digestão do seu pet.',
+    mainKeyword: 'orientação para ração especial',
+    secondaryKeywords: ['ração especial cães', 'ração super premium gatos', 'nutrição animal de alta qualidade'],
+    category: 'Rações especiais',
+    intent: 'Tutor de pet procurando entender a indicação de rações especiais e super premium.',
     publishDate: '2026-07-05',
     readTime: '6 min de leitura',
     author: {
@@ -762,41 +755,41 @@ Por esse motivo, toda mudança de dieta felina deve ser orientada com técnicas 
       role: 'Médica Veterinária com pós-graduação em nutrição animal',
       crmv: 'CRMV-SP 55784',
     },
-    summary: 'Rações coadjuvantes atuam no manejo diário de cães e gatos com necessidades renais, alergias, sobrepeso ou sensibilidade digestiva.',
+    summary: 'Rações especiais e Super Premium atuam no dia a dia de cães e gatos proporcionando nutrientes de alta absorção para cada porte e fase de vida.',
     image: 'https://images.pexels.com/photos/8434744/pexels-photo-8434744.jpeg',
     imageAlt: 'Veterinária cuidando carinhosamente de um paciente pet',
     internalLinks: [
-      { url: '/racao-coadjuvante-para-caes-e-gatos/', text: 'orientação para ração coadjuvante' },
+      { url: '/como-escolher-a-melhor-racao', text: 'como escolher a melhor ração' },
       { url: '/nutricao-pet-online/', text: 'consulta nutricional pet online' },
     ],
-    ctaText: 'Seu pet recebeu indicação de ração especial? Agende uma orientação de ração com a Dra. Thais Vieira.',
+    ctaText: 'Dúvidas sobre qual ração escolher? Agende uma orientação de ração com a Dra. Thais Vieira.',
     contentMarkdown: `
-As **rações coadjuvantes** (também chamadas de rações especiais) são opções nutricionais desenvolvidas especificamente para apoiar o bem-estar de cães e gatos com alterações clínicas em acompanhamento.
+As **rações especiais** (incluindo as linhas Super Premium e fórmulas adaptadas) são opções nutricionais de alta performance desenvolvidas especificamente para atender às exigências de porte, idade e estilo de vida de cães e gatos.
 
-Diferente das rações de manutenção diária, as rações coadjuvantes possuem ajustes minuciosos nos níveis de fósforo, sódio, proteínas, fibras e densidade calórica.
+Diferente de alimentos convencionais, as rações especiais possuem fontes nobres de proteínas, fibras selecionadas e densidade calórica calculada para o aproveitamento máximo.
 
-Por isso, obter uma [orientação para ração coadjuvante](/racao-coadjuvante-para-caes-e-gatos/) com uma médica veterinária é um passo indispensável para apoiar a saúde do animal sem causar outros desequilíbrios.
-
----
-
-## Principais Linhas Coadjuvantes e Suas Indicações
-
-1. **Rações Renais (Renal / Kidney):** Possuem teor reduzido de fósforo e proteína de altíssima digestibilidade para apoiar a função dos rins em cães e gatos idosos ou com sensibilidade renal.
-2. **Rações Hipoalergênicas (Hypoallergenic / Anallergenic):** Utilizam proteínas hidrolisadas (quebradas em partículas menores) para auxiliar no manejo de sensibilidade alimentar.
-3. **Rações Gastrointestinais (Gastrointestinal / Intestinal):** Baixo teor de gordura, alta digestibilidade e fibras funcionais para apoiar o trato digestivo.
-4. **Rações para Obesidade e Saciedade (Satiety / Weight Management):** Ricas em fibras e proteínas, projetadas para promover perda de gordura com acompanhamento do peso, da saciedade e da condição muscular.
+Por isso, obter uma [orientação para escolha de ração](/escolha-de-racao) com uma médica veterinária é um passo indispensável para garantir a nutrição ideal sem desperdício de dinheiro.
 
 ---
 
-## Por que elas NÃO devem ser oferecidas por conta própria?
+## Principais Linhas Especiais e Suas Vantagens
 
-Dar uma ração renal para um cão saudável pode causar restrição protéica indesejada. Da mesma forma, oferecer uma ração para obesidade em um filhote em crescimento pode prejudicar seu desenvolvimento.
-
-Através de uma [consulta nutricional pet online](/nutricao-pet-online/), avaliamos a necessidade do animal, calculamos a porção diária exata em gramas e acompanhamos a evolução.
+1. **Rações por Fase de Vida (Filhote, Adulto e Sênior):** Ajustam o aporte de proteínas e energia para cada estágio do desenvolvimento do pet.
+2. **Rações com Proteínas Selecionadas:** Utilizam ingredientes de alta digestibilidade para pets com sensibilidade a alimentos comuns.
+3. **Rações com Fibras Funcionais:** Favorecem a saúde digestiva e o trânsito intestinal regular.
+4. **Rações de Alta Saciedade:** Ricas em fibras e proteínas de qualidade, formuladas para manter o pet satisfeito e no peso ideal.
 
 ---
 
-*Aviso Legal: As rações coadjuvantes devem ser recomendadas por médico veterinário.* 
+## Por que contar com orientação profissional?
+
+Cada pet possui necessidades calóricas únicas de acordo com a idade, castração e gasto energético diário. Oferecer quantidades erradas pode levar ao ganho excessivo de peso ou à falta de nutrientes.
+
+Através de uma [consulta nutricional pet online](/nutricao-pet-online/) ou orientação de ração, avaliamos o perfil do seu pet, indicamos a marca ideal e calculamos a porção diária exata em gramas.
+
+---
+
+*Aviso Legal: Conteúdo educativo sobre nutrição animal.*
 `
   },
   {
@@ -895,7 +888,7 @@ Sem a necessidade de estressar seu pet transportando-o até uma clínica, você 
 ## Passo a Passo do Atendimento Online
 
 1. **Preenchimento do Formulário Nutricional (Anamnese):** Você nos informa a idade, peso, raça, rotina de exercícios, alimentos atuais e exames recentes do pet.
-2. **Sessão em Vídeo ou Alinhamento Direto:** Analisamos os dados do seu pet e conversamos sobre as metas (emagrecimento, transição para alimentação natural, controle de alergia ou escolha da melhor ração).
+2. **Sessão em Vídeo ou Alinhamento Direto:** Analisamos os dados do seu pet e conversamos sobre as metas (manutenção do peso ideal, transição para alimentação natural balanceada, sensibilidade digestiva ou escolha da melhor ração).
 3. **Envio do Plano Alimentar Personalizado:** Você recebe por e-mail um relatório com o cálculo exato da gramatura, indicação dos alimentos e guia de petiscos.
 4. **Suporte e Acompanhamento via WhatsApp:** Acompanhamos o progresso e tiramos dúvidas durante a adaptação do pet.
 
@@ -912,7 +905,7 @@ Agende agora mesmo sua [consulta nutricional pet online](/nutricao-pet-online/)!
     aliases: ['o-que-dar-para-pet-adotado', 'pet-adotado-alimentacao', 'como-alimentar-cachorro-resgatado'],
     title: 'O que dar para pet adotado? Guia de alimentação para cães e gatos resgatados',
     metaTitle: 'O que dar para Pet Adotado? Guia de Alimentação | Dra. Thais Vieira',
-    metaDescription: 'Acabou de adotar um cão ou gato? Saiba o que dar de comer, como fazer a transição de ração sem diarreia e quando escolher a ração ideal.',
+    metaDescription: 'Acabou de adotar um cão ou gato? Saiba o que dar de comer, como fazer a transição de ração sem desconfortos gastrointestinais e quando escolher a ração ideal.',
     mainKeyword: 'o que dar para pet adotado',
     secondaryKeywords: ['alimentação pet adotado', 'ração para cachorro resgatado', 'como alimentar gato adotado', 'transição de ração'],
     category: 'Escolha de ração',
@@ -976,7 +969,7 @@ Neste atendimento avulso e direto:
 2. Calculamos a porção diária exata em gramas;
 3. Indicamos petiscos e agrados seguros que não desequilibram a dieta.
 
-Caso seu pet já tenha histórico de exames alterados ou suspeita de alergia alimentar, você também pode optar pela [consulta nutricional pet online](/nutricao-pet-online/).
+Caso seu pet já tenha histórico de sensibilidade alimentar ou rotina nutricional específica, você também pode optar pela [consulta nutricional pet online](/nutricao-pet-online/).
 
 ---
 
