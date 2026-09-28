@@ -66,7 +66,7 @@ export const CommercialLandingPage: React.FC<CommercialLandingPageProps> = ({
 
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-400 mb-4">
             <Heart size={16} fill="currentColor" />
-            <span>Nutrição Veterinária Clínica</span>
+            <span>Nutrição Veterinária Especializada</span>
           </div>
 
           <h1 className="text-3xl md:text-5xl font-black font-display text-white mb-6 leading-tight">
@@ -92,7 +92,7 @@ export const CommercialLandingPage: React.FC<CommercialLandingPageProps> = ({
         {landing.detailedText && (
           <div className="bg-white border border-stone-200 rounded-3xl p-8 md:p-10 shadow-sm text-left mb-10">
             <h2 className="text-xl md:text-2xl font-extrabold font-display text-stone-900 mb-4">
-              Entenda o Cuidado Nutricional Clínico
+              Entenda o Cuidado Nutricional Individualizado
             </h2>
             <p className="text-stone-700 text-base leading-relaxed">
               {landing.detailedText}
@@ -148,7 +148,7 @@ export const CommercialLandingPage: React.FC<CommercialLandingPageProps> = ({
             {priceVal}
           </div>
           <p className="text-stone-600 text-sm max-w-md mx-auto mb-6">
-            Atendimento médico veterinário nutricional 100% personalizado, com análise de exames, plano alimentar sob medida e acompanhamento via WhatsApp.
+            Atendimento médico veterinário nutricional individualizado e personalizado, com análise de exames, plano alimentar sob medida e acompanhamento via WhatsApp.
           </p>
           <button
             onClick={() => onOpenConsulta(landing.formatKey)}

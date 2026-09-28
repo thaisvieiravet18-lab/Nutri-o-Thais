@@ -85,7 +85,7 @@ export function TestimonialsSection() {
         <div className="inline-flex items-center gap-1.5 bg-white px-4 py-2 rounded-full border border-stone-200/80 shadow-xs">
           <Star size={14} className="fill-amber-400 text-amber-400" />
           <span className="font-bold text-stone-900">5.0 de 5 estrelas</span>
-          <span>• Avaliações comprovadas de tutores</span>
+          <span>• Relatos de tutores atendidos</span>
         </div>
       </div>
     </div>

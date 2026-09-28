@@ -210,6 +210,38 @@ export function getSeoDataForPath(pathname: string): SeoData {
     };
   }
 
+  // 2.2 Política de Privacidade (LGPD)
+  if (cleanPath === '/politica-de-privacidade') {
+    const title = 'Política de Privacidade (LGPD) | Dra. Thais Vieira';
+    const description = 'Política de Privacidade e Proteção de Dados (LGPD) da Dra. Thais Vieira, médica veterinária (CRMV-SP 55784).';
+    const canonicalUrl = `${DOMAIN}/politica-de-privacidade`;
+    return {
+      title,
+      description,
+      canonicalUrl,
+      h1: 'Política de Privacidade',
+      ogType: 'website',
+      ogImage: DEFAULT_IMAGE,
+      jsonLd: []
+    };
+  }
+
+  // 2.3 Termos de Uso
+  if (cleanPath === '/termos' || cleanPath === '/termos-de-uso') {
+    const title = 'Termos de Uso & Responsabilidade | Dra. Thais Vieira';
+    const description = 'Termos de uso, limites de responsabilidade e orientações éticas dos atendimentos nutricionais da Dra. Thais Vieira.';
+    const canonicalUrl = `${DOMAIN}/termos`;
+    return {
+      title,
+      description,
+      canonicalUrl,
+      h1: 'Termos de Uso & Responsabilidade',
+      ogType: 'website',
+      ogImage: DEFAULT_IMAGE,
+      jsonLd: []
+    };
+  }
+
   // 3. Blog Post Page (/blog/:slug)
   if (cleanPath.startsWith('/blog/')) {
     const articleSlug = cleanPath.replace('/blog/', '');

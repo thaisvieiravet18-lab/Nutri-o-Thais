@@ -34,7 +34,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Análise detalhada da rotina e hábitos do pet',
       'Elaboração de plano alimentar individualizado (ração ideal, Alimentação Natural ou mista)',
       'Tabela de fracionamento das refeições e porção diária exata em gramas',
-      'Atendimento 100% online por médica veterinária para todo o Brasil',
+      'Atendimento online por médica veterinária para todo o Brasil',
       'Suporte e acompanhamento contínuo pós-consulta via WhatsApp'
     ],
     detailedText: 'Manter o peso ideal apoia a vitalidade e a disposição de cães e gatos, favorecendo a mobilidade e o bem-estar diário. Reduzir a quantidade de comida sem orientação técnica pode desbalancear os nutrientes. Com o acompanhamento individualizado da Dra. Thais Vieira, calculamos a energia necessária para que seu amigo fique nutrido, ativo e satisfeito.',
@@ -82,7 +82,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Análise criteriosa de todas as proteínas e alimentos já consumidos',
       'Elaboração de planejamento com ingredientes de alta tolerância',
       'Guia prático de petiscos permitidos e seguros',
-      'Consulta particular 100% online por R$ 200,00 com suporte via WhatsApp'
+      'Consulta particular online por R$ 200,00 com suporte via WhatsApp'
     ],
     detailedText: 'Sensibilidades alimentares podem impactar a vitalidade e a digestão do seu cão ou gato. O acompanhamento nutricional com uma médica veterinária com pós-graduação em nutrição animal permite selecionar os melhores ingredientes de forma criteriosa e segura.',
     faqs: [
@@ -163,7 +163,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     whatsIncluded: [
       'Análise da rotina alimentar e perfil do pet',
       'Plano alimentar individualizado com porções e horários fracionados',
-      'Consulta 100% online por R$ 200,00 com acompanhamento via WhatsApp'
+      'Consulta online por R$ 200,00 com acompanhamento via WhatsApp'
     ],
     detailedText: 'Uma alimentação leve e equilibrada fornece energia e nutrientes essenciais de fácil assimilação para manter a disposição diária do animal.',
     faqs: [
@@ -214,7 +214,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       { url: '/consulta-nutricional-online-para-caes', text: 'Consulta nutricional para cães' },
       { url: '/como-escolher-a-melhor-racao', text: 'Como escolher a melhor ração' }
     ],
-    emergencyDisclaimer: 'Aviso: Em casos de dor aguda ou dificuldade para caminhar, consulte o veterinário ortopedista presencialmente.'
+    emergencyDisclaimer: 'Aviso: Em casos de emergência clínica ou dificuldade de locomoção, consulte o médico veterinário presencialmente.'
   },
   'consulta-nutricional-online-para-caes': {
     slug: 'consulta-nutricional-online-para-caes',
@@ -226,7 +226,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Análise de perfil de raça, idade, porte e nível de atividade física',
       'Indicação da ração comercial ideal ou planejamento de Alimentação Natural',
       'Gramatura exata por refeição e cálculo de petiscos saudáveis',
-      'Atendimento 100% online no conforto da sua casa sem estressar o cão'
+      'Atendimento online no conforto da sua casa sem estressar o cão'
     ],
     formatKey: 'online',
     price: 'R$ 200,00',
@@ -263,14 +263,14 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     keywords: ['consulta nutricional online para gato', 'nutrição felina', 'dieta para gatos online'],
     benefits: [
       'Foco total na fisiologia carnívora estrita e hidratação do gato',
-      'Suporte ao trato urinário e estímulo à hidratação (FLUTD)',
+      'Estímulo diário à ingestão de água e hidratação felina adequada',
       'Estratégias para transição alimentar sem provocar inapetência',
       'Atendimento sem estresse de transporte ou caixa de transporte'
     ],
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
-      'Tutores de gatos que bebem pouca água ou têm histórico de cistite/cálculos',
+      'Tutores de gatos que consomem pouca água na rotina diária',
       'Gatos castrados com tendência ao ganho de peso',
       'Gatos idosos precisando de acompanhamento nutricional profissional',
       'Tutores querendo introduzir sachês de qualidade ou Alimentação Natural'
@@ -298,7 +298,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     slug: 'nutricao-pet-online',
     title: 'Consulta Nutricional Pet Online | Dra. Thais Vieira',
     headline: 'Consulta Nutricional Pet Online para Cães e Gatos em Todo o Brasil',
-    description: 'Atendimento nutricional veterinário 100% online. Planejamento de dietas personalizadas, cálculo preciso de porções e acompanhamento contínuo para a saúde do seu pet.',
+    description: 'Atendimento nutricional veterinário online. Planejamento de dietas personalizadas, cálculo preciso de porções e acompanhamento contínuo para a saúde do seu pet.',
     keywords: ['consulta nutricional pet online', 'nutrição veterinária online', 'dieta personalizada para cães e gatos'],
     benefits: [
       'Atendimento no conforto do seu lar sem estressar seu pet',
@@ -383,7 +383,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
-      'Gatos que bebem pouca água ou têm tendência a problemas urinários',
+      'Gatos que bebem pouca água ou necessitam de maior hidratação diária',
       'Tutores interessados em dieta úmida/natural carnívora',
       'Felinos necessitando de nutrição balanceada'
     ],
@@ -446,10 +446,10 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     slug: 'consulta-online',
     title: 'Consulta Nutricional Veterinária Online | Dra. Thais Vieira',
     headline: 'Consulta Nutricional Veterinária Online para Cães e Gatos em Todo o Brasil',
-    description: 'Atendimento veterinário clínico 100% online. Planejamento de dietas personalizadas, cálculo preciso de porções e acompanhamento contínuo para cães e gatos.',
+    description: 'Atendimento nutricional veterinário online. Planejamento de dietas personalizadas, cálculo preciso de porções e acompanhamento contínuo para cães e gatos.',
     keywords: ['consulta nutricional veterinária online', 'consulta online pet nutrição', 'veterinária nutrição animal online'],
     benefits: [
-      'Atendimento 100% online por videochamada no conforto do seu lar',
+      'Atendimento online por videochamada no conforto do seu lar',
       'Plano alimentar completo e individualizado para cães e gatos',
       'Cálculo calórico e de gramatura exata para suporte nutricional integral',
       'Acompanhamento contínuo por WhatsApp com a Dra. Thais Vieira'
@@ -463,12 +463,12 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Tutores que buscam acompanhamento veterinário completo e contínuo'
     ],
     whatsIncluded: [
-      'Análise detalhada de exames laboratoriais, histórico e queixas clínicas',
+      'Análise detalhada de exames laboratoriais, histórico alimentar e hábitos do pet',
       'Envio do plano alimentar completo em PDF com orientações de preparo ou marcas',
       'Cálculo e planejamento alimentar sob medida quando necessário',
       'Suporte direto por WhatsApp durante a adaptação'
     ],
-    detailedText: 'A consulta nutricional veterinária completa é o formato indicado para pets com necessidades clínicas específicas ou para quem busca dietas personalizadas e balanceadas sob medida.',
+    detailedText: 'A consulta nutricional veterinária completa é o formato indicado para pets com necessidades nutricionais individualizadas ou para quem busca dietas personalizadas e balanceadas sob medida.',
     faqs: [
       {
         question: 'Qual a diferença entre a consulta online e a escolha de ração?',
@@ -645,9 +645,9 @@ A Alimentação Natural Cozida para cães consiste em uma dieta elaborada exclus
 Ela é composta por proporções calculadas de:
 1. **Proteínas de Alta Qualidade:** Peito de frango, carne bovina magra, peixes, ovos ou suíno.
 2. **Carboidratos e Fibras:** Batata-doce, mandioquinha, arroz integral, abóbora, chuchu, brócolis e cenoura.
-3. **Vísceras:** Fontes de nutrientes fundamentais (como fígado bovino, coração e moela).
+3. **Vísceras e Cortes Nutritivos:** Fontes ricas em vitaminas e minerais naturais (como miúdos cozidos e moela).
 4. **Fontes Lipídicas Saudáveis:** Óleos específicos e gorduras boas dos próprios alimentos.
-5. **Equilíbrio Nutricional Integral:** Item 100% fundamental em todas as dietas caseiras.
+5. **Equilíbrio Nutricional Integral:** Item essencial em todas as dietas caseiras.
 
 ---
 
@@ -664,7 +664,7 @@ Ela é composta por proporções calculadas de:
 
 Nenhum alimento isolado possui todos os nutrientes necessários nas proporções perfeitas para um cão. Carnes e vegetais cozidos sem cálculo prévio não fornecem um aporte equilibrado para a saúde canina.
 
-A falta do balanceamento nutricional adequado gera desequilíbrios graves, levando a fraqueza óssea, anemia, lesões de pele e alteração cardíaca.
+A falta do balanceamento nutricional adequado gera carências e desequilíbrios na alimentação, comprometendo a vitalidade, a pelagem e a energia diária do cão.
 
 ---
 
@@ -685,7 +685,7 @@ Antes de alterar a dieta do seu cão, agende uma [consulta nutricional pet onlin
     mainKeyword: 'alimentação natural para gatos',
     secondaryKeywords: ['dieta úmida gatos', 'hidratação felina', 'nutrição para gatos', 'gato não bebe água'],
     category: 'Gatos',
-    intent: 'Tutor de gatos preocupado com consumo de água, cálculos urinários e nutrição carnívora estrita.',
+    intent: 'Tutor de gatos preocupado com consumo de água, hidratação equilibrada e nutrição carnívora estrita.',
     publishDate: '2026-07-10',
     readTime: '6 min de leitura',
     author: {
@@ -768,7 +768,7 @@ As **rações especiais** (incluindo as linhas Super Premium e fórmulas adaptad
 
 Diferente de alimentos convencionais, as rações especiais possuem fontes nobres de proteínas, fibras selecionadas e densidade calórica calculada para o aproveitamento máximo.
 
-Por isso, obter uma [orientação para escolha de ração](/escolha-de-racao) com uma médica veterinária é um passo indispensável para garantir a nutrição ideal sem desperdício de dinheiro.
+Por isso, obter uma [orientação para escolha de ração](/escolha-de-racao) com uma médica veterinária é um passo indispensável para favorecer a nutrição ideal sem desperdício de dinheiro.
 
 ---
 
@@ -845,7 +845,7 @@ No Brasil, os ingredientes devem ser descritos em **ordem decrescente de quantid
 
 Em vez de arriscar comprar pacotes caros que o pet pode rejeitar ou que causem desconforto gástrico, você pode contar com uma médica veterinária com pós-graduação em nutrição animal para indicar a ração ideal, calcular a porção diária exata em gramas e listar os petiscos seguros para o seu pet.
 
-Conheça o nosso serviço exclusivo de [escolha de ração](/escolha-de-racao) para cães e gatos saudáveis! Se o seu pet tiver exames alterados ou necessidades clínicas, conheça também a [consulta nutricional pet online](/nutricao-pet-online/).
+Conheça o nosso serviço exclusivo de [escolha de ração](/escolha-de-racao) para cães e gatos saudáveis! Se o seu pet tiver rotina ou necessidades nutricionais específicas, conheça também a [consulta nutricional pet online](/nutricao-pet-online/).
 
 ---
 
@@ -869,7 +869,7 @@ Conheça o nosso serviço exclusivo de [escolha de ração](/escolha-de-racao) p
       role: 'Médica Veterinária com pós-graduação em nutrição animal',
       crmv: 'CRMV-SP 55784',
     },
-    summary: 'A teleorientação nutricional permite que tutores de todo o Brasil recebam suporte clínico para seus cães e gatos com comodidade e ciência.',
+    summary: 'A teleorientação nutricional permite que tutores de todo o Brasil recebam suporte nutricional qualificado para seus cães e gatos com comodidade e ciência.',
     image: 'https://images.pexels.com/photos/27087012/pexels-photo-27087012.jpeg',
     imageAlt: 'Tutor utilizando computador e cuidando do pet com carinho',
     internalLinks: [

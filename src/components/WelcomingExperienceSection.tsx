@@ -23,6 +23,11 @@ interface WelcomingExperienceSectionProps {
 }
 
 export function WelcomingExperienceSection({ setIsModalOpen, openConsulta }: WelcomingExperienceSectionProps) {
+  const handleDirectWhatsApp = () => {
+    const text = encodeURIComponent('Oiie Thais quero agendar um horario com voce');
+    window.open(`https://api.whatsapp.com/send?phone=5511916539562&text=${text}`, '_blank');
+  };
+
   const steps = [
     {
       number: "1",
@@ -307,7 +312,7 @@ export function WelcomingExperienceSection({ setIsModalOpen, openConsulta }: Wel
               {/* Botão de Ação Rápida */}
               <div className="shrink-0 flex flex-col sm:flex-row md:flex-col gap-2.5 items-stretch sm:items-center md:items-end">
                 <button
-                  onClick={() => setIsModalOpen(true)}
+                  onClick={handleDirectWhatsApp}
                   className="px-7 py-4 bg-gradient-to-r from-[#ff2eb7] via-[#a338b9] to-[#ff841f] hover:from-[#ff4ac1] hover:to-[#ff9b44] text-white font-black rounded-2xl text-xs sm:text-sm uppercase tracking-wider shadow-[0_12px_32px_rgba(255,46,183,0.4)] hover:shadow-[0_16px_40px_rgba(255,46,183,0.6)] transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer border-none"
                 >
                   <span>Agendar Consulta</span>
@@ -327,7 +332,7 @@ export function WelcomingExperienceSection({ setIsModalOpen, openConsulta }: Wel
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
             <motion.button 
               id="btn-plano-pensado-pet"
-              onClick={() => setIsModalOpen(true)}
+              onClick={handleDirectWhatsApp}
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.98 }}
               className="relative group w-full sm:w-auto flex-1 max-w-lg py-5 px-8 sm:px-10 bg-gradient-to-r from-[#ff2eb7] via-[#a338b9] to-[#ff841f] hover:from-[#ff4ac1] hover:to-[#ff9b44] text-white font-black rounded-2xl sm:rounded-3xl uppercase tracking-wider shadow-[0_18px_50px_rgba(255,46,183,0.55),0_0_55px_rgba(163,56,185,0.45)] hover:shadow-[0_22px_60px_rgba(255,46,183,0.75),0_0_70px_rgba(255,132,31,0.55)] transition-all duration-300 flex flex-col items-center justify-center gap-1.5 cursor-pointer border-2 border-white/40 ring-4 ring-[#ff38bc]/35 hover:ring-[#ff38bc]/60 ring-offset-2 ring-offset-[#0a020f] overflow-hidden"
@@ -346,7 +351,7 @@ export function WelcomingExperienceSection({ setIsModalOpen, openConsulta }: Wel
             </motion.button>
 
             <button 
-              onClick={() => openConsulta('online')}
+              onClick={handleDirectWhatsApp}
               className="w-full sm:w-auto py-4 px-7 bg-white/10 hover:bg-white/15 text-white font-bold rounded-2xl text-xs uppercase tracking-wider transition-all border border-white/20 hover:border-white/35 flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>Tirar dúvidas no WhatsApp</span>
@@ -365,7 +370,7 @@ export function WelcomingExperienceSection({ setIsModalOpen, openConsulta }: Wel
             </span>
             <span className="text-stone-700 hidden sm:inline">•</span>
             <span className="flex items-center gap-1.5 text-stone-300">
-              <Check size={14} className="text-purple-300" /> Cães e gatos saudáveis ou com acompanhamento clínico
+              <Check size={14} className="text-purple-300" /> Cães e gatos em todas as fases de vida
             </span>
           </div>
         </FadeIn>

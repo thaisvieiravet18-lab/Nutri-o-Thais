@@ -16,6 +16,11 @@ interface FooterCTAProps {
 }
 
 export function FooterCTA({ setIsModalOpen, openConsulta }: FooterCTAProps) {
+  const handleWhatsApp = () => {
+    const text = encodeURIComponent('Oiie Thais quero agendar um horario com voce');
+    window.open(`https://api.whatsapp.com/send?phone=5511916539562&text=${text}`, '_blank');
+  };
+
   return (
     <section className="pt-24 pb-16 lg:pt-32 lg:pb-24 px-4 md:px-8 text-white relative overflow-hidden text-center border-t border-[#a338b9]/25 rounded-t-[3.5rem] md:rounded-t-[4.5rem] shadow-[0_-20px_50px_rgba(163,56,185,0.12)] z-20 -mt-16 bg-stone-950">
       {/* Background Image with optimized visibility and text contrast */}
@@ -58,7 +63,7 @@ export function FooterCTA({ setIsModalOpen, openConsulta }: FooterCTAProps) {
         <FadeIn delay={0.2} className="pt-4">
           <div className="flex flex-col sm:flex-row justify-center items-center gap-5 max-w-xl mx-auto">
             <motion.button 
-              onClick={() => setIsModalOpen(true)}
+              onClick={handleWhatsApp}
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="w-full sm:w-auto px-8 sm:px-10 py-5 bg-gradient-to-r from-[#ff38bc] via-[#a338b9] to-[#fb923c] text-white font-black rounded-2xl text-xs sm:text-sm uppercase tracking-wider relative overflow-hidden shadow-[0_15px_45px_rgba(163,56,185,0.45)] transition-all duration-300 cursor-pointer flex flex-col items-center justify-center gap-0.5 border-none"
@@ -75,7 +80,7 @@ export function FooterCTA({ setIsModalOpen, openConsulta }: FooterCTAProps) {
             </motion.button>
 
             <motion.button 
-              onClick={() => openConsulta('online')}
+              onClick={handleWhatsApp}
               whileHover={{ scale: 1.04, backgroundColor: "rgba(255, 255, 255, 0.15)" }}
               whileTap={{ scale: 0.98 }}
               className="w-full sm:w-auto px-8 py-5 bg-white/5 text-white font-black rounded-2xl text-xs sm:text-sm uppercase tracking-wider transition-all border border-white/20 hover:border-white/40 cursor-pointer flex flex-col items-center justify-center gap-0.5"
@@ -87,7 +92,7 @@ export function FooterCTA({ setIsModalOpen, openConsulta }: FooterCTAProps) {
 
           <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-[11px] text-stone-300 font-bold font-sans pt-6">
             <span className="flex items-center gap-1.5">
-              <ShieldCheck size={14} className="text-emerald-400" /> Livre de conflito de interesses
+              <ShieldCheck size={14} className="text-emerald-400" /> Orientação nutricional independente
             </span>
             <span className="text-stone-600 hidden sm:inline">•</span>
             <span className="flex items-center gap-1.5">

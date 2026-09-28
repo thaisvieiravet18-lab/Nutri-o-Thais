@@ -29,8 +29,6 @@ import { motion, AnimatePresence } from 'motion/react';
 
 // Imported modular sub-components for better maintainability and code division
 import { FadeIn, TitleReveal } from './components/LayoutComponents';
-import { ConsultaModal } from './components/ConsultaModal';
-import { PaymentModal } from './components/PaymentModal';
 import { faqs, FAQItem } from './components/FAQSection';
 import { WhatsAppFloat } from './components/WhatsAppFloat';
 import { AbordagemDiagram } from './components/AbordagemDiagram';
@@ -57,9 +55,6 @@ interface AppProps {
 }
 
 export default function App({ initialPath }: AppProps = {}) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isConsultaOpen, setIsConsultaOpen] = useState(false);
-  const [consultaFormat, setConsultaFormat] = useState<'online' | 'presencial' | 'insurance' | 'racao'>('online');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Client Router State
@@ -85,16 +80,27 @@ export default function App({ initialPath }: AppProps = {}) {
     setIsMobileMenuOpen(false);
   };
 
-  const openConsulta = (format: 'online' | 'presencial' | 'insurance' | 'racao') => {
-    setConsultaFormat(format);
-    setIsConsultaOpen(true);
+  const openWhatsApp = (customMessage?: string) => {
+    const text = customMessage || 'Oiie Thais quero agendar um horario com voce';
+    const encoded = encodeURIComponent(text);
+    window.open(`https://api.whatsapp.com/send?phone=5511916539562&text=${encoded}`, '_blank');
+  };
+
+  const openConsulta = (_format?: 'online' | 'presencial' | 'insurance' | 'racao' | string) => {
+    openWhatsApp('Oiie Thais quero agendar um horario com voce');
+  };
+
+  const setIsModalOpen = (open: boolean) => {
+    if (open) {
+      openWhatsApp('Oiie Thais quero agendar um horario com voce');
+    }
   };
 
   // Hero slideshow photos with updated images and correct framing
   const defaultHeroPhotos = [
     {
       url: "https://images.unsplash.com/photo-1678783133022-89e103910f76?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Pet saudável sob acompanhamento clínico cuidadoso",
+      alt: "Pet saudável com nutrição individualizada cuidadosa",
       className: "object-center scale-100 hover:scale-[1.05]"
     },
     {
@@ -258,6 +264,16 @@ export default function App({ initialPath }: AppProps = {}) {
     activeView = 'commercial_landing';
     activeCommercialKey = normalizedPath.replace('/', '');
   }
+
+  React.useEffect(() => {
+    if (normalizedPath === '/politica-de-privacidade') {
+      setPrivacyModalTab('privacy');
+      setIsPrivacyModalOpen(true);
+    } else if (normalizedPath === '/termos' || normalizedPath === '/termos-de-uso') {
+      setPrivacyModalTab('terms');
+      setIsPrivacyModalOpen(true);
+    }
+  }, [normalizedPath]);
 
   React.useEffect(() => {
     if (activeView === 'home') {
@@ -941,7 +957,7 @@ export default function App({ initialPath }: AppProps = {}) {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent pointer-events-none" />
                     <span className="absolute top-3 sm:top-5 left-3 sm:left-5 bg-[#a338b9] text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-md">
-                      Nacional • 100% Online
+                      Nacional • Atendimento Online
                     </span>
                   </div>
                   <div className="p-5 sm:p-8 flex flex-col flex-grow justify-between">
@@ -975,7 +991,7 @@ export default function App({ initialPath }: AppProps = {}) {
                   <div className="h-44 sm:h-60 w-full overflow-hidden relative bg-stone-100">
                     <img 
                       src="https://images.pexels.com/photos/8473448/pexels-photo-8473448.jpeg?auto=compress&cs=tinysrgb&w=500&q=70" 
-                      alt="Atendimento clínico direto no consultório em São Paulo" 
+                      alt="Atendimento veterinário direto no consultório em São Paulo" 
                       className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-95"
                       referrerPolicy="no-referrer"
                       loading="lazy"
@@ -1214,7 +1230,7 @@ export default function App({ initialPath }: AppProps = {}) {
             <div className="md:col-span-2 space-y-4">
               <h4 className="text-[10px] font-bold tracking-widest uppercase text-[#111827]">Legal & Transparência</h4>
               <p className="leading-relaxed text-stone-600 text-xs">
-                As consultas e orientações nutricionais têm caráter educativo e não substituem o acompanhamento clínico presencial em casos de urgência ou condições graves do animal.
+                As consultas e orientações nutricionais têm caráter educativo e não substituem o atendimento presencial em casos de urgência ou emergência veterinária.
               </p>
               <div className="flex flex-col gap-2 pt-1 text-xs">
                 <button 
@@ -1260,8 +1276,6 @@ export default function App({ initialPath }: AppProps = {}) {
       </footer>
 
       {/* Interactive Modal instances */}
-      <ConsultaModal isOpen={isConsultaOpen} onClose={() => setIsConsultaOpen(false)} initialFormat={consultaFormat} />
-      <PaymentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <PrivacyPolicyModal isOpen={isPrivacyModalOpen} onClose={() => setIsPrivacyModalOpen(false)} defaultTab={privacyModalTab} />
 
       {/* Dynamic WhatsApp attention-grabber float */}

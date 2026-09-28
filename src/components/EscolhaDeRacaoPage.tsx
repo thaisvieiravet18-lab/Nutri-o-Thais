@@ -192,7 +192,7 @@ export const EscolhaDeRacaoPage: React.FC<EscolhaDeRacaoPageProps> = ({
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
               <div className="absolute bottom-3 left-4 right-4 sm:bottom-4 sm:left-6 text-white text-xs sm:text-sm font-medium flex items-center justify-between">
                 <span>Orientação nutricional individualizada para cães e gatos</span>
-                <span className="hidden sm:inline-block bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-md text-xs">Atendimento 100% Online</span>
+                <span className="hidden sm:inline-block bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-md text-xs">Atendimento Online</span>
               </div>
             </div>
           </div>
@@ -400,7 +400,7 @@ export const EscolhaDeRacaoPage: React.FC<EscolhaDeRacaoPageProps> = ({
         <section className="bg-white border border-stone-200/80 rounded-3xl p-6 sm:p-8 md:p-10 shadow-sm text-left mb-10">
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-700 mb-2">
             <AlertCircle size={15} />
-            <span>Atenção Clínica</span>
+            <span>Atenção Especial</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold font-display text-stone-900 mb-4">
             Quando o caminho é outro

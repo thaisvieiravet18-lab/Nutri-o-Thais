@@ -17,6 +17,11 @@ interface MeuPrimeiroPetProps {
 }
 
 export function MeuPrimeiroPet({ setIsModalOpen }: MeuPrimeiroPetProps) {
+  const handleWhatsApp = () => {
+    const text = encodeURIComponent('Oiie Thais quero agendar um horario com voce');
+    window.open(`https://api.whatsapp.com/send?phone=5511916539562&text=${text}`, '_blank');
+  };
+
   return (
     <section 
       className="pt-24 pb-16 md:pt-32 md:pb-24 px-4 md:px-8 relative z-10 -mt-16 rounded-[3.5rem] md:rounded-[4.5rem] shadow-[0_-15px_45px_rgba(0,0,0,0.15),0_25px_60px_rgba(0,0,0,0.2)] overflow-hidden text-white" 
@@ -164,7 +169,7 @@ export function MeuPrimeiroPet({ setIsModalOpen }: MeuPrimeiroPetProps) {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2 max-w-md mx-auto">
             <motion.button 
-              onClick={() => setIsModalOpen(true)}
+              onClick={handleWhatsApp}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
               className="w-full sm:w-auto flex-1 py-5 px-8 bg-amber-400 hover:bg-amber-300 text-stone-950 font-black rounded-2xl text-xs sm:text-sm uppercase tracking-widest shadow-[0_15px_30px_rgba(251,191,36,0.35)] transition-all flex items-center justify-center gap-2 cursor-pointer border-none"

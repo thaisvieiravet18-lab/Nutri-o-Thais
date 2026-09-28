@@ -15,7 +15,7 @@ export const WhatsAppFloat = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const text = 'Olá Dra. Thais! Gostaria de saber mais sobre as consultas e planos alimentares personalizados para o meu pet.';
+    const text = 'Oiie Thais quero agendar um horario com voce';
     const encodedText = encodeURIComponent(text);
     window.open(`https://api.whatsapp.com/send?phone=5511916539562&text=${encodedText}`, '_blank');
   };
