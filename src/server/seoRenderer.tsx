@@ -22,10 +22,10 @@ export function getSeoDataForPath(pathname: string): SeoData {
 
   // 1. Home Page
   if (cleanPath === '/') {
-    const title = 'Consulta Nutricional Veterinária Online para Cães e Gatos | Dra. Thais Vieira';
-    const description = 'Consulta nutricional veterinária online para cães e gatos. Planos personalizados de ração, alimentação natural, alimentação mista e manejo nutricional para necessidades específicas.';
+    const title = 'Alimentação Natural para Cães e Gatos | Dra. Thais Vieira';
+    const description = 'Alimentação natural para cães e gatos com orientação veterinária online da Dra. Thais Vieira (CRMV-SP 55784). Planejamento em gramas, transição gradual e 30 dias de acompanhamento em todo o Brasil.';
     const canonicalUrl = `${DOMAIN}/`;
-    const h1 = 'Consulta Nutricional Veterinária Online para Cães e Gatos';
+    const h1 = 'Alimentação natural para cães e gatos, com orientação veterinária online.';
 
     return {
       title,
@@ -38,16 +38,14 @@ export function getSeoDataForPath(pathname: string): SeoData {
         {
           '@context': 'https://schema.org',
           '@type': 'VeterinaryCare',
-          'name': 'Dra. Thais Vieira | Nutrição Veterinária',
+          'name': 'Dra. Thais Vieira | Nutrição Veterinária Online',
           'url': canonicalUrl,
           'image': DEFAULT_IMAGE,
           'telephone': '+5511916539562',
-          'description': 'Consultas e teleorientação de nutrição veterinária para cães e gatos com a Dra. Thais Vieira (CRMV-SP 55784). Atendimento profissional exclusivo de consultoria e planejamento alimentar.',
-          'address': {
-            '@type': 'PostalAddress',
-            'addressLocality': 'São Paulo',
-            'addressRegion': 'SP',
-            'addressCountry': 'BR'
+          'description': 'Consultas e teleorientação de nutrição veterinária para cães e gatos com a Dra. Thais Vieira (CRMV-SP 55784). Atendimento exclusivamente online por videochamada para todo o Brasil.',
+          'areaServed': {
+            '@type': 'Country',
+            'name': 'Brasil'
           },
           'founder': {
             '@type': 'Person',
@@ -237,6 +235,22 @@ export function getSeoDataForPath(pathname: string): SeoData {
       description,
       canonicalUrl,
       h1: 'Termos de Uso & Responsabilidade',
+      ogType: 'website',
+      ogImage: DEFAULT_IMAGE,
+      jsonLd: []
+    };
+  }
+
+  // 2.4 Legacy In-Person Routes (Informando atendimento 100% online)
+  if (['/consulta-presencial', '/consultorio', '/consultorio-sp', '/atendimento-presencial', '/presencial'].includes(cleanPath)) {
+    const title = 'Atendimento Exclusivamente Online para Todo o Brasil | Dra. Thais Vieira';
+    const description = 'A Dra. Thais Vieira (CRMV-SP 55784) agora realiza todos os atendimentos nutricionais de forma exclusivamente online por videochamada para cães e gatos em todo o Brasil.';
+    const canonicalUrl = `${DOMAIN}${cleanPath}`;
+    return {
+      title,
+      description,
+      canonicalUrl,
+      h1: 'Atendimento Nutricional Exclusivamente Online para Todo o Brasil',
       ogType: 'website',
       ogImage: DEFAULT_IMAGE,
       jsonLd: []

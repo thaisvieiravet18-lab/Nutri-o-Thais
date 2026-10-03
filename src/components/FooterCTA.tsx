@@ -17,7 +17,25 @@ interface FooterCTAProps {
 
 export function FooterCTA({ setIsModalOpen, openConsulta }: FooterCTAProps) {
   const handleWhatsApp = () => {
-    const text = encodeURIComponent('Oiie Thais quero agendar um horario com voce');
+    try {
+      const win = window as any;
+      if (typeof win.gtag === 'function') {
+        win.gtag('event', 'click_whatsapp', {
+          event_category: 'engagement',
+          position: 'footer_cta',
+          page_path: window.location.pathname
+        });
+      } else if (Array.isArray(win.dataLayer)) {
+        win.dataLayer.push({
+          event: 'click_whatsapp',
+          position: 'footer_cta',
+          page_path: window.location.pathname
+        });
+      }
+    } catch {
+      // silent
+    }
+    const text = encodeURIComponent('Olá, Dra. Thais! Vim pelo site e gostaria de saber os horários da consulta nutricional online para meu pet.');
     window.open(`https://api.whatsapp.com/send?phone=5511916539562&text=${text}`, '_blank');
   };
 

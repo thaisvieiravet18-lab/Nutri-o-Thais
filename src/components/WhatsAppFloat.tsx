@@ -15,7 +15,25 @@ export const WhatsAppFloat = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const text = 'Oiie Thais quero agendar um horario com voce';
+    try {
+      const win = window as any;
+      if (typeof win.gtag === 'function') {
+        win.gtag('event', 'click_whatsapp', {
+          event_category: 'engagement',
+          position: 'floating_button',
+          page_path: window.location.pathname
+        });
+      } else if (Array.isArray(win.dataLayer)) {
+        win.dataLayer.push({
+          event: 'click_whatsapp',
+          position: 'floating_button',
+          page_path: window.location.pathname
+        });
+      }
+    } catch {
+      // silent
+    }
+    const text = 'Olá, Dra. Thais! Vim pelo site e gostaria de saber os horários da consulta nutricional online para meu pet.';
     const encodedText = encodeURIComponent(text);
     window.open(`https://api.whatsapp.com/send?phone=5511916539562&text=${encodedText}`, '_blank');
   };
@@ -25,9 +43,9 @@ export const WhatsAppFloat = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3.5 pointer-events-none" id="contact-floats">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2.5 pointer-events-none" id="contact-floats">
       
-      {/* Balloon notification for WhatsApp or overall welcome */}
+      {/* Balloon notification for WhatsApp or overall welcome - hidden on mobile to avoid covering CTAs/texts */}
       <AnimatePresence>
         {showBubble && !hoveredButton && (
           <motion.div
@@ -35,7 +53,7 @@ export const WhatsAppFloat = () => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 10 }}
             transition={{ type: "spring", stiffness: 280, damping: 20 }}
-            className="mb-1 mr-1 pointer-events-auto cursor-pointer"
+            className="mb-1 mr-1 pointer-events-auto cursor-pointer hidden sm:block"
             onClick={handleWhatsAppClick}
           >
             {/* Balão de Fala "Dra. Thais Online!" */}
@@ -55,14 +73,14 @@ export const WhatsAppFloat = () => {
         )}
       </AnimatePresence>
 
-      {/* Manual Hover Tooltips for Buttons */}
+      {/* Manual Hover Tooltips for Buttons - hidden on mobile */}
       <AnimatePresence>
         {hoveredButton === 'whatsapp' && (
           <motion.div
             initial={{ opacity: 0, x: -10, scale: 0.9 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             exit={{ opacity: 0, x: -10, scale: 0.9 }}
-            className="absolute right-16 top-1.5 mr-1 bg-stone-950 text-white border border-white/10 font-bold text-xs py-2 px-3.5 rounded-lg shadow-xl whitespace-nowrap pointer-events-none select-none"
+            className="hidden sm:block absolute right-16 top-1.5 mr-1 bg-stone-950 text-white border border-white/10 font-bold text-xs py-2 px-3.5 rounded-lg shadow-xl whitespace-nowrap pointer-events-none select-none"
           >
             Fale Direto no WhatsApp 💬
           </motion.div>
@@ -72,7 +90,7 @@ export const WhatsAppFloat = () => {
             initial={{ opacity: 0, x: -10, scale: 0.9 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             exit={{ opacity: 0, x: -10, scale: 0.9 }}
-            className="absolute right-16 bottom-5 mr-1 bg-stone-950 text-white border border-white/10 font-bold text-xs py-2 px-3.5 rounded-lg shadow-xl whitespace-nowrap pointer-events-none select-none"
+            className="hidden sm:block absolute right-16 bottom-5 mr-1 bg-stone-950 text-white border border-white/10 font-bold text-xs py-2 px-3.5 rounded-lg shadow-xl whitespace-nowrap pointer-events-none select-none"
           >
             Siga no Instagram <span className="text-[#ff509e]">@thaisvieiravet</span> 📸
           </motion.div>
@@ -80,7 +98,7 @@ export const WhatsAppFloat = () => {
       </AnimatePresence>
 
       {/* Floating Action Button List */}
-      <div className="flex flex-col items-center gap-3.5 pointer-events-auto">
+      <div className="flex flex-col items-center gap-2.5 pointer-events-auto">
         
         {/* WhatsApp Float Button (Improved & Glowing) */}
         <motion.button
@@ -92,7 +110,7 @@ export const WhatsAppFloat = () => {
           transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.93 }}
-          className="relative p-4 bg-[#25D366] text-white rounded-full shadow-[0_12px_40px_rgba(37,211,102,0.4)] hover:shadow-[0_16px_50px_rgba(37,211,102,0.6)] transition-all duration-300 cursor-pointer flex items-center justify-center group overflow-visible focus:outline-none"
+          className="relative p-3 sm:p-4 bg-[#25D366] text-white rounded-full shadow-[0_12px_40px_rgba(37,211,102,0.4)] hover:shadow-[0_16px_50px_rgba(37,211,102,0.6)] transition-all duration-300 cursor-pointer flex items-center justify-center group overflow-visible focus:outline-none"
           aria-label="Falar no WhatsApp"
         >
           {/* Intense pulse rings */}
@@ -101,7 +119,7 @@ export const WhatsAppFloat = () => {
 
           {/* Clean high-fidelity vector path SVG */}
           <svg
-            className="w-7 h-7 fill-current transform transition-transform duration-300 group-hover:rotate-12 group-hover:scale-105"
+            className="w-6 h-6 sm:w-7 sm:h-7 fill-current transform transition-transform duration-300 group-hover:rotate-12 group-hover:scale-105"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >

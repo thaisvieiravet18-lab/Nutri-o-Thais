@@ -213,7 +213,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       { url: '/consulta-nutricional-online-para-caes', text: 'Consulta nutricional para cães' },
       { url: '/como-escolher-a-melhor-racao', text: 'Como escolher a melhor ração' }
     ],
-    emergencyDisclaimer: 'Aviso: Esta consulta oferece orientações sobre alimentação e rotina diária. Em casos clínicos ou de urgência, consulte o médico veterinário presencialmente.'
+    emergencyDisclaimer: 'Aviso: Esta consulta oferece orientações sobre alimentação e rotina diária. Em situações de urgência ou emergência, procure atendimento veterinário presencial.'
   },
   'consulta-nutricional-online-para-caes': {
     slug: 'consulta-nutricional-online-para-caes',
@@ -291,7 +291,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       { url: '/alimentacao-natural-para-gatos', text: 'Alimentação Natural para Gatos' },
       { url: '/alimentacao-natural-para-gatos', text: 'Alimentação Natural para Gatos' }
     ],
-    emergencyDisclaimer: 'Aviso: Esta consulta oferece orientações sobre alimentação de rotina e hidratação felina. Casos clínicos ou urgências devem ser atendidos presencialmente por hospital veterinário.'
+    emergencyDisclaimer: 'Aviso: Esta consulta oferece orientações sobre alimentação de rotina e hidratação felina. Situações de urgência devem ser atendidas presencialmente por hospital veterinário.'
   },
   'nutricao-pet-online': {
     slug: 'nutricao-pet-online',
@@ -669,7 +669,7 @@ A falta do balanceamento nutricional adequado gera carências e desequilíbrios 
 
 ## Como iniciar o processo de transição?
 
-Antes de alterar a dieta do seu cão, agende uma [consulta nutricional pet online](/nutricao-pet-online/) ou presencial. A médica veterinária analisará os exames recentes do pet, avaliará o peso ideal e criará o cardápio exclusivo em gramas com o balanço de nutrientes adequado.
+Antes de alterar a dieta do seu cão, agende uma [consulta nutricional pet online](/nutricao-pet-online/). A médica veterinária analisará os exames recentes do pet, avaliará as necessidades diárias e criará o cardápio exclusivo em gramas com o balanço de nutrientes adequado.
 
 *Aviso Legal: Artigo educativo. Nunca substitua a alimentação do seu cão sem supervisão veterinária.*
 `

@@ -365,7 +365,7 @@ export const BlogIndexPage: React.FC<BlogIndexPageProps> = ({
               <ArrowRight size={18} />
             </button>
             <span className="text-[11px] text-stone-400 text-center font-medium">
-              Atendimento Online (Brasil) ou Presencial em SP
+              Atendimento Exclusivamente Online para Todo o Brasil
             </span>
           </div>
         </div>
