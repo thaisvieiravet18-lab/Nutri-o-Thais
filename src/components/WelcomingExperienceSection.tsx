@@ -72,10 +72,10 @@ export function WelcomingExperienceSection({ setIsModalOpen, openConsulta }: Wel
       pillClass: "bg-purple-400/20 text-purple-300 border-purple-400/40",
       icon: <Clock className="w-5 h-5 text-purple-300" />,
       tagline: "Você não fica sozinho para aplicar o plano.",
-      description: "Durante 30 dias, acompanho a adaptação pelo WhatsApp, respondo suas dúvidas e avalio como seu pet está reagindo. Se algo não funcionar bem na rotina, faço os ajustes necessários. Quando o objetivo envolver mudança de peso, também acompanho as pesagens e a evolução.",
+      description: "Durante 30 dias, acompanho a adaptação pelo WhatsApp, respondo suas dúvidas e avalio como seu pet está reagindo. Se algo não funcionar bem na rotina, faço os ajustes necessários na alimentação.",
       highlights: [
         "Dúvidas diretamente comigo no WhatsApp",
-        "Acompanhamento do peso e da adaptação",
+        "Acompanhamento contínuo da adaptação alimentar",
         "Ajustes no plano quando necessários"
       ],
       resultNote: "Meu cuidado continua depois que o plano chega ao potinho."
@@ -249,7 +249,7 @@ export function WelcomingExperienceSection({ setIsModalOpen, openConsulta }: Wel
                   Mais de 200 pets já receberam um plano pensado para sua saúde, suas necessidades e a rotina da família
                 </p>
                 <p className="text-stone-300/90 text-xs sm:text-sm mt-0.5 font-normal">
-                  Cães e gatos com digestão regulada, peso saudável e tutores tranquilos.
+                  Cães e gatos com alimentação balanceada, rotina organizada e tutores tranquilos.
                 </p>
               </div>
             </div>

@@ -12,23 +12,22 @@ export const BLOG_CATEGORIES = [
 export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
   'controle-de-peso-em-caes-e-gatos': {
     slug: 'controle-de-peso-em-caes-e-gatos',
-    title: 'Consulta Nutricional para Peso Ideal | Dra. Thais Vieira',
-    headline: 'Orientação Nutricional Veterinária Online para Equilíbrio e Peso Ideal',
-    description: 'Atendimento nutricional veterinário para manutenção do peso ideal. Plano alimentar individualizado e cálculo de porções para cães e gatos.',
-    keywords: ['consulta nutricional veterinária online peso ideal', 'plano alimentar para cães peso saudável', 'acompanhamento nutricional pet'],
+    title: 'Consulta Nutricional para Porções e Saciedade | Dra. Thais Vieira',
+    headline: 'Orientação Nutricional Veterinária Online para Fracionamento de Refeições e Porções Ideais',
+    description: 'Atendimento nutricional veterinário de rotina. Planejamento alimentar individualizado e cálculo de porções em gramas para cães e gatos.',
+    keywords: ['consulta nutricional veterinária online porções', 'plano alimentar para cães rotina saudável', 'acompanhamento nutricional pet'],
     benefits: [
-      'Cálculo calórico direcionado para manutenção do peso saudável e saciedade',
+      'Cálculo calórico direcionado para saciedade e rotina equilibrada',
       'Plano alimentar individualizado (Ração Selecionada ou Alimentação Natural)',
       'Estratégias para aumento da saciedade e rotina equilibrada de refeições',
-      'Acompanhamento do peso e da condição corporal ao longo do tempo'
+      'Acompanhamento contínuo da adaptação do plano ao longo do tempo'
     ],
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
-      'Cães e gatos precisando de ajuste calórico na rotina diária',
-      'Pets que alteraram o peso após castração ou mudança de rotina',
-      'Animais precisando de porções calculadas com precisão',
-      'Tutores que buscam equilíbrio nutricional e hábitos saudáveis para o pet'
+      'Cães e gatos precisando de porções diárias calculadas com precisão',
+      'Pets que precisam de rotina organizada após castração ou mudança de hábitos',
+      'Tutores que buscam equilíbrio nutricional e saciedade saudável para o pet'
     ],
     whatsIncluded: [
       'Análise detalhada da rotina e hábitos do pet',
@@ -37,11 +36,11 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       'Atendimento online por médica veterinária para todo o Brasil',
       'Suporte e acompanhamento contínuo pós-consulta via WhatsApp'
     ],
-    detailedText: 'Manter o peso ideal apoia a vitalidade e a disposição de cães e gatos, favorecendo a mobilidade e o bem-estar diário. Reduzir a quantidade de comida sem orientação técnica pode desbalancear os nutrientes. Com o acompanhamento individualizado da Dra. Thais Vieira, calculamos a energia necessária para que seu amigo fique nutrido, ativo e satisfeito.',
+    detailedText: 'Calcular a quantidade exata de comida em gramas apoia a vitalidade e a disposição de cães e gatos, favorecendo o bem-estar diário. Reduzir ou aumentar comida no olhômetro pode desbalancear os nutrientes. Com o acompanhamento individualizado da Dra. Thais Vieira, calculamos a energia necessária para que seu amigo fique nutrido, ativo e satisfeito.',
     faqs: [
       {
-        question: 'Como funciona o acompanhamento de peso na consulta online?',
-        answer: 'Na consulta online, a Dra. Thais avalia a rotina, fotos, peso atual e perfil do pet. Em seguida, calcula a necessidade calórica exata e estrutura o plano alimentar ideal.'
+        question: 'Como funciona o cálculo de porções na consulta online?',
+        answer: 'Na consulta online, a Dra. Thais avalia a rotina, fotos, porte e perfil do pet. Em seguida, calcula a necessidade calórica e a quantidade exata em gramas por refeição.'
       },
       {
         question: 'Meu pet vai passar fome durante o processo?',
@@ -61,33 +60,33 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
   },
   'sensibilidade-alimentar-em-caes-e-gatos': {
     slug: 'sensibilidade-alimentar-em-caes-e-gatos',
-    title: 'Consulta para Pets com Sensibilidade Alimentar | Dra. Thais Vieira',
-    headline: 'Planejamento Nutricional e Ingredientes Selecionados para Cães e Gatos',
-    description: 'Manejo nutricional para pets com sensibilidade a ingredientes. Orientações de rações de alta tolerância e Alimentação Natural balanceada.',
-    keywords: ['consulta para cachorro com sensibilidade alimentar', 'orientação de ração ingredientes selecionados', 'nutrição cão e gato sensível'],
+    title: 'Orientação para Escolha de Ingredientes e Rotina Alimentar | Dra. Thais Vieira',
+    headline: 'Planejamento Nutricional com Ingredientes Selecionados para Cães e Gatos',
+    description: 'Manejo alimentar com ingredientes selecionados e de alta aceitação. Orientações de rações de alta qualidade e Alimentação Natural balanceada.',
+    keywords: ['consulta para cachorro ingredientes selecionados', 'orientação de ração ingredientes selecionados', 'nutrição cão e gato rotina'],
     benefits: [
-      'Identificação criteriosa de ingredientes com melhor aceitação digestiva',
+      'Identificação criteriosa de ingredientes com excelente aceitação alimentar',
       'Planejamento de dieta com fontes nobres e selecionadas de proteína',
-      'Apoio à maciez e brilho da pelagem e conforto digestivo',
+      'Apoio à maciez e brilho da pelagem e bem-estar geral',
       'Acompanhamento do bem-estar diário do pet'
     ],
     formatKey: 'online',
     price: 'R$ 200,00',
     whoIsItFor: [
-      'Cães e gatos com histórico de sensibilidade a certos alimentos ou fezes amolecidas',
-      'Pets que precisam de ingredientes selecionados e digestão suave',
+      'Cães e gatos com paladar exigente ou preferência por ingredientes selecionados',
+      'Pets que precisam de ingredientes suaves e de alta aceitação',
       'Tutores buscando opções de Alimentação Natural com proteína selecionada'
     ],
     whatsIncluded: [
       'Análise criteriosa de todas as proteínas e alimentos já consumidos',
-      'Elaboração de planejamento com ingredientes de alta tolerância',
+      'Elaboração de planejamento com ingredientes de alta aceitação',
       'Guia prático de petiscos permitidos e seguros',
       'Consulta particular online por R$ 200,00 com suporte via WhatsApp'
     ],
-    detailedText: 'Sensibilidades alimentares podem impactar a vitalidade e a digestão do seu cão ou gato. O acompanhamento nutricional com uma médica veterinária com pós-graduação em nutrição animal permite selecionar os melhores ingredientes de forma criteriosa e segura.',
+    detailedText: 'A escolha cuidadosa dos ingredientes apoia a vitalidade e a rotina do seu cão ou gato. O acompanhamento nutricional com uma médica veterinária com pós-graduação em nutrição animal permite selecionar os melhores alimentos de forma criteriosa e segura.',
     faqs: [
       {
-        question: 'A Alimentação Natural ajuda pets com sensibilidade?',
+        question: 'A Alimentação Natural ajuda pets com paladar exigente?',
         answer: 'Sim! A Alimentação Natural permite selecionar proteínas nobres e vegetais frescos, sem corantes ou conservantes artificiais.'
       },
       {
@@ -180,12 +179,12 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
   },
   'nutricao-e-mobilidade-para-caes': {
     slug: 'nutricao-e-mobilidade-para-caes',
-    title: 'Nutrição e Mobilidade Ativa para Cães | Dra. Thais Vieira',
-    headline: 'Dieta e Plano Alimentar para Apoio à Vitalidade e Mobilidade Canina',
-    description: 'Acompanhamento nutricional focado em peso ideal e mobilidade saudável de cães adultos e idosos. Atendimento online em todo o Brasil.',
-    keywords: ['nutrição para mobilidade cães', 'dieta saudável cão idoso', 'peso ideal cachorro vitalidade'],
+    title: 'Nutrição e Vitalidade Ativa para Cães | Dra. Thais Vieira',
+    headline: 'Dieta e Plano Alimentar para Apoio à Disposição e Vitalidade Canina',
+    description: 'Acompanhamento nutricional focado em energia e disposição saudável de cães adultos e idosos. Atendimento online em todo o Brasil.',
+    keywords: ['nutrição e vitalidade cães', 'dieta saudável cão idoso', 'alimentação cachorro vitalidade'],
     benefits: [
-      'Controle do peso corporal para favorecer a leveza nos passeios',
+      'Rotina nutricional equilibrada para favorecer a leveza nos passeios',
       'Plano alimentar balanceado com suporte à vitalidade',
       'Acompanhamento nutricional contínuo da rotina do cão',
       'Mais conforto e disposição para brincadeiras'
@@ -194,27 +193,27 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
     price: 'R$ 200,00',
     whoIsItFor: [
       'Cães adultos e idosos precisando manter a disposição e vitalidade',
-      'Raças de grande porte com rotina ativa de passeios',
+      'Raças com rotina ativa de passeios e brincadeiras',
       'Tutores que desejam nutrição com foco em bem-estar geral'
     ],
     whatsIncluded: [
-      'Análise do grau de mobilidade e histórico de rotina do cão',
-      'Plano alimentar individualizado focado no peso ideal e nutrição adequada',
+      'Análise do perfil e histórico de rotina do cão',
+      'Plano alimentar individualizado focado em porções adequadas e nutrição de qualidade',
       'Orientações sobre manejo nutricional e escolhas alimentares seguras',
       'Consulta online para todo o Brasil por R$ 200,00 com suporte no WhatsApp'
     ],
-    detailedText: 'A manutenção do peso corporal ideal aliada a nutrientes de qualidade promove energia e disposição para caminhadas confortáveis em todas as fases da vida canina.',
+    detailedText: 'Uma rotina nutricional bem planejada aliada a alimentos de qualidade promove energia e disposição para caminhadas confortáveis em todas as fases da vida canina.',
     faqs: [
       {
         question: 'A alimentação auxilia na disposição do cão?',
-        answer: 'Sim! Ao manter o cão no peso ideal através de um plano nutricional balanceado, favorece-se o conforto e o prazer nas caminhadas diárias.'
+        answer: 'Sim! Ao manter uma alimentação balanceada e porções calculadas, favorece-se o conforto e o prazer nas caminhadas diárias.'
       }
     ],
     relatedLinks: [
       { url: '/consulta-nutricional-online-para-caes', text: 'Consulta nutricional para cães' },
       { url: '/como-escolher-a-melhor-racao', text: 'Como escolher a melhor ração' }
     ],
-    emergencyDisclaimer: 'Aviso: Em casos de emergência clínica ou dificuldade de locomoção, consulte o médico veterinário presencialmente.'
+    emergencyDisclaimer: 'Aviso: Esta consulta oferece orientações sobre alimentação e rotina diária. Em casos clínicos ou de urgência, consulte o médico veterinário presencialmente.'
   },
   'consulta-nutricional-online-para-caes': {
     slug: 'consulta-nutricional-online-para-caes',
@@ -292,7 +291,7 @@ export const SERVICE_LANDINGS: Record<string, ServiceLandingInfo> = {
       { url: '/alimentacao-natural-para-gatos', text: 'Alimentação Natural para Gatos' },
       { url: '/alimentacao-natural-para-gatos', text: 'Alimentação Natural para Gatos' }
     ],
-    emergencyDisclaimer: 'Aviso: Em casos de obstrução urinária felina (gato sem conseguir urinar), procure hospital veterinário imediatamente.'
+    emergencyDisclaimer: 'Aviso: Esta consulta oferece orientações sobre alimentação de rotina e hidratação felina. Casos clínicos ou urgências devem ser atendidos presencialmente por hospital veterinário.'
   },
   'nutricao-pet-online': {
     slug: 'nutricao-pet-online',
@@ -645,7 +644,7 @@ A Alimentação Natural Cozida para cães consiste em uma dieta elaborada exclus
 Ela é composta por proporções calculadas de:
 1. **Proteínas de Alta Qualidade:** Peito de frango, carne bovina magra, peixes, ovos ou suíno.
 2. **Carboidratos e Fibras:** Batata-doce, mandioquinha, arroz integral, abóbora, chuchu, brócolis e cenoura.
-3. **Vísceras e Cortes Nutritivos:** Fontes ricas em vitaminas e minerais naturais (como miúdos cozidos e moela).
+3. **Vísceras e Cortes Nutritivos:** Nutrientes essenciais naturais provenientes de carnes e cortes cozidos selecionados (como miúdos cozidos e moela).
 4. **Fontes Lipídicas Saudáveis:** Óleos específicos e gorduras boas dos próprios alimentos.
 5. **Equilíbrio Nutricional Integral:** Item essencial em todas as dietas caseiras.
 
@@ -721,8 +720,8 @@ Por isso, dietas exclusivamente vegetarianas ou restos caseiros não atendem à 
 ## 2. Benefícios da Dieta Úmida e Alimentação Natural
 
 1. **Hidratação Constante:** A água está inserida na própria refeição.
-2. **Hidratação e Bem-Estar Urinário:** Aumenta o volume hídrico diário e auxilia no equilíbrio dos fluidos corporais.
-3. **Controle de Peso:** Proteínas com teores balanceados de carboidratos apoiam a manutenção da condição corporal.
+2. **Ingestão Hídrica Balanceada:** Aumenta o consumo de água na rotina e auxilia no equilíbrio dos fluidos corporais.
+3. **Saciedade Equilibrada:** Proteínas nobres com teores adequados de energia apoiam a manutenção da condição corporal diária.
 
 ---
 

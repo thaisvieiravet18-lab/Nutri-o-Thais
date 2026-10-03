@@ -41,7 +41,8 @@ export function getSeoDataForPath(pathname: string): SeoData {
           'name': 'Dra. Thais Vieira | Nutrição Veterinária',
           'url': canonicalUrl,
           'image': DEFAULT_IMAGE,
-          'description': description,
+          'telephone': '+5511916539562',
+          'description': 'Consultas e teleorientação de nutrição veterinária para cães e gatos com a Dra. Thais Vieira (CRMV-SP 55784). Atendimento profissional exclusivo de consultoria e planejamento alimentar.',
           'address': {
             '@type': 'PostalAddress',
             'addressLocality': 'São Paulo',
@@ -51,7 +52,7 @@ export function getSeoDataForPath(pathname: string): SeoData {
           'founder': {
             '@type': 'Person',
             'name': 'Dra. Thais Vieira',
-            'jobTitle': 'Médica Veterinária com pós-graduação em nutrição animal'
+            'jobTitle': 'Médica Veterinária (CRMV-SP 55784)'
           }
         },
         {

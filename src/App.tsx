@@ -707,27 +707,27 @@ export default function App({ initialPath }: AppProps = {}) {
                 footerText: "Filhotes • Adultos • Idosos"
               },
               {
-                title: "Sensibilidades e Rotinas Especiais",
+                title: "Preferências e Rotinas Especiais",
                 subtitle: "Nutrição individualizada",
-                desc: "Alimentação sob medida para pets com exigências alimentares específicas, focando na tolerância digestiva e no bem-estar diário.",
+                desc: "Alimentação sob medida para pets com paladar exigente ou rotinas familiares específicas, focando na aceitação dos alimentos e no bem-estar diário.",
                 img: "https://images.unsplash.com/photo-1614621494969-757f4acbe726?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dp",
                 badge: "ROTINA ESPECIAL",
                 action: () => openConsulta('online'),
-                footerText: "Digestão • Tolerância • Vitalidade"
+                footerText: "Aceitação • Variedade • Vitalidade"
               },
               {
-                title: "Controle e Peso Ideal",
-                subtitle: "Porções adequadas e saciedade",
-                desc: "Nem passar fome, nem comer demais. Monto o plano alimentar ideal calculando porções exatas e respeitando o ritmo e energia do pet.",
+                title: "Porções Diárias e Equilíbrio",
+                subtitle: "Cálculo exato de gramas e saciedade",
+                desc: "Nem passar fome, nem comer demais. Monto a rotina alimentar calculando porções diárias em gramas, respeitando o ritmo e a rotina do pet.",
                 img: "https://images.unsplash.com/photo-1644178488613-555a71c24e16?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dp",
-                badge: "PESO IDEAL",
+                badge: "PORÇÕES CERTAS",
                 action: () => openConsulta('online'),
-                footerText: "Porção Ideal • Saciedade"
+                footerText: "Porções em Gramas • Equilíbrio"
               },
               {
                 title: "Nutrição para gatos",
                 subtitle: "Gato não é cachorro pequeno.",
-                desc: "Como nutricionista para gatos, cuido de hidratação, saúde urinária, controle de peso e dieta felina em todas as fases da vida.",
+                desc: "Como nutricionista veterinária para gatos, oriento sobre hidratação, rotina de alimentos úmidos e planejamento alimentar felino em todas as fases da vida.",
                 img: "https://images.unsplash.com/photo-1529778873920-4da4926a72c2?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dop",
                 badge: "NUTRIÇÃO FELINA",
                 action: () => {
@@ -735,7 +735,7 @@ export default function App({ initialPath }: AppProps = {}) {
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                   else navigateTo('/escolha-de-racao');
                 },
-                footerText: "Saúde Felina"
+                footerText: "Alimentação Felina"
               }
             ].map((card, cardIdx) => (
               <motion.div
@@ -1248,7 +1248,7 @@ export default function App({ initialPath }: AppProps = {}) {
               </div>
               <p className="text-stone-500 font-semibold text-[11px] pt-1">
                 Dra. Thais Vieira • CRMV-SP 55784<br />
-                Contato: thaisvieiravet18@gmail.com
+                São Paulo - SP • Contato: thaisvieiravet18@gmail.com
               </p>
             </div>
 
@@ -1270,7 +1270,7 @@ export default function App({ initialPath }: AppProps = {}) {
                 Termos
               </button>
             </div>
-            <p className="font-medium">Isenção absoluta de comissões de marketing de rações industriais.</p>
+            <p className="font-medium">Orientação nutricional independente e sem vínculo com marcas.</p>
           </div>
         </div>
       </footer>
